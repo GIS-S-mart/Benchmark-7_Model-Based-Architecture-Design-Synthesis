@@ -1,35 +1,24 @@
-# Benchmark 1. "TemplateName"
+# Benchmark 6. Concepts Finding for Design Synthesis
 
-This is a template that details the expected Minimum Viable Content of a benchmark. All minimum constitutive elements of a benchmark are formally defined in the meta-model below so as to share reproducible results.
 
-![image-20230401190042620](images/image-20230401190042620.png)
 
 ## Introduction
 
-*Guidelines:*
-
-Write a short introduction of the benchmark that includes at least the following items:
-
-- Type of research: does the benchmark intends to be qualitative and/or quantitative?
-- The main discipline(s) it contributes to
-- The goal of the study (to understand and/or improve design)
-- The type of contribution (theory to knowledge and/or empirical to practice)
-- Object(s) to validate (theory, method, tool, process...)
-- Expected results
-
-*Template:*
+This benchmark aims at collecting and comparing research results supporting engineers in the activity <u>*concepts finding*</u>. In this benchmark, concepts finding is an activity of the design synthesis process that consists in modelling an under-defined system by identifying its variables and properties. Fair comparisons to the state of the art require that research methods and results are open and well documented, with enough detail so that members of the community can attempt to replicate the findings and expand upon them. To fairly compare two competing solutions 
 
 ## Glossary
 
-*Guidelines:*
-
 To share a common understanding of ambiguous keywords, contributors shall agree upon the meaning of the keywords by systematically providing a definition and synonyms. Contributors should reuse existing terms and definitions from existing standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](https://github.com/GIS-S-mart/Benchmark-0_Template/discussions))
 
-*Template:*
-
-| **Keyword** | **Synonyms** | **Definition** | **Source** |
-| :---------: | :----------: | :------------: | :--------: |
-|             |              |                |            |
+|     **Keyword**      | **Synonyms** | **Definition** | **Source** |
+| :------------------: | :----------: | :------------: | :--------: |
+|       Concept        |              |                |            |
+|   Concept finding    |              |                |            |
+|       Function       |              |                |            |
+|      Behaviour       |              |                |            |
+|  Discrete behaviour  |              |                |            |
+| Continuous behaviour |              |                |            |
+|      Structure       |              |                |            |
 
 ## Goals
 
@@ -71,9 +60,11 @@ Benchmark exercises are test cases that serve to evaluate rival solutions.
 
 *Template:*
 
-| **Name** | **Author(s)** | **Version** | **DOI** | **URL** | **License** |
-| :------: | :-----------: | :---------: | :-----: | :-----: | :---------: |
-|          |               |             |         |         |             |
+|   **Name**    | **Author(s)** | **Version** | **DOI** |                           **URL**                            | **License** |
+| :-----------: | :-----------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
+| Bolt coupling |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
+|  Flashlight   |               |     V1      |         | [Link](datasets/Flashlight/Flashlight_benchmark_exercise.md) |  CC-BY-SA   |
+|    Camera     |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 
 ## Solutions
 
