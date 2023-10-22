@@ -87,17 +87,6 @@ To improve the results of the concept finding activity, one can propose a new de
 | :------: | :--------------: | :---------: | :-----: | :-----: | :---------: | :------: |
 | FPPT&SK2 | Lionel Roucoules |             |         |         |             |          |
 
-## Measurement protocols
-
-A measurement protocol is a logical and repeatable procedure to evaluate the metrics when one use a candidate solution to solve a benchmark exercise. It ensures the successful replication of results by others. The recipe highly depends on the preferred research approach (quantitative empirical studies, qualitative empirical studies, mixed-methods studies, analytical studies, experiments, quasi-experiments, ethnographic research, phenomenological research, grounded theory, hermeneutics, case study research, action research, etc.). A measurement protocol may be solution agnostic or part of a candidate solution.
-
-*Guidelines:*
-
-1. 
-2. 
-
-*Template:*
-
 ## Benchmarking
 
 Benchmarking shall enable visitors to determine which solution is better to employ in a specific context.
