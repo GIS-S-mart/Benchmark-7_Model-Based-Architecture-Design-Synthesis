@@ -60,9 +60,9 @@ Bottom up approach
 
 
 
-### Collection of benchmark exercises
+### Characteristics of the collection of benchmark exercises
 
-|                                                              | Bolt coupling |       Flashlight        |        Camera        |
+|                                                              | Coupling bolt |       Flashlight        |        Camera        |
 | ------------------------------------------------------------ | :-----------: | :---------------------: | :------------------: |
 | *Type of design synthesis problem (system sizing, system configuration, resource allocation, architecture generation)* | System sizing | Architecture generation | System configuration |
 | *Multi-engineering*                                          |      No       |           Yes           |                      |
@@ -74,11 +74,13 @@ Bottom up approach
 
 |   **Name**    | **Author(s)** | **Version** | **DOI** |                           **URL**                            | **License** |
 | :-----------: | :-----------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-| Bolt coupling |               |     V1      |         | [Link](/Benchmark exercises/Coupling bolt system/Coupling bolt system benchmark exercise.md) |  CC-BY-SA   |
+| Coupling bolt |               |     V1      |         | [Link](/Benchmark%20exercises/Coupling%20bolt%20system/Coupling%20bolt%20system%20benchmark exercise.md) |  CC-BY-SA   |
 |  Flashlight   |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 |    Camera     |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 
-## Solutions
+
+
+## Claimed contributions
 
 A solution is a candidate theory, process, method, practice, [...], or software that aims to solve a benchmark exercise.
 
