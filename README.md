@@ -10,26 +10,25 @@
 
 An agreed-upon glossary of terms used in this benchmark is proposed below. Contributors should reuse existing terms and definitions from existing standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions)).
 
-|         **Keyword**          |                        **Synonyms**                        |                        **Definition**                        | **Source** |
-| :--------------------------: | :--------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
-|           Concept            |                    Preliminary design,                     |                       A system concept                       |            |
-|       Concept finding        | Embodiement design, Conceptual design, Preliminary design. | An activity of the design synthesis process that intends to find preliminary design variables, parameters and constants, so as to define the set of acceptable and feasible conceptual under-defined design solutions. |            |
-|   Conceptual design method   |                                                            | The procedure to be followed by the practitioners to conceptually design the system-of-interest by using any modelling method and software. |            |
-|           Constant           |                                                            | A constant has an unmodifiable value that is constant with respect to time and remains always the same even between two computations. |            |
-|                              |                                                            |                                                              |            |
-|       Design parameter       |                                                            | A design parameter is a design variable with a fixed value that is set after initialisation, therefore it cannot be calculated using the time-changing design variables. It is constant with respect to time during one computation but can be modified between two computations. |            |
-|       Design variable        |                                                            | A time-changing variable whose value is continuously or discreetly updated at each computation step. |            |
-| Model-based design synthesis |                                                            | A design process which relies on computer-based automatic problem-solving techniques to generate preliminary design solutions that are correct by construction. |            |
-|       Modelling method       |                                                            | The procedure to be followed by the practitioners to model the concepts using the preferred modelling language and modelling software. |            |
-|      Modelling language      |                   Standardized notation                    | Language or notation that is used to encode the concept of the conceptual design method. |            |
-|      Modelling software      |                   Modelling environment                    | A software used by a practitioner to model a system concept using a modelling language. |            |
-|     System configuration     |                                                            | A design synthesis objective that consists in choosing system elements based on a set of compatibility relationships, variants, options and cardinalities. |            |
-|        System sizing         |                                                            | A design synthesis objective that consists in determining unknowns – continuous or discrete – variables of system elements for a given system configuration. |            |
-|                              |                                                            |                                                              |            |
+|         **Keyword**          |                         **Synonyms**                         |                        **Definition**                        | **Source** |
+| :--------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
+|        System concept        | Concept, Design concept, Preliminary design, Under-defined system. | A system concept is an under-defined system definition that satisfies the set of system requirements. |            |
+|       Concept finding        |  Embodiement design, Conceptual design, Preliminary design.  | An activity of the design synthesis process that intends to find preliminary design variables, parameters and constants, so as to define the set of acceptable and feasible conceptual under-defined design solutions. |            |
+|   Conceptual design method   |                                                              | The procedure to be followed by the practitioners to conceptually design the system-of-interest by using any modelling method and software. |            |
+|           Constant           |                                                              | A constant has an unmodifiable value that is constant with respect to time and remains always the same even between two computations. |            |
+|       Design parameter       |                                                              | A design parameter is a design variable with a fixed value that is set after initialisation, therefore it cannot be calculated using the time-changing design variables. It is constant with respect to time during one computation but can be modified between two computations. |            |
+|       Design variable        |                                                              | A time-changing variable whose value is continuously or discreetly updated at each computation step. |            |
+| Model-based design synthesis |                                                              | A design process which relies on computer-based automatic problem-solving techniques to generate preliminary design solutions that are correct by construction. |            |
+|       Modelling method       |                                                              | The procedure to be followed by the practitioners to model the concepts using the preferred modelling language and modelling software. |            |
+|      Modelling language      |                    Standardized notation                     | Language or notation that is used to encode the concept of the conceptual design method. |            |
+|      Modelling software      |                    Modelling environment                     | A software used by a practitioner to model a system concept using a modelling language. |            |
+|     System configuration     |                                                              | A design synthesis objective that consists in choosing system elements based on a set of compatibility relationships, variants, options and cardinalities. |            |
+|        System sizing         |                                                              | A design synthesis objective that consists in determining unknowns – continuous or discrete – variables of system elements for a given system configuration. |            |
+|                              |                                                              |                                                              |            |
 
 ## Body of knowledge
 
-
+Are we benchmarking design method, modelling language, modelling method, modelling software?
 
 ## Research Objectives
 
@@ -52,13 +51,11 @@ An empirical evidence is a quantitative and/or qualitative performance indicator
 
 (complete with a bottom-up approach by reviewing metrics in papers containing concept finding contributions)
 
-
-
 Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones. Any change to existing empirical evidence must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions). Once the suggested change is informally approved by the community, the author shall post on the issues page of the benchmark (e.g. navigate to '*Repositories > Benchmark-0_Template > Issues*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/issues)) and briefly outline the new metric.
 
 ## Benchmarks Collection
 
-The set of benchmark exercises aims to demonstrate the usefulness of each claimed contribution beyond a single benchmark exercise
+The set of benchmark exercises aims to demonstrate the usefulness of each claimed contribution beyond a single benchmark exercise.
 
 ### Characteristics of the collection of benchmark exercises
 
@@ -70,7 +67,7 @@ The set of benchmark exercises aims to demonstrate the usefulness of each claime
 
 
 
-### Sources of benchmark exercises
+### Benchmark exercises
 
 |   **Name**    | **Author(s)** | **Version** | **DOI** |                           **URL**                            | **License** |
 | :-----------: | :-----------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
@@ -78,7 +75,9 @@ The set of benchmark exercises aims to demonstrate the usefulness of each claime
 |  Flashlight   |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 |    Camera     |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 
+### Benchmark protocols
 
+Does a benchmark protocol apply to all benchmark exercise or each benchmark exercise requires its own benchmark protocol?
 
 ## Claimed contributions
 
