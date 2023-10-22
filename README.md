@@ -29,7 +29,7 @@ An agreed-upon glossary of terms used in this benchmark is proposed below. Contr
 
 ## Research Objectives
 
-The fundamental research objective is to find system concepts based on a set of requirements as input data. To improve the results of the concept finding activity, one can propose a new design method, modelling method, modelling language or modelling software. 
+The fundamental research objective is to find system concepts based on a set of requirements as input data. 
 
 ## Metrics
 
@@ -58,7 +58,7 @@ Bottom up approach
 
 ## Benchmarks Collection
 
-
+The set of benchmark exercises aims at demonstrating the usefulness of each claimed contribution beyond a single benchmark exercise
 
 ### Characteristics of the collection of benchmark exercises
 
@@ -74,7 +74,7 @@ Bottom up approach
 
 |   **Name**    | **Author(s)** | **Version** | **DOI** |                           **URL**                            | **License** |
 | :-----------: | :-----------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-| Coupling bolt |               |     V1      |         | [Link](/Benchmark%20exercises/Coupling%20bolt%20system/Coupling%20bolt%20system%20benchmark exercise.md) |  CC-BY-SA   |
+| Coupling bolt |               |     V1      |         | [Link](https://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/blob/main/Benchmark%20exercises/Coupling%20bolt%20system/Coupling%20bolt%20system%20benchmark%20exercise.md) |  CC-BY-SA   |
 |  Flashlight   |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 |    Camera     |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 
@@ -82,23 +82,11 @@ Bottom up approach
 
 ## Claimed contributions
 
-A solution is a candidate theory, process, method, practice, [...], or software that aims to solve a benchmark exercise.
-
-*Guidelines:*
-
-1. It is imperative for good scientific practice that all results are reproducible.
-2. It is strongly recommended to publish the research material (e.g., software code - at least an executable file -, model, simulation, coding book, interviews,  statistics, raw data, observation voice/video recordings, etc.).
-3. The quantitative and/or qualitative metric serve as a a level of evidence which can be of four types:
-   1. **Measured**: the benefit is measured through a measurement protocol.
-   2. **Observed**: the benefit is noticed by the researcher(s) but is not measured through a measurement protocol.
-   3. **Perceived**: the benefit - claimed without evidence - is expected or perceived to be evident by the researcher(s) but the claim is not based on a measurement protocol.
-   4. **Reference** to another source: the benefit is cited from another source.
-
-*Template:*
+To improve the results of the concept finding activity, one can propose a new design method, modelling method, modelling language or modelling software.
 
 | **Name** |  **Author(s)**   | **Version** | **DOI** | **URL** | **License** | Evidence |
 | :------: | :--------------: | :---------: | :-----: | :-----: | :---------: | :------: |
-|          | Lionel Roucoules |             |         |         |             |          |
+| FPPT&SK2 | Lionel Roucoules |             |         |         |             |          |
 
 ## Measurement protocols
 
