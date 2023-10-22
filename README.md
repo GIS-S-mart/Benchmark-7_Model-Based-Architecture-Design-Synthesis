@@ -8,20 +8,24 @@
 
 ## Glossary
 
-An agreed-upon glossary of terms used in this benchmark is proposed below. Contributors should reuse existing terms and definitions from existing standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](https://github.com/GIS-S-mart/Benchmark-0_Template/discussions)).
+An agreed-upon glossary of terms used in this benchmark is proposed below. Contributors should reuse existing terms and definitions from existing standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions)).
 
-|       **Keyword**        |                        **Synonyms**                        |                        **Definition**                        | **Source** |
-| :----------------------: | :--------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
-|         Concept          |                    Preliminary design,                     |                       A system concept                       |            |
-|     Concept finding      | Embodiement design, Conceptual design, Preliminary design. | An activity of the design synthesis process that intends to find preliminary design variables, parameters and constants, so as to define the set of acceptable and feasible conceptual under-defined design solutions. |            |
-| Conceptual design method |                                                            | The procedure to be followed by the practitioners to conceptually design the system-of-interest by using any modelling method and software. |            |
-|     Design synthesis     |                                                            |                                                              |            |
-|     Modelling method     |                                                            | The procedure to be followed by the practitioners to model the concepts using the preferred modelling language and modelling software. |            |
-|    Modelling language    |                   Standardized notation                    | Language or notation that is used to encode the concept of the conceptual design method. |            |
-|    Modelling software    |                   Modelling environment                    | A software used by a practitioner to model a system concept using a modelling language. |            |
-|   System configuration   |                                                            | A design synthesis objective that consists in choosing system elements based on a set of compatibility relationships, variants, options and cardinalities. |            |
-|      System sizing       |                                                            | A design synthesis objective that consists in determining unknowns – continuous or discrete – variables of system elements for a given system configuration. |            |
-|                          |                                                            |                                                              |            |
+|         **Keyword**          |                        **Synonyms**                        |                        **Definition**                        | **Source** |
+| :--------------------------: | :--------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
+|           Concept            |                    Preliminary design,                     |                       A system concept                       |            |
+|       Concept finding        | Embodiement design, Conceptual design, Preliminary design. | An activity of the design synthesis process that intends to find preliminary design variables, parameters and constants, so as to define the set of acceptable and feasible conceptual under-defined design solutions. |            |
+|   Conceptual design method   |                                                            | The procedure to be followed by the practitioners to conceptually design the system-of-interest by using any modelling method and software. |            |
+|           Constant           |                                                            | A constant has an unmodifiable value that is constant with respect to time and remains always the same even between two computations. |            |
+|                              |                                                            |                                                              |            |
+|       Design parameter       |                                                            | A design parameter is a design variable with a fixed value that is set after initialisation, therefore it cannot be calculated using the time-changing design variables. It is constant with respect to time during one computation but can be modified between two computations. |            |
+|       Design variable        |                                                            | A time-changing variable whose value is continuously or discreetly updated at each computation step. |            |
+| Model-based design synthesis |                                                            | A design process which relies on computer-based automatic problem-solving techniques to generate preliminary design solutions that are correct by construction. |            |
+|       Modelling method       |                                                            | The procedure to be followed by the practitioners to model the concepts using the preferred modelling language and modelling software. |            |
+|      Modelling language      |                   Standardized notation                    | Language or notation that is used to encode the concept of the conceptual design method. |            |
+|      Modelling software      |                   Modelling environment                    | A software used by a practitioner to model a system concept using a modelling language. |            |
+|     System configuration     |                                                            | A design synthesis objective that consists in choosing system elements based on a set of compatibility relationships, variants, options and cardinalities. |            |
+|        System sizing         |                                                            | A design synthesis objective that consists in determining unknowns – continuous or discrete – variables of system elements for a given system configuration. |            |
+|                              |                                                            |                                                              |            |
 
 ## Body of knowledge
 
@@ -31,34 +35,30 @@ An agreed-upon glossary of terms used in this benchmark is proposed below. Contr
 
 The fundamental research objective is to find system concepts based on a set of requirements as input data. 
 
-## Metrics
+## Empirical evidence
 
-Metrics are quantitative and/or qualitative performance indicator that measures the degree to which the articulated goals have been achieved.
+An empirical evidence is a quantitative and/or qualitative performance indicator or metric that measures the degree to which the research goal of concept finding has been achieved. The empirical evidence supporting or countering the belief that the contributions claiming to achieve the goal of concept finding are defined as follows: 
 
-*Guidelines:*
+|                           **Name**                           | **Definition** | **Unit** |
+| :----------------------------------------------------------: | :------------: | :------: |
+|    Number of concepts satisfying the system requirements     |                |          |
+|              Number of correct design variables              |                |          |
+|             Number of correct design parameters              |                |          |
+|                Domain of each design variable                |                |          |
+|               Domain of each design parameter                |                |          |
+| Number of correct relationships between design variables, design parameters and constants |                |          |
+|                 (Number of physics explored)                 |                |          |
+|                 (Design synthesis objective)                 |                |          |
 
-1. The achievement of a given goal may be measured by one or more metrics.
-2. Results must be quantitatively and not only qualitatively compared to the literature in a fair and transparent manner.
-3. Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones.
-4. Any change to existing metrics must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](https://github.com/GIS-S-mart/Benchmark-0_Template/discussions). Once the suggested change is informally approved by the community, the author shall post on the issues page of the benchmark (e.g. navigate to '*Repositories > Benchmark-0_Template > Issues*', or [click here](https://github.com/GIS-S-mart/Benchmark-0_Template/issues)) and briefly outline the new metric.
+(complete with a bottom-up approach by reviewing metrics in papers containing concept finding contributions)
 
-*Template:*
 
-|                    **Name**                    | **Definition** | **Unit** |
-| :--------------------------------------------: | :------------: | :------: |
-|      Type de problème de Design Synthesis      |                |          |
-|     Nombre de concepts identifiés/étudiés      |                |          |
-|         (Nombre phénomènes physiques)          |                |          |
-| Liste de paramètres et variables de conception |                |          |
-|       Domain des paramètres et variables       |                |          |
-|                Intéropérabilité                |                |          |
-|                                                |                |          |
 
-Bottom up approach
+Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones. Any change to existing empirical evidence must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions). Once the suggested change is informally approved by the community, the author shall post on the issues page of the benchmark (e.g. navigate to '*Repositories > Benchmark-0_Template > Issues*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/issues)) and briefly outline the new metric.
 
 ## Benchmarks Collection
 
-The set of benchmark exercises aims at demonstrating the usefulness of each claimed contribution beyond a single benchmark exercise
+The set of benchmark exercises aims to demonstrate the usefulness of each claimed contribution beyond a single benchmark exercise
 
 ### Characteristics of the collection of benchmark exercises
 
