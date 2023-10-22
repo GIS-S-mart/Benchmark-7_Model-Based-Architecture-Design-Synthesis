@@ -1,31 +1,35 @@
-# Benchmark 6. Concepts Finding for Design Synthesis
-
-
+# Benchmark 6. Concept Finding in a Model-Based Design Synthesis Process for System Sizing
 
 ## Introduction
 
-This benchmark aims at collecting and comparing research results supporting engineers in the activity <u>*concepts finding*</u>. In this benchmark, concepts finding is an activity of the design synthesis process that consists in modelling an under-defined system by identifying its variables and properties. Fair comparisons to the state of the art require that research methods and results are open and well documented, with enough detail so that members of the community can attempt to replicate the findings and expand upon them. To fairly compare two competing solutions 
+- **Disciplines**: This scientific benchmark repository concerns mainly the engineering design, systems engineering, and product lifecycle management communities.
+- **Goal**: This scientific benchmark aims at collecting and comparing competing or complementary contributions claiming to improve the activity of concept finding in a design synthesis process for system sizing. In this benchmark, design synthesis is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction. A design synthesis process has an objective: system configuration, system sizing, resource allocation, and/or architecture generation.  This benchmark focuses on design synthesis for system sizing. In addition, in a computational design synthesis process for system sizing, this benchmark concentrates on the activity of concept finding.  Starting with a set of validated requirements, concept finding is an activity that intends to find preliminary design variables, parameters and constants, that serve to define the set of acceptable and feasible conceptual design solutions.
+- **Type of claimed contributions to benchmark:** This scientific benchmark aims at benchmarking the modelling language?
 
 ## Glossary
 
-To share a common understanding of ambiguous keywords, contributors shall agree upon the meaning of the keywords by systematically providing a definition and synonyms. Contributors should reuse existing terms and definitions from existing standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](https://github.com/GIS-S-mart/Benchmark-0_Template/discussions))
+An agreed-upon glossary of terms used in this benchmark is proposed below. Contributors should reuse existing terms and definitions from existing standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](https://github.com/GIS-S-mart/Benchmark-0_Template/discussions)).
 
-|     **Keyword**      | **Synonyms** | **Definition** | **Source** |
-| :------------------: | :----------: | :------------: | :--------: |
-|       Concept        |              |                |            |
-|   Concept finding    |              |                |            |
-|       Function       |              |                |            |
-|      Behaviour       |              |                |            |
-|  Discrete behaviour  |              |                |            |
-| Continuous behaviour |              |                |            |
-|      Structure       |              |                |            |
+|       **Keyword**        |                        **Synonyms**                        |                        **Definition**                        | **Source** |
+| :----------------------: | :--------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
+|         Concept          |                    Preliminary design,                     |                       A system concept                       |            |
+|     Concept finding      | Embodiement design, Conceptual design, Preliminary design. | An activity of the design synthesis process that intends to find preliminary design variables, parameters and constants, so as to define the set of acceptable and feasible conceptual under-defined design solutions. |            |
+| Conceptual design method |                                                            | The procedure to be followed by the practitioners to conceptually design the system-of-interest by using any modelling method and software. |            |
+|     Design synthesis     |                                                            |                                                              |            |
+|     Modelling method     |                                                            | The procedure to be followed by the practitioners to model the concepts using the preferred modelling language and modelling software. |            |
+|    Modelling language    |                   Standardized notation                    | Language or notation that is used to encode the concept of the conceptual design method. |            |
+|    Modelling software    |                   Modelling environment                    | A software used by a practitioner to model a system concept using a modelling language. |            |
+|   System configuration   |                                                            | A design synthesis objective that consists in choosing system elements based on a set of compatibility relationships, variants, options and cardinalities. |            |
+|      System sizing       |                                                            | A design synthesis objective that consists in determining unknowns – continuous or discrete – variables of system elements for a given system configuration. |            |
+|                          |                                                            |                                                              |            |
 
-## Goals
+## Body of knowledge
 
-Specify the common set of goals that the competing solutions pursue:
-- The solution shall enable to...
-- The solution shall enable to...
-- The solution shall enable to...
+
+
+## Research Objectives
+
+The fundamental research objective is to find system concepts based on a set of requirements as input data. To improve the results of the concept finding activity, one can propose a new design method, modelling method, modelling language or modelling software. 
 
 ## Metrics
 
@@ -40,30 +44,38 @@ Metrics are quantitative and/or qualitative performance indicator that measures 
 
 *Template:*
 
-| **Name** | **Definition** | **Unit** |
-| :------: | :------------: | :------: |
-|          |                |          |
+|                    **Name**                    | **Definition** | **Unit** |
+| :--------------------------------------------: | :------------: | :------: |
+|      Type de problème de Design Synthesis      |                |          |
+|     Nombre de concepts identifiés/étudiés      |                |          |
+|         (Nombre phénomènes physiques)          |                |          |
+| Liste de paramètres et variables de conception |                |          |
+|       Domain des paramètres et variables       |                |          |
+|                Intéropérabilité                |                |          |
+|                                                |                |          |
 
-## Benchmark exercises
+Bottom up approach
 
-Benchmark exercises are test cases that serve to evaluate rival solutions.
+## Benchmarks Collection
 
-*Guidelines:*
 
-1. A benchmark exercise is a representative example problem of the actual problem for which the solutions are intended.
-2. Authors should reuse existing benchmark exercises and not invent new ones, unless they have a very specific illustrative purpose not covered by existing ones.
-3. The lack of showing particular benchmark exercises in a manuscript says more than the benchmark exercises included in a manuscript.
-4. Any change to existing benchmark exercises must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](https://github.com/GIS-S-mart/Benchmark-0_Template/discussions). Once the suggested change is informally approved by the community, the author shall post on the issues page of the benchmark (e.g. navigate to *Repositories > Benchmark-0_Template > Issues*, or [click here](https://github.com/GIS-S-mart/Benchmark-0_Template/issues)) and briefly outline the new benchmark exercises.
-5. A benchmark exercise shall be stored on an open online repository (to be selected according to the type and size of the dataset, licensing, etc.) such as [Zenodo](https://zenodo.org/), [Recherche Data Gouv](https://entrepot.recherche.data.gouv.fr/dataverse/root), [Harvard Dataverse](https://dataverse.harvard.edu/), [4TU.ResearchData](https://data.4tu.nl/info/en/), [B2SHARE](https://eudat.eu/catalogue/B2SHARE), [B2DROP](https://eudat.eu/catalogue/B2DROP) with a preference for repositories such as [Zenodo](https://zenodo.org/) which creates a persistent identifier (DOI) for the repository. This helps for [referencing and citing a  GitHub repository](https://docs.github.com/fr/repositories/archiving-a-github-repository/referencing-and-citing-content).
-6. If the benchmark exercise is not stored in the benchmark GitHub repository, contributors should specify the hyperlink to the source.
-7. An existing benchmark exercise may be modified according to the feedback of members of the benchmark community. It is important to specify the version of the benchmark exercise in order to evaluate candidate solutions on the latest version.
 
-*Template:*
+### Collection of benchmark exercises
+
+|                                                              | Bolt coupling |       Flashlight        |        Camera        |
+| ------------------------------------------------------------ | :-----------: | :---------------------: | :------------------: |
+| *Type of design synthesis problem (system sizing, system configuration, resource allocation, architecture generation)* | System sizing | Architecture generation | System configuration |
+| *Multi-engineering*                                          |      No       |           Yes           |                      |
+| Type of behaviour                                            |  Continuous   |       Continuous        |                      |
+
+
+
+### Sources of benchmark exercises
 
 |   **Name**    | **Author(s)** | **Version** | **DOI** |                           **URL**                            | **License** |
 | :-----------: | :-----------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-| Bolt coupling |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
-|  Flashlight   |               |     V1      |         | [Link](datasets/Flashlight/Flashlight_benchmark_exercise.md) |  CC-BY-SA   |
+| Bolt coupling |               |     V1      |         | [Link](./Benchmark exercises/Bold coupling/Bolt coupling benchmark exercise.md) |  CC-BY-SA   |
+|  Flashlight   |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 |    Camera     |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 
 ## Solutions
@@ -82,9 +94,9 @@ A solution is a candidate theory, process, method, practice, [...], or software 
 
 *Template:*
 
-| **Name** | **Author(s)** | **Version** | **DOI** | **URL** | **License** | Evidence |
-| :------: | :-----------: | :---------: | :-----: | :-----: | :---------: | -------- |
-|          |               |             |         |         |             |          |
+| **Name** |  **Author(s)**   | **Version** | **DOI** | **URL** | **License** | Evidence |
+| :------: | :--------------: | :---------: | :-----: | :-----: | :---------: | :------: |
+|          | Lionel Roucoules |             |         |         |             |          |
 
 ## Measurement protocols
 
