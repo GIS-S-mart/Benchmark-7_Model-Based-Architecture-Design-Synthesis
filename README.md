@@ -74,7 +74,7 @@ Bottom up approach
 
 |   **Name**    | **Author(s)** | **Version** | **DOI** |                           **URL**                            | **License** |
 | :-----------: | :-----------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-| Bolt coupling |               |     V1      |         | [Link](./Benchmark exercises/Bold coupling/Bolt coupling benchmark exercise.md) |  CC-BY-SA   |
+| Bolt coupling |               |     V1      |         | [Link](/Benchmark exercises/Coupling bolt system/Coupling bolt system benchmark exercise.md) |  CC-BY-SA   |
 |  Flashlight   |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 |    Camera     |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
 
