@@ -1,9 +1,9 @@
-# Benchmark 6. Concept Finding in a Model-Based Design Synthesis Process for System Sizing
+# Benchmark 6. Concept Finding in a Model-Based Architecture Design Synthesis Process for System Sizing
 
 ## Introduction
 
 - **Disciplines**: This scientific benchmark repository concerns mainly the engineering design, systems engineering, and product lifecycle management communities.
-- **Goal**: This scientific benchmark aims at collecting and comparing competing or complementary contributions claiming to improve the activity of concept finding in a design synthesis process for system sizing. In this benchmark, design synthesis is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction. A design synthesis process has an objective: system configuration, system sizing, resource allocation, and/or architecture generation.  This benchmark focuses on design synthesis for system sizing. In addition, in a computational design synthesis process for system sizing, this benchmark concentrates on the activity of concept finding.  Starting with a set of validated requirements, concept finding is an activity that intends to find preliminary design variables, parameters and constants, that serve to define the set of acceptable and feasible conceptual design solutions.
+- **Goal**: This scientific benchmark aims at collecting and comparing competing or complementary contributions claiming to improve the activity of concept finding in a model-based architecture design synthesis process for system sizing. In this benchmark, model-based architecture design synthesis is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction. A design synthesis process has an objective: system configuration, system sizing, resource allocation, and/or architecture generation.  This benchmark focuses on design synthesis for system sizing. In addition, in a computational design synthesis process for system sizing, this benchmark concentrates on the activity of concept finding.  Starting with a set of validated requirements, concept finding is an activity that intends to find preliminary design variables, parameters and constants, that serve to define the set of acceptable and feasible conceptual design solutions.
 - **Type of claimed contributions to benchmark:** This scientific benchmark aims at benchmarking the modelling language?
 
 ## Glossary
@@ -41,11 +41,16 @@ An empirical evidence is a quantitative and/or qualitative performance indicator
 |                           **Name**                           | **Definition** | **Unit** |
 | :----------------------------------------------------------: | :------------: | :------: |
 |    Number of concepts satisfying the system requirements     |                |          |
-|              Number of correct design variables              |                |          |
-|             Number of correct design parameters              |                |          |
-|                Domain of each design variable                |                |          |
-|               Domain of each design parameter                |                |          |
-| Number of correct relationships between design variables, design parameters and constants |                |          |
+|             Number of relevant design variables              |                |          |
+|             Number of relevant design parameters             |                |          |
+|           Relevant domain of each design variable            |                |          |
+|           Relevant domain of each design parameter           |                |          |
+|                      Value of constant?                      |                |          |
+| Number of relevant relationships between design variables, design parameters and constants |                |          |
+|                                                              |                |          |
+|                                                              |                |          |
+|                                                              |                |          |
+|                Minimize number of variables?                 |                |          |
 |                 (Number of physics explored)                 |                |          |
 |                 (Design synthesis objective)                 |                |          |
 
@@ -89,17 +94,22 @@ To improve the results of the concept finding activity, one can propose a new de
 
 ## Benchmarking
 
-Benchmarking shall enable visitors to determine which solution is better to employ in a specific context.
+Benchmark SysML+CatiaMagic... et on fait varier les concepts.
 
-*Guidelines:*
 
-1. When presenting a new solution, results must be quantitatively and not only qualitatively compared to the literature.
-2. The comparison of solutions must be done in a fair and transparent manner.
-3. Results should also be critically judged for physical sanity to avoid the ones that make little sense.
 
-![image-20230401184218148](./images/image-20230401184218148.png)
-
-*Template:*
+|                           **Name**                           | **FPPT-SK2/UML/Eclipse...** | **???** |
+| :----------------------------------------------------------: | :-------------------------: | :-----: |
+|    Number of concepts satisfying the system requirements     |                             |         |
+|             Number of relevant design variables              |                             |         |
+|             Number of relevant design parameters             |                             |         |
+|           Relevant domain of each design variable            |                             |         |
+|           Relevant domain of each design parameter           |                             |         |
+|                      Value of constant?                      |                             |         |
+| Number of relevant relationships between design variables, design parameters and constants |                             |         |
+|                Minimize number of variables?                 |                             |         |
+|                 (Number of physics explored)                 |                             |         |
+|                 (Design synthesis objective)                 |                             |         |
 
 ## Meta-Analysis
 
