@@ -48,9 +48,9 @@ The table below is a collection of contributions that claim to improve the activ
 
 The table below gives access to the open data of each contribution:
 
-| **Contribution ID** |  **Author(s)**   | **Version** | **DOI** | **URL** | **License** |
-| :-----------------: | :--------------: | :---------: | :-----: | :-----: | :---------: |
-|       [001]()       | Lionel Roucoules |             |         |         |             |
+| **Contribution ID** |  **Author(s)**   | **Version** | **DOI** |                           **URL**                            | **License** |
+| :-----------------: | :--------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
+|         001         | Lionel Roucoules |      1      |         | [Open data](https://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/tree/main/Claimed%20contributions/001) |             |
 
 ## Empirical evidence
 
