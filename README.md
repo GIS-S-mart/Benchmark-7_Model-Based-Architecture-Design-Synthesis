@@ -33,11 +33,13 @@ An agreed-upon glossary of terms used in this benchmark is proposed below. Contr
 
 What body of knowledge the contribution claim to extend? design phylosophy, design method, modelling language, modelling method, or modelling software for concepts finding in a MBADS process?
 
-## Research Objectives
+## Research objectives
 
 The fundamental research objective pursued by the benchmark community is the improvement of the activity of concept finding in a model-based architecture design synthesis process for system sizing.
 
 ## Claimed contributions
+
+candidate research proposals (e.g., theory, process, method, modelling language, software…) which, once applied to the collection of benchmarks, must provide empirical evidence that the research objectives have been met. 
 
 The table below is a collection of contributions that claim to improve the activity of concepts finding in a model-based architecture design synthesis approach for system sizing.
 
@@ -45,12 +47,6 @@ The table below is a collection of contributions that claim to improve the activ
 | :-------------: | :---------------: | :-------------: | :-----------------: | :-----------------: | :---------------: |
 |       001       | Lean engineering  | AF + FPPT + SK2 |         UML         |       Eclipse       |   Lionel Method   |
 |       ...       |        ...        |       ...       |         ...         |         ...         |        ...        |
-
-The table below gives access to the open data of each contribution:
-
-| **Contribution ID** |  **Author(s)**   | **Version** | **DOI** |                           **URL**                            | **License** |
-| :-----------------: | :--------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-|         001         | Lionel Roucoules |      1      |         | [Open data](https://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/tree/main/Claimed%20contributions/001) |             |
 
 ## Empirical evidence
 
@@ -109,9 +105,19 @@ The table below stands as the results of the benchmarking
 
 ### Benchmarking on Coupling Bolt
 
+The table below gives access to the open data of each contribution:
+
+| **Contribution ID** | **Benchmark exercise** | **Version** | **DOI** |                           **URL**                            | **License** |
+| :-----------------: | :--------------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
+|         001         |     Coupling bolt      |      1      |         | [Open data](https://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/tree/main/Claimed%20contributions/001) |             |
+|         002         |       Flashlight       |      1      |         |                         [Open data]                          |             |
+|         ...         |          ...           |     ...     |   ...   |                             ...                              |     ...     |
+
+
+
 |                           **Name**                           | **Contribution ID** | **???** |
 | :----------------------------------------------------------: | :-----------------: | :-----: |
-|    Number of concepts satisfying the system requirements     |                     |         |
+|    Number of concepts satisfying the system requirements     |         001         |         |
 |             Number of relevant design variables              |                     |         |
 |             Number of relevant design parameters             |                     |         |
 |           Relevant domain of each design variable            |                     |         |
