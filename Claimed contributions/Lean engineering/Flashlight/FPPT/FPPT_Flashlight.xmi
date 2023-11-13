@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fppt:System
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:fppt="fppt"
+    xsi:schemaLocation="fppt /MDE_ZOO/trunk/metaModels/FPPT/FPPT.ecore"
+    name="Lampe Dynamo Lionel">
+  <HasToRespectFunctions
+      Name="Cr&#xe9;er le flux de lumi&#xe8;re"
+      Description="Eclairer  l'environnement"
+      Type="Current">
+    <IsDescribedBy
+        name="Distance eclairage"
+        nominal="10.0"
+        Unit="m"/>
+    <IsDescribedBy
+        name="Intensite"
+        nominal="100.0"
+        Unit="Lumen"/>
+    <IsRealisedBy>
+      <NeedsFunctions
+          Name="Source Lumineux"
+          Description="Cr&#xe9;er une source de lumi&#xe8;re qui g&#xe9;nera le flux">
+        <IsRealisedBy
+            Type="Electroluminescence">
+          <NeedsTechno
+              ID="LED"
+              type="Puits"
+              IsAssociatedTo="/"/>
+          <NeedsFunctions
+              Name="Cr&#xe9;er courant &#xe9;lectrique"
+              Description="Creer un courant electrique"
+              IsCurentConductedBy="//@HasToRespectFunctions.0/@IsRealisedBy/@NeedsFunctions.0/@IsRealisedBy/@NeedsTechno.0"
+              Type="Current">
+            <IsDescribedBy
+                name="Intensite"
+                Unit="A"/>
+            <IsRealisedBy
+                Type="LoiOhm">
+              <NeedsFunctions
+                  Name="Cr&#xe9;er une ddp"
+                  Description="Creer une ddp">
+                <IsRealisedBy
+                    Type="Lenz">
+                  <NeedsTechno
+                      ID="Bobine"
+                      type="CondElec_I"
+                      IsAssociatedTo="/"/>
+                  <NeedsFunctions
+                      Name="Creer un mouvement"
+                      Description="Mettre en mouvement de rotation de l'aimant par rapport a la bobine"
+                      IsCurentBetween="//@HasToRespectFunctions.0/@IsRealisedBy/@NeedsFunctions.0/@IsRealisedBy/@NeedsFunctions.0/@IsRealisedBy/@NeedsFunctions.0/@IsRealisedBy/@NeedsTechno.0 //@HasToRespectFunctions.0/@IsRealisedBy/@NeedsFunctions.0/@IsRealisedBy/@NeedsFunctions.0/@IsRealisedBy/@NeedsFunctions.0/@IsRealisedBy/@NeedsFunctions.1">
+                    <IsRealisedBy
+                        Type="PrincipeFondamentalDynamique">
+                      <NeedsFunctions
+                          Name="Creer un couple sur l'aimant"
+                          Description="Creer un couple sur l'aimant">
+                        <IsRealisedBy>
+                          <NeedsFunctions
+                              Name="Creer un effort sur l'aimant"
+                              Description="Creer un effort sur l'aimant">
+                            <IsRealisedByTech
+                                ID="Main"
+                                type="SourceMeca_F"
+                                IsAssociatedTo="/"/>
+                          </NeedsFunctions>
+                        </IsRealisedBy>
+                      </NeedsFunctions>
+                    </IsRealisedBy>
+                  </NeedsFunctions>
+                  <NeedsFunctions
+                      Name="Cr&#xe9;er une induction magn&#xe9;tique"
+                      Description="Cr&#xe9;er une induction magn&#xe9;tique"
+                      Type="Current">
+                    <IsRealisedBy
+                        Type="AimantationMatiere">
+                      <NeedsFunctions
+                          Name="Cr&#xe9;er un champ magn&#xe9;tique"
+                          Description="Cr&#xe9;er un champ magn&#xe9;tique">
+                        <IsRealisedByTech
+                            ID="Aimant"
+                            type="SourceMagnet_H"
+                            IsAssociatedTo="/"/>
+                      </NeedsFunctions>
+                    </IsRealisedBy>
+                  </NeedsFunctions>
+                </IsRealisedBy>
+                <IsRealisedByTech
+                    ID="Pile"
+                    IsAssociatedTo="/"/>
+              </NeedsFunctions>
+            </IsRealisedBy>
+          </NeedsFunctions>
+        </IsRealisedBy>
+      </NeedsFunctions>
+    </IsRealisedBy>
+  </HasToRespectFunctions>
+</fppt:System>

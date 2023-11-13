@@ -109,11 +109,10 @@ The table below gives access to the open data of each contribution:
 
 | **Contribution ID** | **Benchmark exercise** | **Version** | **DOI** |                           **URL**                            | **License** |
 | :-----------------: | :--------------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-|         001         |     Coupling bolt      |      1      |         | [Open data](https://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/tree/main/Claimed%20contributions/001) |             |
-|         002         |       Flashlight       |      1      |         |                         [Open data]                          |             |
+|         001         |     Coupling bolt      |      1      |         | [Open data](Claimed%20contributions/Lean%20engineering/Coupling%20bolt/001.md) |             |
 |         ...         |          ...           |     ...     |   ...   |                             ...                              |     ...     |
 
-
+Benchmarking on Coupling Bolt
 
 |                           **Name**                           | **Contribution ID** | **???** |
 | :----------------------------------------------------------: | :-----------------: | :-----: |
@@ -130,7 +129,27 @@ The table below gives access to the open data of each contribution:
 
 ### Benchmarking on Flash Light
 
-...
+The table below gives access to the open data of each contribution:
+
+| **Contribution ID** | **Benchmark exercise** | **Version** | **DOI** |                           **URL**                            | **License** |
+| :-----------------: | :--------------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
+|         001         |     Coupling bolt      |      1      |         | [Open data](https://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/tree/main/Claimed%20contributions/001) |             |
+|         ...         |          ...           |     ...     |   ...   | [Open data](https://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/tree/main/Claimed%20contributions/001) |     ...     |
+
+Benchmarking on Coupling Bolt
+
+|                           **Name**                           | **Contribution ID** | **???** |
+| :----------------------------------------------------------: | :-----------------: | :-----: |
+|    Number of concepts satisfying the system requirements     |         001         |         |
+|             Number of relevant design variables              |                     |         |
+|             Number of relevant design parameters             |                     |         |
+|           Relevant domain of each design variable            |                     |         |
+|           Relevant domain of each design parameter           |                     |         |
+|                      Value of constant?                      |                     |         |
+| Number of relevant relationships between design variables, design parameters and constants |                     |         |
+|                Minimize number of variables?                 |                     |         |
+|                 (Number of physics explored)                 |                     |         |
+|                 (Design synthesis objective)                 |                     |         |
 
 ### Benchmarking on Camera
 

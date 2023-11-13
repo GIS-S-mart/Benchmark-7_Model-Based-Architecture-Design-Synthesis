@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="FPPT" nsURI="fppt" nsPrefix="fppt">
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicalPrinciple">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" lowerBound="1" eType="#//physicalPrincipType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsDescribedBy" upperBound="-1"
+        eType="#//PhysicalPrincipParameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="NeedsTechno" upperBound="-1"
+        eType="#//Technology" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="NeedsFunctions" lowerBound="1"
+        upperBound="-1" eType="#//Function" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Technology" eSuperTypes="#//Elements">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsDescribedBy" upperBound="-1"
+        eType="#//TechnologyParameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//technologyType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsAssociatedTo" lowerBound="1"
+        eType="#//System" eOpposite="#//System/IsComposedOfTechs"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="isCorrespondingToFunction"
+        eType="#//Function" eOpposite="#//Function/IsRealisedByTech"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="conducts" upperBound="-1"
+        eType="#//Function" eOpposite="#//Function/IsCurentConductedBy"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParameterCaracterisitc" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="infLimit" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="supLimit" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nominal" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Unit" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="HasToRespectFunctions"
+        lowerBound="1" upperBound="-1" eType="#//Function" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsComposedOfTechs" upperBound="-1"
+        eType="#//Technology" eOpposite="#//Technology/IsAssociatedTo"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="technologyType">
+    <eLiterals name="SourceElec_U"/>
+    <eLiterals name="SourceMeca_F" value="1"/>
+    <eLiterals name="SourceMagnet_H" value="2"/>
+    <eLiterals name="CondElec_I" value="3"/>
+    <eLiterals name="CondMeca_V" value="4"/>
+    <eLiterals name="CondMagnet_B" value="5"/>
+    <eLiterals name="Puits" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="physicalPrincipType">
+    <eLiterals name="actionReaction"/>
+    <eLiterals name="ForcePressionMaxwell" value="1"/>
+    <eLiterals name="LoiLorentz" value="2"/>
+    <eLiterals name="LoiLaplace" value="3"/>
+    <eLiterals name="MaxwellFaraday" value="4"/>
+    <eLiterals name="BiotSavart" value="5"/>
+    <eLiterals name="AimantationMatiere" value="6"/>
+    <eLiterals name="MaxwellAmpere" value="7"/>
+    <eLiterals name="LoiOhm" value="8"/>
+    <eLiterals name="Electroluminescence" value="9"/>
+    <eLiterals name="Lenz" value="10"/>
+    <eLiterals name="PrincipeFondamentalDynamique" value="11"/>
+    <eLiterals name="PropagationOndeLumineuse" value="12"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Function" eSuperTypes="#//Elements">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsDescribedBy" upperBound="-1"
+        eType="#//FunctionParameter" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsRealisedBy" eType="#//PhysicalPrinciple"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Description" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsRealisedByTech" eType="#//Technology"
+        containment="true" eOpposite="#//Technology/isCorrespondingToFunction"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsCurentConductedBy" upperBound="-1"
+        eType="#//Technology" eOpposite="#//Technology/conducts"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsCurentBetween" upperBound="-1"
+        eType="#//Elements"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Type" lowerBound="1" eType="#//FunctionType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TechnologyParameter" eSuperTypes="#//ParameterCaracterisitc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PhysicalPrincipParameter" eSuperTypes="#//ParameterCaracterisitc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="FunctionParameter" eSuperTypes="#//ParameterCaracterisitc"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Elements" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="FunctionType">
+    <eLiterals name="Effort"/>
+    <eLiterals name="Current" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>

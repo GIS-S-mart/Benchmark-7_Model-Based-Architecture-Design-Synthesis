@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="SK2" nsURI="SK2" nsPrefix="SK2">
+  <eClassifiers xsi:type="ecore:EEnum" name="EnergyType">
+    <eLiterals name="electric"/>
+    <eLiterals name="mechanic" value="1"/>
+    <eLiterals name="magnetic" value="2"/>
+    <eLiterals name="Light" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="SkeletonType">
+    <eLiterals name="conducting"/>
+    <eLiterals name="semiConducting" value="1"/>
+    <eLiterals name="insulating" value="2"/>
+    <eLiterals name="Source" value="3"/>
+    <eLiterals name="Puits" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Skeleton" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="skeletonDirection" lowerBound="1"
+        eType="#//skeletonDirection"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="EnergyField" lowerBound="1"
+        eType="#//EnergyType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="SkeletonType" lowerBound="1"
+        eType="#//SkeletonType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Transforms" eType="#//FlowTransformation"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="InternalSkeleton" eSuperTypes="#//Skeleton">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsAssociatedTo" lowerBound="1"
+        eType="#//Part"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Needs" lowerBound="2" upperBound="2"
+        eType="#//Skin" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ExternalSkeleton" eSuperTypes="#//Skeleton">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Connects" lowerBound="2"
+        upperBound="2" eType="#//Skin"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="skeletonDirection">
+    <eLiterals name="function2skin" literal="Function2skin"/>
+    <eLiterals name="skin2function" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Skin">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ID" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="formEntity" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tolerance" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="rugosity" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="matiereDirection" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Part">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="AreSourceOf" upperBound="-1"
+        eType="#//EnergeticFlow" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsComposedOf" lowerBound="1"
+        upperBound="-1" eType="#//Part" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsConstrainedBy" upperBound="-1"
+        eType="#//Constraints" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsAssociated" eType="#//EnergeticFlow"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Induces" upperBound="-1"
+        eType="#//FlowTransformation" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EnergeticFlow">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Nom" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsMadeOf" lowerBound="1"
+        upperBound="-1" eType="#//Skeleton" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="IsAssociated" lowerBound="1"
+        eType="#//System"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FlowTransformation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Description" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Generates" lowerBound="1"
+        eType="#//EnergeticFlow" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="DueToInterectionAmong"
+        upperBound="-1" eType="#//Skeleton"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Constraints">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Description" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Relates" lowerBound="2"
+        upperBound="2" eType="#//Skin"/>
+  </eClassifiers>
+</ecore:EPackage>

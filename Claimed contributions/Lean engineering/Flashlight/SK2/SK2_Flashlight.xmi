@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ASCII"?>
+<SK2:System
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:SK2="SK2"
+    xsi:schemaLocation="SK2 /MDE_ZOO/trunk/metaModels/SK2/SK2.ecore"
+    Name="Lampe Dynamo">
+  <IsComposedOf
+      Name="Bobine"/>
+  <IsComposedOf
+      Name="Aimant">
+    <AreSourceOf
+        Nom="Flux magnetique"
+        IsAssociated="/">
+      <IsMadeOf
+          xsi:type="SK2:InternalSkeleton"
+          ID="Sq : Source Magnetique"
+          EnergyField="magnetic"
+          SkeletonType="Source"
+          IsAssociatedTo="//@IsComposedOf.1">
+        <Needs
+            ID="Skin : source mag pole +"/>
+        <Needs
+            ID="Skin : source mag pole -"/>
+      </IsMadeOf>
+      <IsMadeOf
+          xsi:type="SK2:ExternalSkeleton"
+          ID="Sq : Conduction flux Magnet Air"
+          EnergyField="magnetic"
+          Connects="//@IsComposedOf.1/@AreSourceOf.0/@IsMadeOf.0/@Needs.0 //@IsComposedOf.1/@AreSourceOf.0/@IsMadeOf.2/@Needs.1"/>
+      <IsMadeOf
+          xsi:type="SK2:InternalSkeleton"
+          ID="Sq : Conduction flux Magnet dans bobine"
+          EnergyField="magnetic"
+          IsAssociatedTo="//@IsComposedOf.0">
+        <Needs
+            ID="Skin : bobine pole mag +"/>
+        <Needs
+            ID="Skin : bobine pole mag -"/>
+      </IsMadeOf>
+      <IsMadeOf
+          xsi:type="SK2:ExternalSkeleton"
+          ID="Sq : conduction flux Magnet Air"
+          Connects="//@IsComposedOf.1/@AreSourceOf.0/@IsMadeOf.2/@Needs.0 //@IsComposedOf.1/@AreSourceOf.0/@IsMadeOf.0/@Needs.1"/>
+    </AreSourceOf>
+  </IsComposedOf>
+  <IsComposedOf
+      Name="LED"/>
+  <IsComposedOf
+      Name="Main">
+    <AreSourceOf
+        Nom="Flux Vitesse M&#xe9;canique"
+        IsAssociated="/">
+      <IsMadeOf
+          xsi:type="SK2:InternalSkeleton"
+          ID="Sq : source m&#xe9;canique dans Main"
+          SkeletonType="Source"
+          IsAssociatedTo="//@IsComposedOf.3">
+        <Needs
+            ID="Skin : sortie effort"/>
+        <Needs
+            ID="Skin : Condition &#xe9;quilibre"/>
+      </IsMadeOf>
+    </AreSourceOf>
+  </IsComposedOf>
+  <Induces Description="Loi de Lenz (coupl&#xe9;e au flux de vitesse)"
+      DueToInterectionAmong="//@IsComposedOf.1/@AreSourceOf.0/@IsMadeOf.2">
+    <Generates
+        Nom="Flux Electrique"
+        IsAssociated="/">
+      <IsMadeOf
+          xsi:type="SK2:InternalSkeleton"
+          ID="Sq : source Elec dans Bobine"
+          SkeletonType="Source"
+          IsAssociatedTo="//@IsComposedOf.0">
+        <Needs
+            ID="Skin : source elec pole +"/>
+        <Needs
+            ID="Skin : source elec pole -"/>
+      </IsMadeOf>
+      <IsMadeOf
+          xsi:type="SK2:ExternalSkeleton"
+          ID="Sq : conduction flux Elex"
+          Connects="//@Induces.0/@Generates/@IsMadeOf.0/@Needs.0 //@Induces.0/@Generates/@IsMadeOf.2/@Needs.1"/>
+      <IsMadeOf
+          xsi:type="SK2:InternalSkeleton"
+          ID="Sq : conduction Flux Elec dans LED"
+          IsAssociatedTo="//@IsComposedOf.2">
+        <Needs
+            ID="Skin : LED pole +"/>
+        <Needs
+            ID="Skin : LED pole -"/>
+      </IsMadeOf>
+      <IsMadeOf
+          xsi:type="SK2:ExternalSkeleton"
+          ID="Sq : conduction Flux Elec"
+          Connects="//@Induces.0/@Generates/@IsMadeOf.2/@Needs.0 //@Induces.0/@Generates/@IsMadeOf.0/@Needs.1"/>
+    </Generates>
+  </Induces>
+  <Induces Description="Eletroluminescence"
+      DueToInterectionAmong="//@Induces.0/@Generates/@IsMadeOf.2">
+    <Generates
+        Nom="Flux lumineux"
+        IsAssociated="/">
+      <IsMadeOf
+          xsi:type="SK2:InternalSkeleton"
+          ID="Sq : source Lum"
+          EnergyField="Light"
+          IsAssociatedTo="//@IsComposedOf.2">
+        <Needs
+            ID="Skin : LED soure pole +"/>
+        <Needs
+            ID="Skin : LED source pole -"/>
+      </IsMadeOf>
+    </Generates>
+  </Induces>
+</SK2:System>
