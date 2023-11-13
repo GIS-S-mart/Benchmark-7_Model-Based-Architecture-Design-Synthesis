@@ -109,7 +109,7 @@ The table below gives access to the open data of each contribution:
 
 | **Contribution ID** | **Benchmark exercise** | **Version** | **DOI** |                           **URL**                            | **License** |
 | :-----------------: | :--------------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-|         001         |     Coupling bolt      |      1      |         | [Open data](Claimed%20contributions/Lean%20engineering/Coupling%20bolt/001.md) |             |
+|         001         |     Coupling bolt      |      1      |         | [Open data](Claimed%20contributions/Lean%20engineering/Coupling%20bolt/0001.md) |             |
 |         ...         |          ...           |     ...     |   ...   |                             ...                              |     ...     |
 
 Benchmarking on Coupling Bolt
