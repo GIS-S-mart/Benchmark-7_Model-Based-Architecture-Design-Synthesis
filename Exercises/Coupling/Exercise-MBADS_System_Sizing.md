@@ -4,7 +4,7 @@
 
 This benchmark exercise aims to evaluate - competitive or complementary - contributions claiming to improve the Model-Based Architecture Design Synthesis (MBADS) process for system sizing. 
 
-In this benchmark exercise, the overall objective of the Model-Based Architecture Design Synthesis Process is to size the Coupling Bolt System defined in Section 2. The candidate solutions can support an engineer throughout the MBADS process or for a specific activity.
+In this benchmark exercise, the overall objective of the Model-Based Architecture Design Synthesis Process is to size the Coupling Bolt System defined in Section 2. The candidate solutions can support an engineer throughout the end-to-end MBADS process or for a specific activity.
 
 Section 3 specifies the design inputs for each activity of the MBADS process. All candidate solutions must reuse these design inputs to make fair comparisons.
 
@@ -70,7 +70,7 @@ The Coupling Bolt System shall perform two functions:
 | C1   | The coupling bolt system must be purely mechanical.       |
 | C2   | The cost of the coupling bolt system must be minimized.   |
 | C3   | The weight of the coupling bolt system must be minimized. |
-| C4   | The diameter of the shaft                                 |
+| C4   | The diameter of the shaft is equal to 50 mm.              |
 
 ### *3.3. Problem Modelling*
 
@@ -88,7 +88,7 @@ The Coupling Bolt System shall perform two functions:
 
 The Coupling Bolt System configuration is known in advance as the objective of the MBADS is system sizing. As shown below, the Coupling Bolt System includes at least one bolt and one shaft, and exactly one material.
 
-<img src="./Images/image-20231119092505829.png" alt="image-20231119092505829" style="zoom: 50%;" />
+<img src="./Images/image-20231119092505829.png" alt="image-20231119092505829" style="zoom: 33%;" />
 
 **Preliminary Set of Constants**
 
@@ -175,8 +175,6 @@ The Coupling Bolt System configuration is known in advance as the objective of t
 $$
 N ≥N_m \tag{1}
 $$
-Tableau 3 : Tables des boulons
-
  **Geometric model:**
 
 
@@ -263,6 +261,8 @@ $$
 
 
 **Cost model:**
+
+
 $$
 C_{accou}=K_1×d+K_2×N 							\tag{20}
 $$

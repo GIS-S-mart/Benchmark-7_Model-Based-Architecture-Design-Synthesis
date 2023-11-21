@@ -18,45 +18,43 @@ An agreed-upon glossary of terms used in this benchmark is proposed below. Contr
 
 |                **Keyword**                |                         **Synonyms**                         |                        **Definition**                        | **Source** |
 | :---------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
-|              System concept               | Concept, Design concept, Preliminary design, Under-defined system. | A system concept is an under-defined system definition that satisfies the set of system requirements. |            |
+|                  Concept                  | Concept, Design concept, Preliminary design, Under-defined system. | A concept is an under-defined system design that satisfies the set of system requirements and design constraints. |            |
 |              Concept finding              | Embodiment design, Conceptual design, Preliminary design, Architecture Design, System Architecting | An activity of the design synthesis process that intends to find preliminary design variables, parameters and constants, so as to define the set of acceptable and feasible conceptual under-defined design solutions. |            |
-|         Conceptual design method          |                                                              | The procedure to be followed by the practitioners to generate system concepts by using any modelling method and software. |            |
-|                 Constant                  |                                                              | A constant has an unmodifiable value that is constant with respect to time and remains always the same even between two computations. |            |
+|               Design method               |                                                              | The procedure to be followed by the practitioners to generate concepts. The implementation of a design method requires choosing a modelling language, a modelling software, and a modelling method. A design method is in line with a design philosophy. |            |
+|                 Constant                  |                                                              | A constant has an immutable value that remains always the same between two computations. |            |
 |             Design constraint             |                                                              | A limitation on the design of a system externally imposed by a stakeholder or an external system. Design constraints cannot be traded off and make certain designs “not allowed” whereas requirements make certain designs inappropriate for their intended use. |            |
-|             Design parameter              |                                                              | . A design parameter is a known design variable with a fixed value that is set after a design synthesis iteration concluded by an agreed-upon design decision; therefore, it is not calculated when solving the formal design problem. |            |
+|             Design parameter              |                                                              | A design parameter is a known design variable with a fixed value that is set after a design synthesis iteration concluded by an agreed-upon design decision; therefore, it is not calculated when solving the formal design problem. |            |
 |             Design philosophy             |                                                              | The axioms, postulates, assumptions, and convictions taken to be true to serve as a premise or starting point for further reasoning and arguments. |            |
-|             Design synthesis              |                                                              | A problem-solving activity that consists in finding a solution to a set of needs |            |
+|             Design synthesis              |                                                              | A problem-solving activity that consists in finding a solution to a set of needs. |            |
 |              Design variable              |                                                              | A design variable is an unknown variable whose value is computed when solving the formal design problem. |            |
-| Model-based architecture design synthesis |         Computational architecture design synthesis          | A design process which relies on computer-based automatic problem-solving techniques to generate architecture design solutions that are correct by construction |            |
 |       Model-based design synthesis        |                Computational design synthesis                | A design process which relies on computer-based automatic problem-solving techniques to generate design solutions that are correct by construction. |            |
+| Model-based architecture design synthesis |         Computational architecture design synthesis          | A design process which relies on computer-based automatic problem-solving techniques to generate architecture design solutions that are correct by construction. |            |
 |             Modelling method              | Modelling methodology, modelling process, Modelling guidelines | The procedure to be followed by the practitioners to model the concepts using the preferred modelling language and modelling software. |            |
-|            Modelling language             |                    Standardised notation                     | A language or a standardised notation that is used to encode the system concept elaborated with the conceptual design method. |            |
+|            Modelling language             |                    Standardised notation                     | A language or a standardised notation that is used to encode the system concept elaborated with a design method. |            |
 |            Modelling software             |                    Modelling environment                     | A software used by a practitioner to model a system concept using a modelling language. |            |
-|                Requirement                |                                                              | An agreed-to expectation for a system to perform a system function at a specified level of performance and under some conditions of use. |            |
-|           System configuration            |                                                              | A design synthesis objective that consists in choosing system elements based on a set of compatibility relationships between variants, options and cardinalities |            |
-|               System sizing               |                                                              | A design synthesis objective that consists in determining the value of unknown design variables of a system element |            |
-|                                           |                                                              |                                                              |            |
+|                Requirement                |                                                              | An agreed-to expectation for a system to perform a system function at a specified performance level and under some operational conditions. |            |
+|           System configuration            |                                                              |       A set of compatible design variants and options.       |            |
+|               System sizing               |                                                              | A design activity that consists in determining the values of unknown design variables. |            |
 
 ## Research objectives
 
-The primitive research objective pursued by the benchmark community is improving the **concept finding** activity in a **Model-Based Architecture Design Synthesis** process for **system sizing**.
+The primitive research objective pursued by the benchmark community is improving the concept finding activity in a Model-Based Architecture Design Synthesis process for system sizing.
 
-The metrics 
+The metrics used to measure how well 
 
-|                           **Name**                           | **Definition** |  **Unit**   |
-| :----------------------------------------------------------: | :------------: | :---------: |
-|    Number of concepts satisfying the system requirements     |                | Real number |
-|                  Number of design variables                  |                | Real number |
-|                 Number of design parameters                  |                | Real number |
-|                Design space (Product domain)                 |                |             |
-| Number of relationships between design variables, design parameters and constants |                |             |
-|                     Model-based approach                     |                |             |
-|                  Design synthesis objective                  |                |             |
-|                  Number of physics explored                  |                |             |
-|                 Minimize number of variables                 |                |             |
-|                        Learning curve                        |                |             |
-|                   Language expressiveness                    |                |             |
-|                                                              |                |             |
+|                           **Name**                           | **Definition** |     **Unit**     |
+| :----------------------------------------------------------: | :------------: | :--------------: |
+|    Number of concepts satisfying the system requirements     |                |   Real number    |
+|                  Number of design variables                  |                |   Real number    |
+|                 Number of design parameters                  |                |   Real number    |
+|                Design space (Product domain)                 |                |                  |
+| Number of relationships between design variables, design parameters and constants |                |                  |
+|                     Model-based approach                     |                |     Boolean      |
+|                  Design synthesis objective                  |                |                  |
+|                  Number of physics explored                  |                | Positive integer |
+|                 Minimize number of variables                 |                | Positive integer |
+|                        Learning curve                        |                |                  |
+|                   Language expressiveness                    |                |                  |
 
 ## Body of knowledge
 
@@ -76,50 +74,32 @@ This benchmark focuses on a more narrow scope limited to the design approaches s
 
 However, the design inputs and outputs of the concept finding activity depend on the objective of the Model-Based Architecture Design Synthesis process. This benchmark concentrates on the activity of MBADS for system sizing, which further limits the body of knowledge, although all related works are of interest.
 
-## Proposals
+## Claimed contributions
 
-The table below is a collection of research proposals that claim to improve the activity of concepts finding in a model-based architecture design synthesis approach for system sizing.
-
-(e.g., theory, process, method, modelling language, software…) which, once applied to the collection of benchmarks, must provide empirical evidence that the research objectives have been meta collection of contributions 
+The table below is a collection of research proposals (e.g., theory, process, method, modelling language, software…) that claim to improve the activity of concept finding in the MBADS process for system sizing. Once applied to the collection of benchmarks, they must provide empirical evidence that the research objectives have been met. 
 
 | Contribution ID | Design Philosophy | Design  Method  | Modelling  Language | Modelling  Software | Modelling  Method |      |
 | :-------------: | :---------------: | :-------------: | :-----------------: | :-----------------: | :---------------: | ---- |
 |       001       | Lean engineering  | AF + FPPT + SK2 |         UML         |       Eclipse       |   Lionel Method   |      |
 |       ...       |        ...        |       ...       |         ...         |         ...         |        ...        |      |
 
-## Claimed contributions
-
-
-
-|                           **Name**                           | Contribution ID | ...  |
-| :----------------------------------------------------------: | :-------------: | :--: |
-|    Number of concepts satisfying the system requirements     |                 |      |
-|                  Number of design variables                  |                 |      |
-|                 Number of design parameters                  |                 |      |
-|                Design space (Product domain)                 |                 |      |
-| Number of relationships between design variables, design parameters and constants |                 |      |
-|                     Model-based approach                     |                 |      |
-|                  Design synthesis objective                  |                 |      |
-|                  Number of physics explored                  |                 |      |
-|                 Minimize number of variables                 |                 |      |
-|                        Learning curve                        |                 |      |
-|                   Language expressiveness                    |                 |      |
-
 ## Benchmarks Collection
+
+To demonstrate the usefulness of a claimed contribution, it is necessary to demonstrate the usefulness of a claimed contribution beyond an example problem. To build confidence in genericity and identify limits, one can use the set of benchmark exercises to confirm or disconfirm that the claimed contribution meets the research objectives.
 
 ### Benchmark exercises
 
-|                                                              |      |      |      |      |      |
-| :----------------------------------------------------------: | :--: | :--: | :--: | :--: | :--: |
-| [**Coupling bolt**](../Exercises/Coupling/Exercise-MBDAS_System_Sizing.md) |      |      |      |      |      |
-|                        **Flashlight**                        |      |      |      |      |      |
-|                          **Camera**                          |      |      |      |      |      |
+These benchmark exercise aims to evaluate - competitive or complementary - contributions claiming to improve the MBADS process for system sizing. 
+
+|                                                              | Number of physics | Number of systemic levels | Number of different parts |      |      |
+| :----------------------------------------------------------: | :---------------: | :-----------------------: | :-----------------------: | :--: | :--: |
+| [**Coupling bolt**](../Exercises/Coupling/Exercise-MBADS_System_Sizing.md) |         1         |             1             |             3             |      |      |
+|                        **Flashlight**                        |                   |                           |                           |      |      |
+|                          **Camera**                          |                   |                           |                           |      |      |
 
 ### Benchmark protocols
 
 Does a benchmark protocol apply to all benchmark exercises, or does each one require its benchmark protocol?
-
-### 
 
 ## Empirical evidence
 
