@@ -42,6 +42,8 @@ The primitive research objective pursued by the benchmark community is improving
 
 The metrics used to measure how well 
 
+Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones. Any change to existing empirical evidence must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions). Once the suggested change is informally approved by the community, the author shall post on the issues page of the benchmark (e.g. navigate to '*Repositories > Benchmark-0_Template > Issues*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/issues)) and briefly outline the new metric.
+
 |                           **Name**                           | **Definition** |     **Unit**     |
 | :----------------------------------------------------------: | :------------: | :--------------: |
 |    Number of concepts satisfying the system requirements     |                |   Real number    |
@@ -78,10 +80,10 @@ However, the design inputs and outputs of the concept finding activity depend on
 
 The table below is a collection of research proposals (e.g., theory, process, method, modelling language, software…) that claim to improve the activity of concept finding in the MBADS process for system sizing. Once applied to the collection of benchmarks, they must provide empirical evidence that the research objectives have been met. 
 
-| Contribution ID | Design Philosophy | Design  Method  | Modelling  Language | Modelling  Software | Modelling  Method |      |
-| :-------------: | :---------------: | :-------------: | :-----------------: | :-----------------: | :---------------: | ---- |
-|       001       | Lean engineering  | AF + FPPT + SK2 |         UML         |       Eclipse       |   Lionel Method   |      |
-|       ...       |        ...        |       ...       |         ...         |         ...         |        ...        |      |
+| Contribution ID | Design Philosophy | Design  Method | Modelling  Language | Modelling  Software |          Modelling  Method          |
+| :-------------: | :---------------: | :------------: | :-----------------: | :-----------------: | :---------------------------------: |
+|       001       | Lean engineering  |    FPPT-SK2    | FPPT-SK2 Ecore DSL  |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
+|       ...       |        ...        |      ...       |         ...         |         ...         |                 ...                 |
 
 ## Benchmarks Collection
 
@@ -103,54 +105,28 @@ Does a benchmark protocol apply to all benchmark exercises, or does each one req
 
 ## Empirical evidence
 
-An empirical evidence is a quantitative and/or qualitative performance indicator or metric that measures the degree to which the research goal of concept finding has been achieved. The empirical evidence supporting or countering the belief that the contributions claiming to achieve the goal of concept finding are defined as follows: 
+The table below gives access to the open data that serves as empirical evidence supporting or countering the belief that the contributions claiming to achieve the goal of concept finding in a MBADS process for system sizing.
 
-The table below gives access to the open data of each contribution:
-
-|                   |                       Contribution 001                       |      |      |      |      |
-| :---------------: | :----------------------------------------------------------: | :--: | :--: | :--: | :--: |
-| **Coupling bolt** | [Empirical evidence](../Proposals/FPPT-SK2/Coupling/Coupling.md) |      |      |      |      |
-|  **Flashlight**   |                                                              |      |      |      |      |
-|    **Camera**     |                                                              |      |      |      |      |
-
-
-
-(complete with a bottom-up approach by reviewing metrics in papers containing concept finding contributions)
-
-Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones. Any change to existing empirical evidence must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions). Once the suggested change is informally approved by the community, the author shall post on the issues page of the benchmark (e.g. navigate to '*Repositories > Benchmark-0_Template > Issues*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/issues)) and briefly outline the new metric.
-
-
-
-|                           **Name**                           | **Contribution ID** |      | **???** |
-| :----------------------------------------------------------: | :-----------------: | ---- | :-----: |
-|    Number of concepts satisfying the system requirements     |         001         |      |         |
-|             Number of relevant design variables              |                     |      |         |
-|             Number of relevant design parameters             |                     |      |         |
-|           Relevant domain of each design variable            |                     |      |         |
-|           Relevant domain of each design parameter           |                     |      |         |
-|                      Value of constant?                      |                     |      |         |
-| Number of relevant relationships between design variables, design parameters and constants |                     |      |         |
-|                Minimize number of variables?                 |                     |      |         |
-|                 (Number of physics explored)                 |                     |      |         |
-|                 (Design synthesis objective)                 |                     |      |         |
+|                   |                       Contribution 001                       | Contribution 002 | Contribution 003 |
+| :---------------: | :----------------------------------------------------------: | :--------------: | :--------------: |
+| **Coupling bolt** | [Empirical evidence](../Proposals/FPPT-SK2/Coupling/Coupling.md) |                  |                  |
+|  **Flashlight**   |                                                              |                  |                  |
+|    **Camera**     |                                                              |                  |                  |
 
 ## Benchmarking
 
-The table below shows the results of the benchmarking 
-
-
-
-The table below gives access to the open data of each contribution:
-
-
-
-|                   |    Contribution 001    |      |      |      |      |
-| :---------------: | :--------------------: | :--: | :--: | :--: | :--: |
-| **Coupling bolt** | [Empirical evidence]() |      |      |      |      |
-|  **Flashlight**   |                        |      |      |      |      |
-|    **Camera**     |                        |      |      |      |      |
-
-
+|                           **Name**                           |    **Contribution 001**     |      | **???** |
+| :----------------------------------------------------------: | :-------------------------: | ---- | :-----: |
+|                                                              | Coupling Bolt \| Flashlight |      |         |
+|    Number of concepts satisfying the system requirements     |          1 \| ...           |      |         |
+|                  Number of design variables                  |          2 \| ...           |      |         |
+|                 Number of design parameters                  |          ? \| ...           |      |         |
+|                Design space (Product domain)                 |            ? ...            |      |         |
+| Number of relationships between design variables, design parameters and constants |            ? ...            |      |         |
+|                     Model-based approach                     |         Yes \| ...          |      |         |
+|                  Number of physics explored                  |          1 \| ...           |      |         |
+|                 Minimize number of variables                 |           ? \| ?            |      |         |
+|                        Learning curve                        |           ? \| ?            |      |         |
 
 ## Meta-Analysis
 

@@ -48,10 +48,10 @@ The primitive research objective pursued by the benchmark community is to improv
 
 The list of claimed contributions gathers candidate research proposals combining a design philosophy, design method, modelling language, modelling software, and modelling method, which claim to improve the end-to-end model-based architecture design synthesis process. 
 
-| Contribution ID | **Benchmark exercise** | **Version** | **DOI** |    **URL**    | **License** |
-| :-------------: | :--------------------: | :---------: | :-----: | :-----------: | :---------: |
-|       001       |                        |             |         | [Open data]() |             |
-|                 |                        |             |         |               |             |
+| Contribution ID | Design Philosophy | Design  Method | Modelling  Language | Modelling  Software | Modelling  Method |
+| :-------------: | :---------------: | :------------: | :-----------------: | :-----------------: | :---------------: |
+|       001       |                   |                |                     |                     |                   |
+|                 |                   |                |                     |                     |                   |
 
 ## Benchmarks
 
@@ -66,13 +66,22 @@ Hence, the MBADS benchmark is decomposed into 6 benchmarks.
 | **Problem modelling**        |                                |                                                              |                               |                            |                             |                        |
 | **Problem solving**          |                                |                                                              |                               |                            |                             |                        |
 
+## Benchmarking
 
+...
+
+|            **Name**            | **Contribution 001** | Contribution 002 | Contribution 003 |
+| :----------------------------: | :------------------: | :--------------: | :--------------: |
+| MBADS for System Configuration |                      |                  |                  |
+|    MBADS for System Sizing     |          X           |                  |                  |
+| MBADS for Resource Allocation  |                      |                  |                  |
+|   MBADS for Space Allocation   |                      |                  |                  |
+|  MBADS for Interface Routing   |                      |                  |                  |
+|     MBADS for Architecture     |                      |                  |                  |
 
 ## Meta-Analysis
 
 A meta-analysis is the analysis of all results of the benchmark for the purpose of integrating the findings. Meta-analytic results are the most trustworthy source of evidence.
-
-
 
 ## References
 
