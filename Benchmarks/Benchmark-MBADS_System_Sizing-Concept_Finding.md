@@ -40,11 +40,9 @@ An agreed-upon glossary of terms used in this benchmark is proposed below. Contr
 
 The primitive research objective pursued by the benchmark community is improving the concept finding activity in a Model-Based Architecture Design Synthesis process for system sizing.
 
-The metrics used to measure how well 
+The metrics used to measure how well the research objectives are satisfied are defined as follows:
 
-Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones. Any change to existing empirical evidence must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions). Once the suggested change is informally approved by the community, the author shall post on the issues page of the benchmark (e.g. navigate to '*Repositories > Benchmark-0_Template > Issues*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/issues)) and briefly outline the new metric.
-
-|                           **Name**                           | **Definition** |     **Unit**     |
+|                          **Metric**                          | **Definition** |     **Unit**     |
 | :----------------------------------------------------------: | :------------: | :--------------: |
 |    Number of concepts satisfying the system requirements     |                |   Real number    |
 |                  Number of design variables                  |                |   Real number    |
@@ -57,6 +55,8 @@ Authors should use existing metrics and not invent new ones, unless they measure
 |                 Minimize number of variables                 |                | Positive integer |
 |                        Learning curve                        |                |                  |
 |                   Language expressiveness                    |                |                  |
+
+Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones. Any change to existing empirical evidence must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions). Once the suggested change is informally approved by the community, the author shall post on the issues page of the benchmark (e.g. navigate to '*Repositories > Benchmark-0_Template > Issues*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/issues)) and briefly outline the new metric.
 
 ## Body of knowledge
 
@@ -115,7 +115,7 @@ The table below gives access to the open data that serves as empirical evidence 
 
 ## Benchmarking
 
-|                           **Name**                           |    **Contribution 001**     | Contribution 002 | Contribution 003 |
+|                          **Metric**                          |    **Contribution 001**     | Contribution 002 | Contribution 003 |
 | :----------------------------------------------------------: | :-------------------------: | ---------------- | :--------------: |
 |                                                              | Coupling Bolt \| Flashlight |                  |                  |
 |    Number of concepts satisfying the system requirements     |          1 \| ...           |                  |                  |
