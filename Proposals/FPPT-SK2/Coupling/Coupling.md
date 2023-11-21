@@ -1,6 +1,6 @@
 # #OO1 Lean Engineering - Coupling Bolt
 
-
+This research proposal aims at providing evidence that the FPPT-SK2
 
 > Metadata:
 >

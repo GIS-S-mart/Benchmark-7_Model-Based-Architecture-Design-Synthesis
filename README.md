@@ -1,12 +1,11 @@
 # Benchmark 6. Model-Based Architecture Design Synthesis
 
-[TOC]
+
 
 ## Introduction
 
 - **Disciplines**: This scientific benchmark repository concerns mainly the engineering design, systems engineering, and product lifecycle management communities.
 - **Goal**: This scientific benchmark aims at collecting and comparing competing or complementary contributions claiming to improve the model-based architecture design synthesis process. In this benchmark, Model-Based Architecture Design Synthesis (MBADS) is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction.
-- **Type of claimed contributions to benchmark:** ...
 
 ## Glossary
 
@@ -29,7 +28,7 @@ An agreed-upon glossary of terms used in this benchmark is proposed below. Contr
 |                Modelling language                 |                    Standardised notation                     | A language or a standardised notation that is used to encode the system concept elaborated with the conceptual design method. |            |
 |                Modelling software                 |                    Modelling environment                     | A software used by a practitioner to model a system concept using a modelling language. |            |
 
-## Body of knowledge
+## Body of Knowledge
 
 The body of knowledge is the background knowledge upon which researchers will draw on and contribute in theory or practice. This benchmark aims to increase the knowledge of the MBADS process.
 
@@ -49,10 +48,10 @@ The primitive research objective pursued by the benchmark community is to improv
 
 The list of claimed contributions gathers candidate research proposals combining a design philosophy, design method, modelling language, modelling software, and modelling method, which claim to improve the end-to-end model-based architecture design synthesis process. 
 
-| Contribution ID | **Benchmark exercise** | **Version** | **DOI** |                           **URL**                            | **License** |
-| :-------------: | :--------------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-|       001       |     Coupling bolt      |      1      |         | [Open data](Claimed%20contributions/Lean%20engineering/Coupling%20bolt/0001.md) |             |
-|       001       |       Flashlight       |      1      |         | [Open data](Claimed%20contributions/Lean%20engineering/Flashlight/0001.md) |     ...     |
+| Contribution ID | **Benchmark exercise** | **Version** | **DOI** |    **URL**    | **License** |
+| :-------------: | :--------------------: | :---------: | :-----: | :-----------: | :---------: |
+|       001       |                        |             |         | [Open data]() |             |
+|                 |                        |             |         |               |             |
 
 ## Benchmarks
 
@@ -62,8 +61,8 @@ Hence, the MBADS benchmark is decomposed into 6 benchmarks.
 
 |                              | MBADS for System Configuration |                   MBADS for System Sizing                    | MBADS for Resource Allocation | MBADS for Space Allocation | MBADS for Interface Routing | MBADS for Architecture |
 | ---------------------------- | :----------------------------: | :----------------------------------------------------------: | :---------------------------: | :------------------------: | :-------------------------: | :--------------------: |
-| **Requirements development** |                                |                                                              |                               |                            |                             |                        |
-| **Concept finding**          |                                | [Benchmark](Benchmarks/Benchmark-MBDAS_System_Sizing-Concept_Finding.md) |                               |                            |                             |                        |
+| **Requirements development** |                                |                                                              |                               |                            |                             |     [Benchmark]()      |
+| **Concept finding**          |                                | [Benchmark](Benchmarks/Benchmark-MBDAS_System_Sizing-Concept_Finding.md) |                               |                            |                             |     [Benchmark]()      |
 | **Problem modelling**        |                                |                                                              |                               |                            |                             |                        |
 | **Problem solving**          |                                |                                                              |                               |                            |                             |                        |
 
@@ -77,24 +76,5 @@ A meta-analysis is the analysis of all results of the benchmark for the purpose 
 
 ## References
 
-*Guidelines:*
-
-- Please use the Harvard format to list references supporting any data (keyword definition, goal, metric, benchmark exercise, solution, etc.) of the benchmark.
-- Make sure to provide the DOI of the document.
-
-*Template:*
-
-- **Book, one author:** Bell, J. (2010) *Doing your research project*. 5th edn. Maidenhead: Open University Press.
-
-- **One author, book, multiple editions:** Hawking, S.W. (1998) *A brief history of time: From the big bang to black holes*. 10th edn. New York: Bantam Doubleday Dell Publishing Group.
-
-- **Chapter in an edited book:** Jewsiewicki, B. (2010). ‘Historical Memory and Representation of New Nations in Africa’, in Diawara, M., Lategan, B., and Rusen, J. (eds.) *Historical memory in Africa: Dealing with the past, reaching for the future in an intercultural context*. New York: Berghahn Books, pp. 53-66.
-
-- **More than three authors, journal article:** Shakoor, J., et al. (2011) ‘A prospective longitudinal study of children’s theory of mind and adolescent involvement in bullying’, *Journal of Child Psychology and Psychiatry*, 53(3), pp. 254–261. doi: 10.1111/j.1469-7610.2011.02488.x.
-
-- **Conference papers:** Drogen, E. (2014) ‘Changing how we think about war: The role of psychology’, *The British Psychological Society 2014 Annual Conference*. The ICC, Birmingham British Psychological Society, 07-09 May 2014.
-
-- **Web page, by an individual:** Moon, M. (2019) *Ubisoft put an official video game design course inside a video game*. Available at https://www.engadget.com/2019/09/25/ubisoft-video-game-design-course/ (Accessed 19 November 2019).
-
-- **Web page, by a company or organization:** RotoBaller (2019) *NFL player news*. Available at https://www.rotoballer.com/player-news?sport=nfl (Accessed 17 September 2019).
+- 
 

@@ -2,20 +2,19 @@
 
 ## Introduction
 
-- **Disciplines**: This scientific benchmark repository concerns mainly the engineering design, systems engineering, and product lifecycle management communities.
-- **Goal**: This scientific benchmark aims at collecting and comparing competing or complementary contributions claiming to improve the activity of concept finding in a model-based architecture design synthesis process for system sizing. In this benchmark, model-based architecture design synthesis is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction. A design synthesis process has an objective: system configuration, system sizing, resource allocation, and/or architecture generation.  This benchmark focuses on design synthesis for system sizing. In addition, in a computational design synthesis process for system sizing, this benchmark concentrates on the activity of concept finding. Starting with a set of valid system requirements, concept finding is an activity that intends to find preliminary design variables, parameters and constants, that serve to define the set of acceptable and feasible conceptual design solutions.
-- **Type of claimed contributions to benchmark:** our discussions related to engineering design method actually concludes that a tight link exists among "design method (paradigm)", "concepts for system modelling", "modelling language" and "modelling software solution". For exemple, in a systematic paradigm for engineering design [Pahl et Beitz], several models can be used to formalise the system (interaction diagrams, FAST, 3D, ...). Those models are (or not) described with formal languages (ex : CPM, ULM, SysML...) using (or not) software solution (ex : Capella, Catia Magic, Papyrus...). It is, therefore important to separate those four notions in the following benchmark.
+- **Disciplines**: The discipline concerned by . Although engineering design, systems engineering, and product lifecycle management
+- **Goal**: This scientific benchmark aims to foster cumulative research and support researchers in the fair and systematic evaluation of competing or complementary research proposals that claim to improve the activity of **concept finding** in the 4-activity **Model-Based Architecture Design Synthesis** (MBADS) process for **system sizing** defined as follows:
 
-| Activity                 | Inputs                                                       | Outputs                                                      |
-| :----------------------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| Requirements development | Expected system functions (i.e. an  effect – intended by a stakeholder – of the interaction of the system with  the system context.) | - Valid set of requirements (i.e. an agreed-to expectation for a system to perform a system function at a specified level of performance and under some conditions of use).<br />- Valid set of design constraints (i.e. a  limitation on the design of a system externally imposed by a stakeholder or an external system. Design constraints cannot be traded off and make certain designs  “not allowed” whereas requirements make certain designs inappropriate for their intended use) |
-| Concept finding          | Outputs of the activity "requirements development".          | - Set of typed design variables with  their range of acceptable values (e.g., min and/or max real number, Boolean,  enumeration).<br />- Set of design parameters, each with a  fixed value set after a design synthesis iteration. <br />- Set of constants, each with its unmodifiable value.<br />- Preliminary set of relationships between design variables, design parameters, and constants. |
-| Problem modelling        | Outputs of the activity "concept finding".                   | Complete set of relationships between design variables, design parameters, and constants. |
-| Problem solving          | Outputs of the activity "problem modelling".                 | Values for design variables.                                 |
+|         Activity         |                         Inputs                          | Outputs                                                      |
+| :----------------------: | :-----------------------------------------------------: | :----------------------------------------------------------- |
+| Requirements development |                Expected system functions                | - Valid set of requirements.<br />- Valid set of design constraints. |
+|   **Concept finding**    | **Outputs of the activity "requirements development".** | **- Set of design variables with their data types and range of acceptable values.<br />- Set of design parameters with their data types and values<br />- Set of constants with their types and values.<br />- Preliminary set of relationships between design variables, design parameters, and constants.** |
+|    Problem modelling     |       Outputs of the activity "concept finding".        | Complete set of relationships between design variables, design parameters, and constants. |
+|     Problem solving      |      Outputs of the activity "problem modelling".       | Values for design variables.                                 |
 
 ## Glossary
 
-An agreed-upon glossary of terms used in this benchmark is proposed below. Contributors should reuse existing terms and definitions from existing standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions)).
+An agreed-upon glossary of terms used in this benchmark is proposed below. Contributors should reuse existing terms and definitions from existing standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](../discussions)).
 
 |                **Keyword**                |                         **Synonyms**                         |                        **Definition**                        | **Source** |
 | :---------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
@@ -23,6 +22,7 @@ An agreed-upon glossary of terms used in this benchmark is proposed below. Contr
 |              Concept finding              | Embodiment design, Conceptual design, Preliminary design, Architecture Design, System Architecting | An activity of the design synthesis process that intends to find preliminary design variables, parameters and constants, so as to define the set of acceptable and feasible conceptual under-defined design solutions. |            |
 |         Conceptual design method          |                                                              | The procedure to be followed by the practitioners to generate system concepts by using any modelling method and software. |            |
 |                 Constant                  |                                                              | A constant has an unmodifiable value that is constant with respect to time and remains always the same even between two computations. |            |
+|             Design constraint             |                                                              | A limitation on the design of a system externally imposed by a stakeholder or an external system. Design constraints cannot be traded off and make certain designs “not allowed” whereas requirements make certain designs inappropriate for their intended use. |            |
 |             Design parameter              |                                                              | . A design parameter is a known design variable with a fixed value that is set after a design synthesis iteration concluded by an agreed-upon design decision; therefore, it is not calculated when solving the formal design problem. |            |
 |             Design philosophy             |                                                              | The axioms, postulates, assumptions, and convictions taken to be true to serve as a premise or starting point for further reasoning and arguments. |            |
 |             Design synthesis              |                                                              | A problem-solving activity that consists in finding a solution to a set of needs |            |
@@ -32,17 +32,16 @@ An agreed-upon glossary of terms used in this benchmark is proposed below. Contr
 |             Modelling method              | Modelling methodology, modelling process, Modelling guidelines | The procedure to be followed by the practitioners to model the concepts using the preferred modelling language and modelling software. |            |
 |            Modelling language             |                    Standardised notation                     | A language or a standardised notation that is used to encode the system concept elaborated with the conceptual design method. |            |
 |            Modelling software             |                    Modelling environment                     | A software used by a practitioner to model a system concept using a modelling language. |            |
+|                Requirement                |                                                              | An agreed-to expectation for a system to perform a system function at a specified level of performance and under some conditions of use. |            |
 |           System configuration            |                                                              | A design synthesis objective that consists in choosing system elements based on a set of compatibility relationships between variants, options and cardinalities |            |
 |               System sizing               |                                                              | A design synthesis objective that consists in determining the value of unknown design variables of a system element |            |
 |                                           |                                                              |                                                              |            |
 
 ## Research objectives
 
-### Fundamental research objective
+The primitive research objective pursued by the benchmark community is improving the **concept finding** activity in a **Model-Based Architecture Design Synthesis** process for **system sizing**.
 
-The primitive research objective pursued by the benchmark community is improving the **concept finding** activity in a **Model-Based Architecture Design Synthesis** process for **system sizing**. Improvements can be a new design method, modelling language, modelling software, and/or modelling method that the concept finding activity.
-
-### Metrics...
+The metrics 
 
 |                           **Name**                           | **Definition** |  **Unit**   |
 | :----------------------------------------------------------: | :------------: | :---------: |
@@ -79,22 +78,24 @@ However, the design inputs and outputs of the concept finding activity depend on
 
 ## Proposals
 
-candidate research proposals (e.g., theory, process, method, modelling language, software…) which, once applied to the collection of benchmarks, must provide empirical evidence that the research objectives have been met. 
+The table below is a collection of research proposals that claim to improve the activity of concepts finding in a model-based architecture design synthesis approach for system sizing.
 
-| Contribution ID | Design Philosophy | Design  Method  | Modelling  Language | Modelling  Software | Modelling  Method |
-| :-------------: | :---------------: | :-------------: | :-----------------: | :-----------------: | :---------------: |
-|       001       | Lean engineering  | AF + FPPT + SK2 |         UML         |       Eclipse       |   Lionel Method   |
-|       ...       |        ...        |       ...       |         ...         |         ...         |        ...        |
+(e.g., theory, process, method, modelling language, software…) which, once applied to the collection of benchmarks, must provide empirical evidence that the research objectives have been meta collection of contributions 
+
+| Contribution ID | Design Philosophy | Design  Method  | Modelling  Language | Modelling  Software | Modelling  Method |      |
+| :-------------: | :---------------: | :-------------: | :-----------------: | :-----------------: | :---------------: | ---- |
+|       001       | Lean engineering  | AF + FPPT + SK2 |         UML         |       Eclipse       |   Lionel Method   |      |
+|       ...       |        ...        |       ...       |         ...         |         ...         |        ...        |      |
 
 ## Claimed contributions
 
-The table below is a collection of contributions that claim to improve the activity of concepts finding in a model-based architecture design synthesis approach for system sizing.
+
 
 |                           **Name**                           | Contribution ID | ...  |
 | :----------------------------------------------------------: | :-------------: | :--: |
 |    Number of concepts satisfying the system requirements     |                 |      |
 |                  Number of design variables                  |                 |      |
-|                 Number of design parameters                  |    Increase     |      |
+|                 Number of design parameters                  |                 |      |
 |                Design space (Product domain)                 |                 |      |
 | Number of relationships between design variables, design parameters and constants |                 |      |
 |                     Model-based approach                     |                 |      |
@@ -106,7 +107,7 @@ The table below is a collection of contributions that claim to improve the activ
 
 ## Benchmarks Collection
 
-
+### Benchmark exercises
 
 |                                                              |      |      |      |      |      |
 | :----------------------------------------------------------: | :--: | :--: | :--: | :--: | :--: |
@@ -118,22 +119,19 @@ The table below is a collection of contributions that claim to improve the activ
 
 Does a benchmark protocol apply to all benchmark exercises, or does each one require its benchmark protocol?
 
-## Benchmarking
-
-The table below shows the results of the benchmarking 
-
-### Claimed contributions
-
-The table below gives access to the open data of each contribution:
-
-| **Contribution ID** | **Benchmark exercise** | **Version** | **DOI** |                           **URL**                            | **License** |
-| :-----------------: | :--------------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-|         001         |     Coupling bolt      |      1      |         | [Open data](Claimed%20contributions/Lean%20engineering/Coupling%20bolt/0001.md) |             |
-|         001         |       Flashlight       |      1      |         | [Open data](Claimed%20contributions/Lean%20engineering/Flashlight/0001.md) |     ...     |
+### 
 
 ## Empirical evidence
 
 An empirical evidence is a quantitative and/or qualitative performance indicator or metric that measures the degree to which the research goal of concept finding has been achieved. The empirical evidence supporting or countering the belief that the contributions claiming to achieve the goal of concept finding are defined as follows: 
+
+The table below gives access to the open data of each contribution:
+
+|                   |                       Contribution 001                       |      |      |      |      |
+| :---------------: | :----------------------------------------------------------: | :--: | :--: | :--: | :--: |
+| **Coupling bolt** | [Empirical evidence](../Proposals/FPPT-SK2/Coupling/Coupling.md) |      |      |      |      |
+|  **Flashlight**   |                                                              |      |      |      |      |
+|    **Camera**     |                                                              |      |      |      |      |
 
 
 
@@ -141,7 +139,7 @@ An empirical evidence is a quantitative and/or qualitative performance indicator
 
 Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones. Any change to existing empirical evidence must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions). Once the suggested change is informally approved by the community, the author shall post on the issues page of the benchmark (e.g. navigate to '*Repositories > Benchmark-0_Template > Issues*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/issues)) and briefly outline the new metric.
 
-## 
+
 
 |                           **Name**                           | **Contribution ID** |      | **???** |
 | :----------------------------------------------------------: | :-----------------: | ---- | :-----: |
@@ -155,6 +153,22 @@ Authors should use existing metrics and not invent new ones, unless they measure
 |                Minimize number of variables?                 |                     |      |         |
 |                 (Number of physics explored)                 |                     |      |         |
 |                 (Design synthesis objective)                 |                     |      |         |
+
+## Benchmarking
+
+The table below shows the results of the benchmarking 
+
+
+
+The table below gives access to the open data of each contribution:
+
+
+
+|                   |    Contribution 001    |      |      |      |      |
+| :---------------: | :--------------------: | :--: | :--: | :--: | :--: |
+| **Coupling bolt** | [Empirical evidence]() |      |      |      |      |
+|  **Flashlight**   |                        |      |      |      |      |
+|    **Camera**     |                        |      |      |      |      |
 
 
 

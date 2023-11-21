@@ -1,19 +1,17 @@
 # Benchmark exercise MBADS for System Sizing: Coupling bolt
 
-[TOC]
-
 ## 1. Introduction
 
 This benchmark exercise aims to evaluate - competitive or complementary - contributions claiming to improve the Model-Based Architecture Design Synthesis (MBADS) process for system sizing. 
 
-In this benchmark exercise, the overall objective of the [Model-Based Architecture Design Synthesis Process]() is to size the Coupling Bolt System defined in [Section 2](#2. System-Of-Interest: A Coupling Bolt System). The candidate solutions can support an engineer throughout the MBADS process or for a specific activity.
+In this benchmark exercise, the overall objective of the Model-Based Architecture Design Synthesis Process is to size the Coupling Bolt System defined in Section 2. The candidate solutions can support an engineer throughout the MBADS process or for a specific activity.
 
-[Section 3](#3. Inputs)  of the benchmark exercise specifies the design inputs for each activity of the MBADS process. All candidate solutions must reuse these design inputs to make fair comparisons.
+Section 3 specifies the design inputs for each activity of the MBADS process. All candidate solutions must reuse these design inputs to make fair comparisons.
 
-- [Section 3.1]() defines the inputs of the Requirements Development activity.
-- [Section 3.2]() defines the inputs of the Concept Finding activity.
-- [Section 3.3]() defines the inputs of the Problem Modelling activity.
-- [Section 3.4]() defines the inputs of the Problem Solving activity.
+- Section 3.1 defines the inputs of the Requirements Development activity.
+- Section 3.2 defines the inputs of the Concept Finding activity.
+- Section 3.3 defines the inputs of the Problem Modelling activity.
+- Section 3.4 defines the inputs of the Problem Solving activity.
 
 ## 2. System-Of-Interest
 
@@ -172,12 +170,16 @@ The Coupling Bolt System configuration is known in advance as the objective of t
 |   *M*    |  Positive real   |   [Mt, 1 E7]   | N.mm |   Torque transfered by the coupling    |
 
 **Bolts:**
+
+
 $$
 N ≥N_m \tag{1}
 $$
 Tableau 3 : Tables des boulons
 
  **Geometric model:**
+
+
 $$
 R= R_b+ b \tag{2}
 $$
@@ -207,6 +209,8 @@ b≥b_m										\tag{8}
 $$
 
 **Mechanical stress Von Mises:**
+
+
 $$
 M=N×R_b  × f_m × F0_{mini}   						\tag{9}
 $$
@@ -242,6 +246,8 @@ $$
 
 
 **Mass model:**
+
+
 $$
 M_{accou}=  π/2×e_p×(ρ_j×(4×R_b×b_m-N×d_t^2 )+ρ_v×N×d^2) 		\tag{17}
 $$
