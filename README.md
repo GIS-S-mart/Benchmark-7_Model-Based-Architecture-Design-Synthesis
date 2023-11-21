@@ -1,163 +1,79 @@
-# Benchmark 6. Concept Finding in a Model-Based Architecture Design Synthesis Process for System Sizing
+# Benchmark 6. Model-Based Architecture Design Synthesis
+
+[TOC]
 
 ## Introduction
 
 - **Disciplines**: This scientific benchmark repository concerns mainly the engineering design, systems engineering, and product lifecycle management communities.
-- **Goal**: This scientific benchmark aims at collecting and comparing competing or complementary contributions claiming to improve the activity of concept finding in a model-based architecture design synthesis process for system sizing. In this benchmark, model-based architecture design synthesis is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction. A design synthesis process has an objective: system configuration, system sizing, resource allocation, and/or architecture generation.  This benchmark focuses on design synthesis for system sizing. In addition, in a computational design synthesis process for system sizing, this benchmark concentrates on the activity of concept finding. Starting with a set of valid system requirements, concept finding is an activity that intends to find preliminary design variables, parameters and constants, that serve to define the set of acceptable and feasible conceptual design solutions.
-- **Type of claimed contributions to benchmark:** our discussions related to engineering design method actually concludes that a tight link exists among "design method (paradigm)", "concepts for system modelling", "modelling langage" and "modelling software solution". For exemple, in a systematic paradigm for engineering design [Pahl et Beitz], several models can be used to formalise the system (interaction diagrams, FAST, 3D, ...). Those models are (or not) described with formal languages (ex : CPM, ULM, SysML...) using (or not) sofwtare solution (ex : Capella, Catia Magic, Papyrus...). It is therefore important to separate those four notions in the folowing benchmark.
+- **Goal**: This scientific benchmark aims at collecting and comparing competing or complementary contributions claiming to improve the model-based architecture design synthesis process. In this benchmark, Model-Based Architecture Design Synthesis (MBADS) is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction.
+- **Type of claimed contributions to benchmark:** ...
 
 ## Glossary
 
 An agreed-upon glossary of terms used in this benchmark is proposed below. Contributors should reuse existing terms and definitions from existing standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions)).
 
-|                **Keyword**                |                         **Synonyms**                         |                        **Definition**                        | **Source** |
-| :---------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
-|              System concept               | Concept, Design concept, Preliminary design, Under-defined system. | A system concept is an under-defined system definition that satisfies the set of system requirements. |            |
-|              Concept finding              |  Embodiment design, Conceptual design, Preliminary design.   | An activity of the design synthesis process that intends to find preliminary design variables, parameters and constants, so as to define the set of acceptable and feasible conceptual under-defined design solutions. |            |
-|         Conceptual design method          |                                                              | The procedure to be followed by the practitioners to generate system concepts by using any modelling method and software. |            |
-|                 Constant                  |                                                              | A constant has an unmodifiable value that is constant with respect to time and remains always the same even between two computations. |            |
-|             Design parameter              |                                                              | . A design parameter is a known design variable with a fixed value that is set after a design synthesis iteration concluded by an agreed-upon design decision; therefore, it is not calculated when solving the formal design problem. |            |
-|             Design philosophy             |                                                              | The axioms, postulates, assumptions, and convictions taken to be true to serve as a premise or starting point for further reasoning and arguments. |            |
-|             Design synthesis              |                                                              | A problem-solving activity that consists in finding a solution to a set of needs |            |
-|              Design variable              |                                                              | A design variable is an unknown variable whose value is computed when solving the formal design problem. |            |
-| Model-based architecture design synthesis |         Computational architecture design synthesis          | A design process which relies on computer-based automatic problem-solving techniques to generate architecture design solutions that are correct by construction |            |
-|       Model-based design synthesis        |                Computational design synthesis                | A design process which relies on computer-based automatic problem-solving techniques to generate design solutions that are correct by construction. |            |
-|             Modelling method              | Modelling methodology, modelling process, Modelling guidelines | The procedure to be followed by the practitioners to model the concepts using the preferred modelling language and modelling software. |            |
-|            Modelling language             |                    Standardised notation                     | A language or a standardised notation that is used to encode the system concept elaborated with the conceptual design method. |            |
-|            Modelling software             |                    Modelling environment                     | A software used by a practitioner to model a system concept using a modelling language. |            |
-|           System configuration            |                                                              | A design synthesis objective that consists in choosing system elements based on a set of compatibility relationships between variants, options and cardinalities |            |
-|               System sizing               |                                                              | A design synthesis objective that consists in determining the value of unknowns design variables of a system element |            |
-|                                           |                                                              |                                                              |            |
+|                    **Keyword**                    |                         **Synonyms**                         |                        **Definition**                        | **Source** |
+| :-----------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
+|                 Design philosophy                 |                                                              | The axioms, postulates, assumptions, and convictions taken to be true to serve as a premise or starting point for further reasoning and arguments. |            |
+|                 Design synthesis                  |                                                              | A problem-solving activity that consists in finding a solution to a set of needs |            |
+|                  Design variable                  |                                                              | A design variable is an unknown variable whose value is computed when solving the formal design problem. |            |
+|           Model-based design synthesis            |                Computational design synthesis                | A design process which relies on computer-based automatic problem-solving techniques to generate design solutions that are correct by construction. |            |
+| Model-based architecture design synthesis (MBADS) |         Computational architecture design synthesis          | A design process which relies on computer-based automatic problem-solving techniques to generate architecture design solutions that are correct by construction. |            |
+|          MBADS for system configuration           |                                                              | A MBADS objective that consists in choosing system elements based on a set of compatibility relationships between variants, options and cardinalities |            |
+|              MBADS for system sizing              |                                                              | A MBADS objective objective that consists in determining the value of unknown design variables of a system element |            |
+|           MBADS for resource allocation           |                                                              | A MBADS objective that consists in allocating hardware and/or software system elements to system functional requirements. |            |
+|            MBADS for space allocation             |                                                              | A MBADS objective that consists in defining the bounding box of the subsystems and their spatial position and orientation within a system. |            |
+|           MBADS for interfaces routing            |                                                              | A MBADS objective that consists in defining the path and wrapping each physical interface between two subsystems within the system bounding box. |            |
+|         MBADS for architecture generation         |                                                              | A MBADS objective that combines at least two of the previous MBADS objectives, whether a logical, abstract architecture design or a physical one which mirrors the implementation. |            |
+|                 Modelling method                  | Modelling methodology, modelling process, Modelling guidelines | The procedure to be followed by the practitioners to model the concepts using the preferred modelling language and modelling software. |            |
+|                Modelling language                 |                    Standardised notation                     | A language or a standardised notation that is used to encode the system concept elaborated with the conceptual design method. |            |
+|                Modelling software                 |                    Modelling environment                     | A software used by a practitioner to model a system concept using a modelling language. |            |
 
 ## Body of knowledge
 
-What body of knowledge the contribution claim to extend? design phylosophy, design method, modelling language, modelling method, or modelling software for concepts finding in a MBADS process?
+The body of knowledge is the background knowledge upon which researchers will draw on and contribute in theory or practice. This benchmark aims to increase the knowledge of the MBADS process.
+
+- Hartmann, C., Chenouard, R., Mermoz, E., & Bernard, A. (2018). A framework for automatic architectural synthesis in conceptual design phase. *Journal of Engineering Design*, *29*(11), 665-689.
+- Menu, J., Nicolai, M., & Zeller, M. (2018, July). Designing fail-safe architectures for aircraft electrical power systems. In *2018 AIAA/IEEE Electric Aircraft Technologies Symposium (EATS)* (pp. 1-14). IEEE.
+- Menu, J., & Nicolai, M. (2017). A Framework for Automated Design, Verification, and Simulation of Electrical Power Systems for Aircraft. In *Proceedings of 6th International Workshop on Aircraft System Technologies (AST 2017)* (pp. 135-144).
+- Rosich, A., Berx, K., & Pinte, G. (2016). Model-based design synthesis: application to optimal air-compressor system design. *IFAC-PapersOnLine*, *49*(21), 416-422.
+- dos Santos, C. A. R., Saleh, A. H., Schrijvers, T., & Nicolai, M. (2019, September). CONDEnSe: contract based design synthesis. In *2019 ACM/IEEE 22nd International Conference on Model Driven Engineering Languages and Systems (MODELS)* (pp. 250-260). IEEE.
+- Yvars, P. A., & Zimmer, L. (2022). Towards a correct by construction design of complex systems: The MBSS approach. *Procedia CIRP*, *109*, 269-274.
+- Yvars, P. A., & Zimmer, L. (2021). A model-based synthesis approach to system design correct by construction under environmental impact requirements. *Procedia CIRP*, *103*, 85-90.
 
 ## Research objectives
 
-The fundamental research objective pursued by the benchmark community is the improvement of the activity of concept finding in a model-based architecture design synthesis process for system sizing.
+The primitive research objective pursued by the benchmark community is to improve a model-based architecture design synthesis process, which includes four main activities: 1) requirements definition, 2) concept finding, 3) problem modelling, and 4) system sizing.
 
 ## Claimed contributions
 
-candidate research proposals (e.g., theory, process, method, modelling language, software…) which, once applied to the collection of benchmarks, must provide empirical evidence that the research objectives have been met. 
+The list of claimed contributions gathers candidate research proposals combining a design philosophy, design method, modelling language, modelling software, and modelling method, which claim to improve the end-to-end model-based architecture design synthesis process. 
 
-The table below is a collection of contributions that claim to improve the activity of concepts finding in a model-based architecture design synthesis approach for system sizing.
+| Contribution ID | **Benchmark exercise** | **Version** | **DOI** |                           **URL**                            | **License** |
+| :-------------: | :--------------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
+|       001       |     Coupling bolt      |      1      |         | [Open data](Claimed%20contributions/Lean%20engineering/Coupling%20bolt/0001.md) |             |
+|       001       |       Flashlight       |      1      |         | [Open data](Claimed%20contributions/Lean%20engineering/Flashlight/0001.md) |     ...     |
 
-| Contribution ID | Design Philosophy | Design  Method  | Modelling  Language | Modelling  Software | Modelling  Method |
-| :-------------: | :---------------: | :-------------: | :-----------------: | :-----------------: | :---------------: |
-|       001       | Lean engineering  | AF + FPPT + SK2 |         UML         |       Eclipse       |   Lionel Method   |
-|       ...       |        ...        |       ...       |         ...         |         ...         |        ...        |
+## Benchmarks
 
-## Empirical evidence
+Once applied to the collection of benchmarks, the claimed contributions must provide empirical evidence that the research objectives have been met. The design inputs of each activity of the Model-Based Architecture Design Synthesis process change according to the MBADS objective. For instance, a research proposal can contribute to MBADS for system sizing without contributing to MBADS for interfaces routing. In addition, a research proposal can contribute to one activity of the MBADS process (e.g., concept finding) without contributing to other activities.
 
-An empirical evidence is a quantitative and/or qualitative performance indicator or metric that measures the degree to which the research goal of concept finding has been achieved. The empirical evidence supporting or countering the belief that the contributions claiming to achieve the goal of concept finding are defined as follows: 
+Hence, the MBADS benchmark is decomposed into 6 benchmarks.
 
-|                           **Name**                           | **Definition** | **Unit** |
-| :----------------------------------------------------------: | :------------: | :------: |
-|    Number of concepts satisfying the system requirements     |                |          |
-|             Number of relevant design variables              |                |          |
-|             Number of relevant design parameters             |                |          |
-|           Relevant domain of each design variable            |                |          |
-|           Relevant domain of each design parameter           |                |          |
-|                      Value of constant?                      |                |          |
-| Number of relevant relationships between design variables, design parameters and constants |                |          |
-|                                                              |                |          |
-|                                                              |                |          |
-|                                                              |                |          |
-|                Minimize number of variables?                 |                |          |
-|                 (Number of physics explored)                 |                |          |
-|                 (Design synthesis objective)                 |                |          |
-|                        Learning curve                        |                |          |
-|                   Language expressiveness                    |                |          |
+|                              | MBADS for System Configuration |                   MBADS for System Sizing                    | MBADS for Resource Allocation | MBADS for Space Allocation | MBADS for Interface Routing | MBADS for Architecture |
+| ---------------------------- | :----------------------------: | :----------------------------------------------------------: | :---------------------------: | :------------------------: | :-------------------------: | :--------------------: |
+| **Requirements development** |                                |                                                              |                               |                            |                             |                        |
+| **Concept finding**          |                                | [Benchmark](Benchmarks/Benchmark-MBDAS_System_Sizing-Concept_Finding.md) |                               |                            |                             |                        |
+| **Problem modelling**        |                                |                                                              |                               |                            |                             |                        |
+| **Problem solving**          |                                |                                                              |                               |                            |                             |                        |
 
-(complete with a bottom-up approach by reviewing metrics in papers containing concept finding contributions)
 
-Authors should use existing metrics and not invent new ones, unless they measure additional aspects not covered by existing ones. Any change to existing empirical evidence must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions). Once the suggested change is informally approved by the community, the author shall post on the issues page of the benchmark (e.g. navigate to '*Repositories > Benchmark-0_Template > Issues*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/issues)) and briefly outline the new metric.
-
-## Benchmarks Collection
-
-The set of benchmark exercises aims to demonstrate the usefulness of each claimed contribution beyond a single benchmark exercise.
-
-### Characteristics of the collection of benchmark exercises
-
-|                                                              | Coupling bolt |       Flashlight        |        Camera        |
-| ------------------------------------------------------------ | :-----------: | :---------------------: | :------------------: |
-| *Type of design synthesis problem (system sizing, system configuration, resource allocation, architecture generation)* | System sizing | Architecture generation | System configuration |
-| *Multi-engineering*                                          |      No       |           Yes           |          ?           |
-| Type of behaviour                                            |  Continuous   |       Continuous        |          ?           |
-| Systemic decomposition                                       |      No       |           Yes           |          ?           |
-
-### Benchmark exercises
-
-|   **Name**    | **Author(s)** | **Version** | **DOI** |                           **URL**                            | **License** |
-| :-----------: | :-----------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-| Coupling bolt |               |     V1      |         | [Link](https://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/blob/main/Benchmark%20exercises/Coupling%20bolt%20system/Coupling%20bolt%20system%20benchmark%20exercise.md) |  CC-BY-SA   |
-|  Flashlight   |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
-|    Camera     |               |     V1      |         |                           [Link]()                           |  CC-BY-SA   |
-
-### Benchmark protocols
-
-Does a benchmark protocol apply to all benchmark exercise or each benchmark exercise requires its own benchmark protocol?
-
-## Benchmarking
-
-The table below stands as the results of the benchmarking 
-
-### Benchmarking on Coupling Bolt
-
-The table below gives access to the open data of each contribution:
-
-| **Contribution ID** | **Benchmark exercise** | **Version** | **DOI** |                           **URL**                            | **License** |
-| :-----------------: | :--------------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-|         001         |     Coupling bolt      |      1      |         | [Open data](Claimed%20contributions/Lean%20engineering/Coupling%20bolt/0001.md) |             |
-|         ...         |          ...           |     ...     |   ...   |                             ...                              |     ...     |
-
-Benchmarking on Coupling Bolt
-
-|                           **Name**                           | **Contribution ID** | **???** |
-| :----------------------------------------------------------: | :-----------------: | :-----: |
-|    Number of concepts satisfying the system requirements     |         001         |         |
-|             Number of relevant design variables              |                     |         |
-|             Number of relevant design parameters             |                     |         |
-|           Relevant domain of each design variable            |                     |         |
-|           Relevant domain of each design parameter           |                     |         |
-|                      Value of constant?                      |                     |         |
-| Number of relevant relationships between design variables, design parameters and constants |                     |         |
-|                Minimize number of variables?                 |                     |         |
-|                 (Number of physics explored)                 |                     |         |
-|                 (Design synthesis objective)                 |                     |         |
-
-### Benchmarking on Flash Light
-
-The table below gives access to the open data of each contribution:
-
-| **Contribution ID** | **Benchmark exercise** | **Version** | **DOI** |                           **URL**                            | **License** |
-| :-----------------: | :--------------------: | :---------: | :-----: | :----------------------------------------------------------: | :---------: |
-|         001         |     Coupling bolt      |      1      |         | [Open data](https://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/tree/main/Claimed%20contributions/001) |             |
-|         ...         |          ...           |     ...     |   ...   | [Open data](https://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/tree/main/Claimed%20contributions/001) |     ...     |
-
-Benchmarking on Coupling Bolt
-
-|                           **Name**                           | **Contribution ID** | **???** |
-| :----------------------------------------------------------: | :-----------------: | :-----: |
-|    Number of concepts satisfying the system requirements     |         001         |         |
-|             Number of relevant design variables              |                     |         |
-|             Number of relevant design parameters             |                     |         |
-|           Relevant domain of each design variable            |                     |         |
-|           Relevant domain of each design parameter           |                     |         |
-|                      Value of constant?                      |                     |         |
-| Number of relevant relationships between design variables, design parameters and constants |                     |         |
-|                Minimize number of variables?                 |                     |         |
-|                 (Number of physics explored)                 |                     |         |
-|                 (Design synthesis objective)                 |                     |         |
-
-### Benchmarking on Camera
-
-...
 
 ## Meta-Analysis
 
 A meta-analysis is the analysis of all results of the benchmark for the purpose of integrating the findings. Meta-analytic results are the most trustworthy source of evidence.
+
+
 
 ## References
 
@@ -181,3 +97,4 @@ A meta-analysis is the analysis of all results of the benchmark for the purpose 
 - **Web page, by an individual:** Moon, M. (2019) *Ubisoft put an official video game design course inside a video game*. Available at https://www.engadget.com/2019/09/25/ubisoft-video-game-design-course/ (Accessed 19 November 2019).
 
 - **Web page, by a company or organization:** RotoBaller (2019) *NFL player news*. Available at https://www.rotoballer.com/player-news?sport=nfl (Accessed 17 September 2019).
+
