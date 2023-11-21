@@ -93,11 +93,11 @@ To demonstrate the usefulness of a claimed contribution, it is necessary to demo
 
 These benchmark exercise aims to evaluate - competitive or complementary - contributions claiming to improve the MBADS process for system sizing. 
 
-|                                                              | Number of physics | Number of systemic levels | Number of different parts |      |      |
-| :----------------------------------------------------------: | :---------------: | :-----------------------: | :-----------------------: | :--: | :--: |
-| [**Coupling bolt**](../Exercises/Coupling/Exercise-MBADS_System_Sizing.md) |         1         |             1             |             3             |      |      |
-|                        **Flashlight**                        |                   |                           |                           |      |      |
-|                          **Camera**                          |                   |                           |                           |      |      |
+|                                                              | Number of physics | Number of systemic levels | Number of different parts |
+| :----------------------------------------------------------: | :---------------: | :-----------------------: | :-----------------------: |
+| [**Coupling bolt**](../Exercises/Coupling/Exercise-MBADS_System_Sizing.md) |         1         |             1             |             3             |
+|                        **Flashlight**                        |                   |                           |                           |
+|                          **Camera**                          |                   |                           |                           |
 
 ### Benchmark protocols
 
@@ -115,18 +115,18 @@ The table below gives access to the open data that serves as empirical evidence 
 
 ## Benchmarking
 
-|                           **Name**                           |    **Contribution 001**     |      | **???** |
-| :----------------------------------------------------------: | :-------------------------: | ---- | :-----: |
-|                                                              | Coupling Bolt \| Flashlight |      |         |
-|    Number of concepts satisfying the system requirements     |          1 \| ...           |      |         |
-|                  Number of design variables                  |          2 \| ...           |      |         |
-|                 Number of design parameters                  |          ? \| ...           |      |         |
-|                Design space (Product domain)                 |            ? ...            |      |         |
-| Number of relationships between design variables, design parameters and constants |            ? ...            |      |         |
-|                     Model-based approach                     |         Yes \| ...          |      |         |
-|                  Number of physics explored                  |          1 \| ...           |      |         |
-|                 Minimize number of variables                 |           ? \| ?            |      |         |
-|                        Learning curve                        |           ? \| ?            |      |         |
+|                           **Name**                           |    **Contribution 001**     | Contribution 002 | Contribution 003 |
+| :----------------------------------------------------------: | :-------------------------: | ---------------- | :--------------: |
+|                                                              | Coupling Bolt \| Flashlight |                  |                  |
+|    Number of concepts satisfying the system requirements     |          1 \| ...           |                  |                  |
+|                  Number of design variables                  |          2 \| ...           |                  |                  |
+|                 Number of design parameters                  |          ? \| ...           |                  |                  |
+|                Design space (Product domain)                 |            ? ...            |                  |                  |
+| Number of relationships between design variables, design parameters and constants |            ? ...            |                  |                  |
+|                     Model-based approach                     |         Yes \| ...          |                  |                  |
+|                  Number of physics explored                  |          1 \| ...           |                  |                  |
+|                 Minimize number of variables                 |           ? \| ?            |                  |                  |
+|                        Learning curve                        |           ? \| ?            |                  |                  |
 
 ## Meta-Analysis
 
