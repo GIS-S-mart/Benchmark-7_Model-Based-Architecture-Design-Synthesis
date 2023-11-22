@@ -86,3 +86,8 @@ ADD ILLUSTRATION FPPT COUPLING
 ![image-20231115143149693](./Images/image-20231115143149693.png)
 
 - [ ] [Click here to download the SK2 model of the Coupling Bolt System](../Proposals/FPPT-SK2/Sources/)
+
+## References
+
+- Jean-Sébastien, K. M., Guilain, C., Pascal, L., Nadčge, T., Lionel, R., & Thierry, G. (2007). Product Modelling for Design Alternatives Selection Using Optimisation and Robustness Analysis. *Guidelines for a Decision Support Method Adapted to NPD Processes*.
+- Skander, A., Roucoules, L., & Klein Meyer, J. S. (2008). Design and manufacturing interface modelling for manufacturing processes selection and knowledge synthesis in design. *The international journal of advanced manufacturing technology*, *37*, 443-454.
