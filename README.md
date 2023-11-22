@@ -4,7 +4,7 @@
 
 ## Introduction
 
-- **Disciplines**: This scientific benchmark repository concerns mainly the engineering design, systems engineering, and product lifecycle management communities.
+- **Disciplines**: This scientific benchmark concerns mainly the engineering design, systems engineering, and product lifecycle management communities.
 - **Goal**: This scientific benchmark aims at collecting and comparing competing or complementary contributions claiming to improve the model-based architecture design synthesis process. In this benchmark, Model-Based Architecture Design Synthesis (MBADS) is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction.
 
 ## Glossary
@@ -59,12 +59,12 @@ Once applied to the collection of benchmarks, the claimed contributions must pro
 
 Hence, the MBADS benchmark is decomposed into 6 benchmarks.
 
-|                              | MBADS for System Configuration |                   MBADS for System Sizing                    | MBADS for Resource Allocation | MBADS for Space Allocation | MBADS for Interface Routing | MBADS for Architecture |
-| ---------------------------- | :----------------------------: | :----------------------------------------------------------: | :---------------------------: | :------------------------: | :-------------------------: | :--------------------: |
-| **Requirements development** |                                |                                                              |                               |                            |                             |     [Benchmark]()      |
-| **Concept finding**          |                                | [Benchmark](Benchmarks/Benchmark-MBADS_System_Sizing-Concept_Finding.md) |                               |                            |                             |     [Benchmark]()      |
-| **Problem modelling**        |                                |                                                              |                               |                            |                             |                        |
-| **Problem solving**          |                                |                                                              |                               |                            |                             |                        |
+|                              | MBADS for System Configuration |                   MBADS for System Sizing                    | MBADS for Resource Allocation | MBADS for Space Allocation | MBADS for Interface Routing |              MBADS for Architecture Generation               |
+| ---------------------------- | :----------------------------: | :----------------------------------------------------------: | :---------------------------: | :------------------------: | :-------------------------: | :----------------------------------------------------------: |
+| **Requirements development** |                                |                                                              |                               |                            |                             |                        [Benchmark]()                         |
+| **Concept finding**          |                                | [Benchmark](Benchmarks/Benchmark-MBADS_System_Sizing-Concept_Finding.md) |                               |                            |                             | [Benchmark](Benchmarks/Benchmark-MBADS_SArchitecture-Concept_Finding.md) |
+| **Problem modelling**        |                                |                                                              |                               |                            |                             |                                                              |
+| **Problem solving**          |                                |                                                              |                               |                            |                             |                                                              |
 
 ## Benchmarking
 

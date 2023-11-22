@@ -82,6 +82,9 @@ The Coupling Bolt System shall perform two functions:
   - Preliminary set of relationships between design variables, design parameters, and constants.
 
 - [ ] **Design Outputs:**
+  
+  - Complete set of design variables, design parameters, and constants.
+  
   - Complete set of relationships between design variables, design parameters, and constants.
 
 **Coupling Bolt System Configuration**
@@ -92,34 +95,36 @@ The Coupling Bolt System configuration is known in advance as the objective of t
 
 **Preliminary Set of Constants**
 
-
+| Name | Data Type | Domain | Unit | Definition |
+| :--: | :-------: | :----: | :--: | :--------: |
+|      |           |        |      |            |
 
 **Preliminary Set of Design Parameters**
 
 | Name |   Data Type   |  Domain  | Unit |          Definition           |
 | :--: | :-----------: | :------: | :--: | :---------------------------: |
-| *Mt* | Positive real | 40 00 00 | N.mm |  Minimum torque to transfer   |
-| *Nm* | Positive real |    8     |  -   |    Minimum number of bolts    |
-| *ep* | Positive real |    10    |  mm  |           Thickness           |
-| *Rm* | Positive real |    50    |  mm  | Radius of housing shafts (mm) |
+|  Mt  | Positive real | 40 00 00 | N.mm |  Minimum torque to transfer   |
+|  Nm  | Positive real |    8     |  -   |    Minimum number of bolts    |
+|  ep  | Positive real |    10    |  mm  |           Thickness           |
+|  Rm  | Positive real |    50    |  mm  | Radius of housing shafts (mm) |
 
 **Preliminary Set of Design Variables**
 
-|   Name   |    Data Type     |     Domain     | Unit |               Definition               |
-| :------: | :--------------: | :------------: | :--: | :------------------------------------: |
-|   *N*    | Positive integer | [\| Nm, 100\|] |  -   |            Number of bolts             |
-|   *R*    |  Positive real   |   [10;1050]    |  mm  |            Coupling radius             |
-|   *Rb*   |  Positive real   |    [5;1000]    |  mm  |              Bolt radius               |
-|    b     |  Positive real   |     [5;50]     |      |  Radial width of the contact surface   |
-|    s     |  Positive real   |    [1;100]     |  mm  |         Distance between bolts         |
-|   Bref   | Positive integer | Cf Table below |  -   |             Bolt reference             |
-| *Maccou* |  Positive real   |                |      | Total mass of the coupling bolt system |
-|  *Coût*  |  Positive real   |                |      | Total cost of the coupling bolt system |
-|   *M*    |  Positive real   |   [Mt, 1 E7]   | N.m  |     e transferred by the coupling      |
+|  Name  |    Data Type     |     Domain     | Unit |               Definition               |
+| :----: | :--------------: | :------------: | :--: | :------------------------------------: |
+|   N    | Positive integer | [\| Nm, 100\|] |  -   |            Number of bolts             |
+|   R    |  Positive real   |   [10;1050]    |  mm  |            Coupling radius             |
+|   Rb   |  Positive real   |    [5;1000]    |  mm  |              Bolt radius               |
+|   b    |  Positive real   |     [5;50]     |      |  Radial width of the contact surface   |
+|   s    |  Positive real   |    [1;100]     |  mm  |         Distance between bolts         |
+|  Bref  | Positive integer | Cf Table below |  -   |             Bolt reference             |
+| Maccou |  Positive real   |                |      | Total mass of the coupling bolt system |
+|  Coût  |  Positive real   |                |      | Total cost of the coupling bolt system |
+|   M    |  Positive real   |   [Mt, 1 E7]   | N.m  |     e transferred by the coupling      |
 
 ![img](./Images/clip_image001.png)
 
-
+**Table of bolt references**
 
 | Num  |  d   |   ds   |   d2   |  p   |  bm   |  sm   |  dt  |
 | :--: | :--: | :----: | :----: | :--: | :---: | :---: | :--: |

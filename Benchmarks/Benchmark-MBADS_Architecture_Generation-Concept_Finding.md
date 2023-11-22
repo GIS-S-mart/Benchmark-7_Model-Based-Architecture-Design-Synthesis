@@ -1,4 +1,4 @@
-# Benchmark 6. MBADS for System Sizing: Concept Finding
+# Benchmark 6. MBADS for Architecture Generation: Concept Finding
 
 ## Introduction
 
@@ -95,9 +95,8 @@ These benchmark exercise aims to evaluate - competitive or complementary - contr
 
 |                                                              | Number of physics | Number of systemic levels | Number of different parts |
 | :----------------------------------------------------------: | :---------------: | :-----------------------: | :-----------------------: |
-| [**Coupling bolt**](../Exercises/Coupling/Exercise-MBADS_System_Sizing.md) |         1         |             1             |             3             |
-|                        **Flashlight**                        |                   |                           |                           |
-|                          **Camera**                          |                   |                           |                           |
+| [**Flashlight**](../Exercises/Flashlight/Exercise-MBADS_Architecture_Generation.md) |         3         |             2             |                           |
+|                             ...                              |                   |                           |                           |
 
 ### Benchmark protocols
 
