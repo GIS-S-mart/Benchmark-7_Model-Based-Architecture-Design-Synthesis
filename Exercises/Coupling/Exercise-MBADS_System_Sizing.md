@@ -27,12 +27,15 @@ The design inputs are defined in a generic format, leaving the contributors the 
 
 - [ ] **Design Inputs:**
   - 1..* system functions
-
+  - 1 system context
+  - 1 system architecture
 - [ ] **Design Outputs:**
 
   - 1..* requirements
 
   - 1..* design constraints
+
+**Coupling Bolt System Functions**
 
 The Coupling Bolt System shall perform two functions:
 
@@ -40,6 +43,10 @@ The Coupling Bolt System shall perform two functions:
 | :--: | ------------------------------------------------------------ |
 |  F1  | To hold two halves of a flanged shaft together to transfer the torque. |
 |  F2  | To maintain shaft alignment.                                 |
+
+**Coupling Bolt System Architecture**
+
+![image-20231122103813243](./Images/image-20231122103813243.png)
 
 ### *3.2. Concept Finding*
 
@@ -90,8 +97,6 @@ The Coupling Bolt System shall perform two functions:
 **Coupling Bolt System Configuration**
 
 The Coupling Bolt System configuration is known in advance as the objective of the MBADS is system sizing. As shown below, the Coupling Bolt System includes at least one bolt and one shaft, and exactly one material.
-
-<img src="./Images/image-20231119092505829.png" alt="image-20231119092505829" style="zoom: 33%;" />
 
 **Preliminary Set of Constants**
 
@@ -177,10 +182,12 @@ The Coupling Bolt System configuration is known in advance as the objective of t
 **Bolts:**
 
 
+
 $$
 N ≥N_m \tag{1}
 $$
  **Geometric model:**
+
 
 
 $$
@@ -204,7 +211,7 @@ R_b  ≥ R_m+b									 \tag{6}
 $$
 
 $$
-s≥s_m										(\tag{7})
+s≥s_m										\tag{7}
 $$
 
 $$
@@ -212,6 +219,7 @@ b≥b_m										\tag{8}
 $$
 
 **Mechanical stress Von Mises:**
+
 
 
 $$
@@ -251,6 +259,7 @@ $$
 **Mass model:**
 
 
+
 $$
 M_{accou}=  π/2×e_p×(ρ_j×(4×R_b×b_m-N×d_t^2 )+ρ_v×N×d^2) 		\tag{17}
 $$
@@ -283,5 +292,5 @@ $$
 ## References
 
 - Yvars, P. A., & Zimmer, L. (2021). A model-based synthesis approach to system design correct by construction under environmental impact requirements. *Procedia CIRP*, *103*, 85-90.
-- Yvars, P. A., Lafon, P., & Zimmer, L. (2009, July). Optimization of mechanical system: Contribution of constraint satisfaction method. In *2009 International Conference on Computers & Industrial Engineering* (pp. 1379-1384). IEEE.
+- Yvars, P. A., Lafon, P., & Zimmer, L. (2009). Optimization of mechanical system: Contribution of constraint satisfaction method. In *2009 International Conference on Computers & Industrial Engineering* (pp. 1379-1384). IEEE.
 - Roucoules, L., Lafon, P. et al. (2006). Knowledge intensive approach towards multiple product modelling and geometry emergence to foster cooperative design. In: Proceedings of the CIRP Design Seminar, Kananaskis
