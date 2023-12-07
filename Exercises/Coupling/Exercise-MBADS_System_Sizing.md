@@ -1,5 +1,20 @@
 # Benchmark exercise MBADS for System Sizing: Coupling bolt
 
+
+
+## Glossary
+
+|       Keyword**       |   **Synonyms**   | **Definition**                                               | **Source** |
+| :-------------------: | :--------------: | :----------------------------------------------------------- | :--------: |
+|      Angularity       |                  | The angle between two rotating axes at a given point. The angularity is expressed in terms of a slope in mils/mm (gap per diameter). The angularity multiplied by the coupling diameter gives an equivalent gap difference at the coupling rim.<br />![image-20231207153558971](./Images/image-20231207153558971.png) |            |
+|        Offset         |                  | The distance between two rotating axes at a given point. Offset is measured in mm.<br />![image-20231207153723897](./Images/image-20231207153723897.png)<br />Offset is sometimes incorrectly referred to as parallel offset or rim misalignment. However, the shaft rotation axes are rarely parallel, and the coupling or shaft rim has an unknown relationship to the shaft rotation axes. The same alignment condition, the offset value varies depending upon the location where the distance between two shaft rotation ration axes is measured.<br /><br />![image-20231207153913381](./Images/image-20231207153913381.png) |            |
+| Horizontal angularity | Gap per diameter | <br />The angle between the shaft rotating axes in the horizontal (plan view) at a given point.![image-20231207151128463](./Images/image-20231207151128463.png) |            |
+|   Horizontal offset   |                  | <br />The distance between the shaft rotating axes in the horizontal (plan view) at a given point.![image-20231207151138058](./Images/image-20231207151138058.png) |            |
+|  Vertical angularity  | Gap per diameter | <br />The angle between the shaft rotating axes in the vertical (side view) at a given point.![img](./Images/image-20231207151008109.png) |            |
+|    Vertical offset    |                  | <br />The distance between the shaft rotating axes in the vertical (side view) at a given point.![image-20231207151020374](./Images/image-20231207151020374.png) |            |
+
+
+
 ## 1. Introduction
 
 This benchmark exercise aims to evaluate - competitive or complementary - contributions claiming to improve the Model-Based Architecture Design Synthesis (MBADS) process for system sizing. 
@@ -21,13 +36,13 @@ The system-of-interest is a Coupling Bolt System. A Coupling Bolt System is a me
 
 ## 3. Design Inputs
 
-The design inputs are defined in a generic format, leaving the contributors the choice to use any modelling language and software to encode the data.
+The design inputs are defined in a generic format, without a specific modelling language and software, leaving the contributors to choose to use their preferred solutions to encode the data.
 
 ### *3.1. Requirements Development*
 
 - [ ] **Design Inputs:**
-  - 1..* system functions
   - 1 system context
+  - 1..* system functions
   - 1 system architecture
 - [ ] **Design Outputs:**
 
@@ -35,18 +50,35 @@ The design inputs are defined in a generic format, leaving the contributors the 
 
   - 1..* design constraints
 
-**Coupling Bolt System Functions**
+**Coupling Bolt System Context of Use**
+
+For this benchmark exercise, we only consider the operational context of the Coupling Bolt System. A more exhaustive system analysis would also consider other phases of the Coupling Bolt System life cycle (e.g., maintenance phase) that are additional sources of constraints and functions.
+
+
+
+
+
+
+
+
+
+**Coupling Bolt System Architecture**
+
+![image-20231122103813243](./Images/image-20231122103813243.png)**Coupling Bolt System Functions**
 
 The Coupling Bolt System shall perform two functions:
 
 |  ID  | Function                                                     |
 | :--: | ------------------------------------------------------------ |
-|  F1  | To hold two halves of a flanged shaft together to transfer the torque. |
-|  F2  | To maintain shaft alignment.                                 |
+|  F1  | To transfer torque from shaft A to shaft B?                  |
+|  F2  | To maintain the vertical angularity between shaft A and shaft B. |
+|  F3  | To maintain the vertical offset between shaft A and shaft B. |
+|      | To maintain the horizontal angularity between shaft A and shaft B. |
+|      | To maintain the horizontal offset between shaft A and shaft B. |
 
-**Coupling Bolt System Architecture**
 
-![image-20231122103813243](./Images/image-20231122103813243.png)
+
+
 
 ### *3.2. Concept Finding*
 
@@ -58,17 +90,25 @@ The Coupling Bolt System shall perform two functions:
 
 - [ ] **Design Outputs:**
   - 1..* system configuration
-  - Preliminary set of typed design variables with their range of acceptable values (e.g., min and/or max real number, Boolean, enumeration).
-  - Preliminary set of design parameters, each with a fixed value set after a design synthesis iteration.
-  - Preliminary set of constants, each with its unmodifiable value.
-  - Preliminary set of relationships between design variables, design parameters, and constants
+  - A preliminary set of typed design variables with their range of acceptable values (e.g., min and/or max real number, Boolean, enumeration).
+  - A preliminary set of design parameters, each with a fixed value set after a design synthesis iteration.
+  - A preliminary set of constants, each with its unmodifiable value.
+  - A preliminary set of relationships between design variables, design parameters, and constants
 
 **Coupling Bolt System Requirements**
+
+
+
+
 
 | ID   | Statement                                                    |
 | ---- | ------------------------------------------------------------ |
 | SR1  | The coupling bolt system shall transfer a torque greater than or equal to 400 000 N.mm. |
-| SR2  | The coupling bolt system shall maintain the shaft alignment . |
+| SR2  | The coupling bolt system shall maintain the vertical angularity ..., when:<br />- The rotating speed of shaft A is between X and Y rad/s.<br />- The rotating speed of shaft B is between X and Y rad/s.<br />- The outside air temperature is between X and Y °C.<br /> |
+| SR3  | The coupling bolt system shall maintain the vertical offset ..., when:<br /><br /><br />- The rotating speed of shaft A is between X and Y rad/s.<br />- The rotating speed of shaft B is between X and Y rad/s.<br />- The outside air temperature is between X and Y °C.<br /> |
+| SR4  | The coupling bolt system shall maintain the horizontal angularity..., when:<br />- The rotating speed of shaft A is between X and Y rad/s.<br />- The rotating speed of shaft B is between X and Y rad/s.<br />- The outside air temperature is between X and Y °C.<br /> |
+| SR5  | The coupling bolt system shall maintain the horizontal offset ..., when:<br />- The rotating speed of shaft A is between X and Y rad/s.<br />- The rotating speed of shaft B is between X and Y rad/s.<br />- The outside air temperature is between X and Y °C.<br /> |
+|      |                                                              |
 
 **Coupling Bolt System Design Constraints**
 
@@ -151,6 +191,10 @@ The Coupling Bolt System configuration is known in advance as the objective of t
 
 - [ ] **Design Outputs:**
   - 1..* values for design variables.
+
+
+
+<img src="./Images/image-20231207130644170.png" alt="image-20231207130644170" style="zoom:50%;" />
 
 **Complete set of Constants**
 
@@ -294,3 +338,5 @@ $$
 - Yvars, P. A., & Zimmer, L. (2021). A model-based synthesis approach to system design correct by construction under environmental impact requirements. *Procedia CIRP*, *103*, 85-90.
 - Yvars, P. A., Lafon, P., & Zimmer, L. (2009). Optimization of mechanical system: Contribution of constraint satisfaction method. In *2009 International Conference on Computers & Industrial Engineering* (pp. 1379-1384). IEEE.
 - Roucoules, L., Lafon, P. et al. (2006). Knowledge intensive approach towards multiple product modelling and geometry emergence to foster cooperative design. In: Proceedings of the CIRP Design Seminar, Kananaskis
+- https://backflowparts.com/wp-content/uploads/2021/06/Shaft_Alignment_Instructions.pdf
+- 
