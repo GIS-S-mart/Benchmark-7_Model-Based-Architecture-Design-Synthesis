@@ -2,88 +2,82 @@
 
 
 
-## Glossary
+## 1. Glossary
 
-|       Keyword**       |   **Synonyms**   | **Definition**                                               | **Source** |
-| :-------------------: | :--------------: | :----------------------------------------------------------- | :--------: |
-|      Angularity       |                  | The angle between two rotating axes at a given point. The angularity is expressed in terms of a slope in mils/mm (gap per diameter). The angularity multiplied by the coupling diameter gives an equivalent gap difference at the coupling rim.<br />![image-20231207153558971](./Images/image-20231207153558971.png) |            |
-|        Offset         |                  | The distance between two rotating axes at a given point. Offset is measured in mm.<br />![image-20231207153723897](./Images/image-20231207153723897.png)<br />Offset is sometimes incorrectly referred to as parallel offset or rim misalignment. However, the shaft rotation axes are rarely parallel, and the coupling or shaft rim has an unknown relationship to the shaft rotation axes. The same alignment condition, the offset value varies depending upon the location where the distance between two shaft rotation ration axes is measured.<br /><br />![image-20231207153913381](./Images/image-20231207153913381.png) |            |
-| Horizontal angularity | Gap per diameter | <br />The angle between the shaft rotating axes in the horizontal (plan view) at a given point.![image-20231207151128463](./Images/image-20231207151128463.png) |            |
-|   Horizontal offset   |                  | <br />The distance between the shaft rotating axes in the horizontal (plan view) at a given point.![image-20231207151138058](./Images/image-20231207151138058.png) |            |
-|  Vertical angularity  | Gap per diameter | <br />The angle between the shaft rotating axes in the vertical (side view) at a given point.![img](./Images/image-20231207151008109.png) |            |
-|    Vertical offset    |                  | <br />The distance between the shaft rotating axes in the vertical (side view) at a given point.![image-20231207151020374](./Images/image-20231207151020374.png) |            |
+|        Keyword        |   **Synonyms**   | **Definition**                                               |                          **Source**                          |
+| :-------------------: | :--------------: | :----------------------------------------------------------- | :----------------------------------------------------------: |
+|      Angularity       |                  | The angle between two rotating axes at a given point. The angularity is expressed in terms of a slope in mils/mm (gap per diameter). The angularity multiplied by the coupling diameter gives an equivalent gap difference at the coupling rim.<br />![image-20231207153558971](./Images/image-20231207153558971.png) | [Source](https://backflowparts.com/wp-content/uploads/2021/06/Shaft_Alignment_Instructions.pdf) |
+|        Offset         |                  | The distance between two rotating axes at a given point. Offset is measured in mm.<br />![image-20231207153723897](./Images/image-20231207153723897.png)<br />Offset is sometimes incorrectly referred to as parallel offset or rim misalignment. However, the shaft rotation axes are rarely parallel, and the coupling or shaft rim has an unknown relationship to the shaft rotation axes. The same alignment condition, the offset value varies depending upon the location where the distance between two shaft rotation ration axes is measured.<br /><br />![image-20231207153913381](./Images/image-20231207153913381.png) | [Source](https://backflowparts.com/wp-content/uploads/2021/06/Shaft_Alignment_Instructions.pdf) |
+| Horizontal angularity | Gap per diameter | <br />The angle between the shaft rotating axes in the horizontal (plan view) at a given point.![image-20231207151128463](./Images/image-20231207151128463.png) | [Source](https://backflowparts.com/wp-content/uploads/2021/06/Shaft_Alignment_Instructions.pdf) |
+|   Horizontal offset   |                  | <br />The distance between the shaft rotating axes in the horizontal (plan view) at a given point.![image-20231207151138058](./Images/image-20231207151138058.png) | [Source](https://backflowparts.com/wp-content/uploads/2021/06/Shaft_Alignment_Instructions.pdf) |
+|  Vertical angularity  | Gap per diameter | <br />The angle between the shaft rotating axes in the vertical (side view) at a given point.![img](./Images/image-20231207151008109.png) | [Source](https://backflowparts.com/wp-content/uploads/2021/06/Shaft_Alignment_Instructions.pdf) |
+|    Vertical offset    |                  | <br />The distance between the shaft rotating axes in the vertical (side view) at a given point.![image-20231207151020374](./Images/image-20231207151020374.png) | [Source](https://backflowparts.com/wp-content/uploads/2021/06/Shaft_Alignment_Instructions.pdf) |
 
-
-
-## 1. Introduction
+## 2. Introduction
 
 This benchmark exercise aims to evaluate - competitive or complementary - contributions claiming to improve the Model-Based Architecture Design Synthesis (MBADS) process for system sizing. 
 
-In this benchmark exercise, the overall objective of the Model-Based Architecture Design Synthesis Process is to size the Coupling Bolt System defined in Section 2. The candidate solutions can support an engineer throughout the end-to-end MBADS process or for a specific activity.
+In this benchmark exercise, the overall objective of the Model-Based Architecture Design Synthesis Process is to size the Coupling Bolt System defined in Section 3. The candidate solutions can support an engineer throughout the end-to-end MBADS process or for a specific activity.
 
-Section 3 specifies the design inputs for each activity of the MBADS process. All candidate solutions must reuse these design inputs to make fair comparisons.
+Section 4 specifies the design inputs for each activity of the MBADS process. All candidate solutions must reuse these design inputs to make fair comparisons.
 
-- Section 3.1 defines the inputs of the Requirements Development activity.
-- Section 3.2 defines the inputs of the Concept Finding activity.
-- Section 3.3 defines the inputs of the Problem Modelling activity.
-- Section 3.4 defines the inputs of the Problem Solving activity.
+- Section 4.1 defines the inputs of the Requirements Development activity.
+- Section 4.2 defines the inputs of the Concept Finding activity.
+- Section 4.3 defines the inputs of the Problem Modelling activity.
+- Section 4.4 defines the inputs of the Problem Solving activity.
 
-## 2. System-Of-Interest
+## 3. System-Of-Interest
 
-The system-of-interest is a Coupling Bolt System. A Coupling Bolt System is a mechanical means of holding two halves of a flanged shaft together to transfer the torque while maintaining shaft alignment.
+The system-of-interest is a rigid flange Coupling Bolt System. A Coupling Bolt System is a mechanical means of holding two halves of a flanged shaft together to transfer the torque while maintaining shaft alignment.
 
 ![image-20231022152120992](./Images/image-20231022152120992.png)
 
-## 3. Design Inputs
+## 4. Design Inputs
 
-The design inputs are defined in a generic format, without a specific modelling language and software, leaving the contributors to choose to use their preferred solutions to encode the data.
+The design inputs are defined in a generic format, that is, without a specific modelling language and software, leaving the contributors to choose to use their preferred solutions for encoding the data.
 
-### *3.1. Requirements Development*
+### *4.1. Requirements Development*
 
 - [ ] **Design Inputs:**
   - 1 system context
   - 1..* system functions
   - 1 system architecture
 - [ ] **Design Outputs:**
+- 1..* requirements
+  
+- 1..* design constraints
 
-  - 1..* requirements
+**Coupling Bolt System Context**
 
-  - 1..* design constraints
+A system context includes the external environment in which the system must operate. The external environment includes external entities stakeholders with which the system must interact. For this benchmark exercise, we only consider the operational context of the Coupling Bolt System. A more exhaustive system analysis would also consider other contexts related to other phases of the Coupling Bolt System life cycle (e.g., maintenance phase) that are additional sources of constraints and functions.
 
-**Coupling Bolt System Context of Use**
+**Coupling Bolt System Functions**
 
-For this benchmark exercise, we only consider the operational context of the Coupling Bolt System. A more exhaustive system analysis would also consider other phases of the Coupling Bolt System life cycle (e.g., maintenance phase) that are additional sources of constraints and functions.
-
-
-
-
-
-
-
-
-
-**Coupling Bolt System Architecture**
-
-![image-20231122103813243](./Images/image-20231122103813243.png)**Coupling Bolt System Functions**
-
-The Coupling Bolt System shall perform two functions:
+The Coupling Bolt System shall perform a set of functions:
 
 |  ID  | Function                                                     |
 | :--: | ------------------------------------------------------------ |
-|  F1  | To transfer torque from shaft A to shaft B                   |
-|  F2  | To maintain the vertical angularity between shaft A and shaft B. |
-|  F3  | To maintain the vertical offset between shaft A and shaft B. |
-|  F4  | To maintain the horizontal angularity between shaft A and shaft B. |
-|  F5  | To maintain the horizontal offset between shaft A and shaft B. |
+|  F1  | To transfer torque from the driving shaft to the driven shaft. |
+|  F2  | To maintain the vertical angularity between the driving shaft and the driven shaft. |
+|  F3  | To maintain the vertical offset between the driving shaft and the driven shaft. |
+|  F4  | To maintain the horizontal angularity between the driving shaft and the driven shaft. |
+|  F5  | To maintain the horizontal offset between the driving shaft and the driven shaft. |
 
 ### *3.2. Concept Finding*
+**Coupling Bolt System Architecture**
 
+The architecture of the rigid flange Coupling Bolt System is known.
+
+
+
+![image-20231122103813243](./Images/image-20231122103813243.png)
+
+### *4.2. Concept Finding*
 - [ ] **Design Inputs:**
-
   - 1..* requirements
-
+  
   - 1..* design constraints
-
+  
 - [ ] **Design Outputs:**
   - 1..* system configuration
   - A preliminary set of typed design variables with their range of acceptable values (e.g., min and/or max real number, Boolean, enumeration).
@@ -93,16 +87,19 @@ The Coupling Bolt System shall perform two functions:
 
 **Coupling Bolt System Requirements**
 
+The table below specifies the requirements that the Coupling Bolt System must satisfy. The Coupling Bolt System specification is potentially incomplete compared to the design outputs obtained after benchmarking claimed contributions to the activity 4.1. Requirements Development. 
+
 | ID   | Statement                                                    |
 | ---- | ------------------------------------------------------------ |
-| SR1  | The coupling bolt system shall transfer a torque greater than or equal to 400 000 N.mm. |
-| SR2  | The coupling bolt system shall maintain the vertical angularity ..., when:<br />- The rotating speed of shaft A is between X and Y rad/s.<br />- The rotating speed of shaft B is between X and Y rad/s.<br />- The outside air temperature is between X and Y °C.<br /> |
-| SR3  | The coupling bolt system shall maintain the vertical offset ..., when:<br /><br /><br />- The rotating speed of shaft A is between X and Y rad/s.<br />- The rotating speed of shaft B is between X and Y rad/s.<br />- The outside air temperature is between X and Y °C.<br /> |
-| SR4  | The coupling bolt system shall maintain the horizontal angularity..., when:<br />- The rotating speed of shaft A is between X and Y rad/s.<br />- The rotating speed of shaft B is between X and Y rad/s.<br />- The outside air temperature is between X and Y °C.<br /> |
-| SR5  | The coupling bolt system shall maintain the horizontal offset ..., when:<br />- The rotating speed of shaft A is between X and Y rad/s.<br />- The rotating speed of shaft B is between X and Y rad/s.<br />- The outside air temperature is between X and Y °C.<br /> |
-|      |                                                              |
+| SR1  | The coupling bolt system shall transfer a torque greater than or equal to 400 N.m, when: - The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and - The outside air temperature is between 5°C and 50°C |
+| SR2  | The coupling bolt system shall maintain the vertical angularity ..., when: - The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and - The outside air temperature is between 5°C and 50°C |
+| SR3  | The coupling bolt system shall maintain the vertical offset ..., when: - The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and - The outside air temperature is between 5°C and 50°C |
+| SR4  | The coupling bolt system shall maintain the horizontal angularity..., when: - The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and - The outside air temperature is between 5°C and 50°C |
+| SR5  | The coupling bolt system shall maintain the horizontal offset ..., when: - The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and - The outside air temperature is between 5°C and 50°C |
 
 **Coupling Bolt System Design Constraints**
+
+The table below specifies the Coupling Bolt System Design constraints imposed by external entities (stakeholders or systems).
 
 | ID   | Statement                                                 |
 | ---- | --------------------------------------------------------- |
@@ -111,7 +108,7 @@ The Coupling Bolt System shall perform two functions:
 | C3   | The weight of the coupling bolt system must be minimized. |
 | C4   | The diameter of the shaft is equal to 50 mm.              |
 
-### *3.3. Problem Modelling*
+### *4.3. Problem Modelling*
 
 - [ ] **Design Inputs:**
   - 1..* system configuration
@@ -176,7 +173,7 @@ The Coupling Bolt System configuration is known in advance as the objective of t
 
  
 
-### *3.4. Problem Solving*
+### *4.4. Problem Solving*
 
 - [ ] **Design Inputs:**
   - Complete set of relationships between design variables, design parameters, and constants.
