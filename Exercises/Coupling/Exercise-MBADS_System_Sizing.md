@@ -70,15 +70,11 @@ The Coupling Bolt System shall perform two functions:
 
 |  ID  | Function                                                     |
 | :--: | ------------------------------------------------------------ |
-|  F1  | To transfer torque from shaft A to shaft B?                  |
+|  F1  | To transfer torque from shaft A to shaft B                   |
 |  F2  | To maintain the vertical angularity between shaft A and shaft B. |
 |  F3  | To maintain the vertical offset between shaft A and shaft B. |
-|      | To maintain the horizontal angularity between shaft A and shaft B. |
-|      | To maintain the horizontal offset between shaft A and shaft B. |
-
-
-
-
+|  F4  | To maintain the horizontal angularity between shaft A and shaft B. |
+|  F5  | To maintain the horizontal offset between shaft A and shaft B. |
 
 ### *3.2. Concept Finding*
 
@@ -96,10 +92,6 @@ The Coupling Bolt System shall perform two functions:
   - A preliminary set of relationships between design variables, design parameters, and constants
 
 **Coupling Bolt System Requirements**
-
-
-
-
 
 | ID   | Statement                                                    |
 | ---- | ------------------------------------------------------------ |
@@ -336,7 +328,11 @@ $$
 ## References
 
 - Yvars, P. A., & Zimmer, L. (2021). A model-based synthesis approach to system design correct by construction under environmental impact requirements. *Procedia CIRP*, *103*, 85-90.
+
 - Yvars, P. A., Lafon, P., & Zimmer, L. (2009). Optimization of mechanical system: Contribution of constraint satisfaction method. In *2009 International Conference on Computers & Industrial Engineering* (pp. 1379-1384). IEEE.
+
 - Roucoules, L., Lafon, P. et al. (2006). Knowledge intensive approach towards multiple product modelling and geometry emergence to foster cooperative design. In: Proceedings of the CIRP Design Seminar, Kananaskis
+
 - https://backflowparts.com/wp-content/uploads/2021/06/Shaft_Alignment_Instructions.pdf
-- 
+
+  
