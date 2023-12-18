@@ -68,9 +68,7 @@ The Coupling Bolt System shall perform a set of functions:
 
 The architecture of the rigid flange Coupling Bolt System is known.
 
-
-
-![image-20231122103813243](./Images/image-20231122103813243.png)
+![image-20231218101524983](./Images/image-20231218101524983.png)
 
 ### *4.2. Concept Finding*
 - [ ] **Design Inputs:**
