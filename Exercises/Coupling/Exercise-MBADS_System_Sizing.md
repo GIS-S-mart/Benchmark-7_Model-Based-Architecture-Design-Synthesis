@@ -91,11 +91,11 @@ The table below specifies the requirements that the Coupling Bolt System must sa
 
 | ID   | Statement                                                    |
 | ---- | ------------------------------------------------------------ |
-| SR1  | The coupling bolt system shall transfer a torque greater than or equal to 400 N.m, when: - The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and - The outside air temperature is between 5°C and 50°C |
-| SR2  | The coupling bolt system shall maintain the vertical angularity ..., when: - The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and - The outside air temperature is between 5°C and 50°C |
-| SR3  | The coupling bolt system shall maintain the vertical offset ..., when: - The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and - The outside air temperature is between 5°C and 50°C |
-| SR4  | The coupling bolt system shall maintain the horizontal angularity..., when: - The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and - The outside air temperature is between 5°C and 50°C |
-| SR5  | The coupling bolt system shall maintain the horizontal offset ..., when: - The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and - The outside air temperature is between 5°C and 50°C |
+| SR1  | The coupling bolt system shall transfer a torque greater than or equal to 400 N.m, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
+| SR2  | The coupling bolt system shall maintain the vertical angularity lower than or equal to 0.3°, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
+| SR3  | The coupling bolt system shall maintain the vertical offset lower than or equal to 0.03 mm, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
+| SR4  | The coupling bolt system shall maintain the horizontal angularity lower than or equal to 0.3°, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
+| SR5  | The coupling bolt system shall maintain the horizontal offset lower than or equal to 0.03 mm, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
 
 **Coupling Bolt System Design Constraints**
 
