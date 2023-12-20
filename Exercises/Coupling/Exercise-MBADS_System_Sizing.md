@@ -30,7 +30,7 @@ Section 4 specifies the design inputs for each activity of the MBADS process. Al
 
 The system-of-interest is a rigid flange Coupling Bolt System. A Coupling Bolt System is a mechanical means of holding two halves of a flanged shaft together to transfer the torque while maintaining shaft alignment.
 
-![image-20231022152120992](./Images/image-20231022152120992.png)
+<img src="./Images/desch-flange-coupling-din-116_664491.jpg" alt="Desch Flange coupling DIN 116 - IMTEK" style="zoom: 25%;" />
 
 ## 4. Design Inputs
 
@@ -41,17 +41,15 @@ The design inputs are defined in a generic format, that is, without a specific m
 - [ ] **Design Inputs:**
   - 1 system context
   - 1..* system functions
-  - 1 system architecture
 - [ ] **Design Outputs:**
 - 1..* requirements
-  
 - 1..* design constraints
 
-**Coupling Bolt System Context**
+**System Context**
 
 A system context includes the external environment in which the system must operate. The external environment includes external entities stakeholders with which the system must interact. For this benchmark exercise, we only consider the operational context of the Coupling Bolt System. A more exhaustive system analysis would also consider other contexts related to other phases of the Coupling Bolt System life cycle (e.g., maintenance phase) that are additional sources of constraints and functions.
 
-**Coupling Bolt System Functions**
+**System Functions**
 
 The Coupling Bolt System shall perform a set of functions:
 
@@ -63,25 +61,26 @@ The Coupling Bolt System shall perform a set of functions:
 |  F4  | To maintain the horizontal angularity between the driving shaft and the driven shaft. |
 |  F5  | To maintain the horizontal offset between the driving shaft and the driven shaft. |
 
-### *3.2. Concept Finding*
-**Coupling Bolt System Architecture**
-
-The architecture of the rigid flange Coupling Bolt System is known.
-
-![image-20231218101524983](./Images/image-20231218101524983.png)
-
 ### *4.2. Concept Finding*
+
 - [ ] **Design Inputs:**
   - 1..* requirements
   
   - 1..* design constraints
   
+  - 1 configured system architecture
+  
 - [ ] **Design Outputs:**
-  - 1..* system configuration
   - A preliminary set of typed design variables with their range of acceptable values (e.g., min and/or max real number, Boolean, enumeration).
   - A preliminary set of design parameters, each with a fixed value set after a design synthesis iteration.
   - A preliminary set of constants, each with its unmodifiable value.
   - A preliminary set of relationships between design variables, design parameters, and constants
+
+**Configured System Architecture**
+
+With this exercise limited to the sizing of a system, the architecture and its configuration are known in advance. Here, a Flange Coupling Bolt System was selected.
+
+![image-20231218101524983](./Images/image-20231218101524983.png)
 
 **Coupling Bolt System Requirements**
 
@@ -89,11 +88,11 @@ The table below specifies the requirements that the Coupling Bolt System must sa
 
 | ID   | Statement                                                    |
 | ---- | ------------------------------------------------------------ |
-| SR1  | The coupling bolt system shall transfer a torque greater than or equal to 400 N.m, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
-| SR2  | The coupling bolt system shall maintain the vertical angularity lower than or equal to 0.3°, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
-| SR3  | The coupling bolt system shall maintain the vertical offset lower than or equal to 0.03 mm, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
-| SR4  | The coupling bolt system shall maintain the horizontal angularity lower than or equal to 0.3°, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
-| SR5  | The coupling bolt system shall maintain the horizontal offset lower than or equal to 0.03 mm, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
+| SR1  | The flange coupling bolt system shall transfer a torque greater than or equal to 400 N.m, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
+| SR2  | The flange coupling bolt system shall maintain the vertical angularity lower than or equal to 0.3°, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
+| SR3  | The flange coupling bolt system shall maintain the vertical offset lower than or equal to 0.03 mm, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
+| SR4  | The flange coupling bolt system shall maintain the horizontal angularity lower than or equal to 0.3°, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
+| SR5  | The flange coupling bolt system shall maintain the horizontal offset lower than or equal to 0.03 mm, when:<br />- The rotating speed of the driving shaft is between 0 rpm and 4000 rpm, and<br />- The outside air temperature is between 5°C and 50°C |
 
 **Coupling Bolt System Design Constraints**
 
@@ -152,7 +151,7 @@ The Coupling Bolt System configuration is known in advance as the objective of t
 |  Bref  | Positive integer | Cf Table below |  -   |             Bolt reference             |
 | Maccou |  Positive real   |                |      | Total mass of the coupling bolt system |
 |  Coût  |  Positive real   |                |      | Total cost of the coupling bolt system |
-|   M    |  Positive real   |   [Mt, 1 E7]   | N.m  |     e transferred by the coupling      |
+|   M    |  Positive real   |   [Mt, 1 E7]   | N.m  |   Torque transferred by the coupling   |
 
 ![img](./Images/clip_image001.png)
 
