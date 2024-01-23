@@ -1,4 +1,4 @@
-# Benchmark 6. Model-Based Architecture Design Synthesis
+# Benchmark 7. Model-Based Architecture Design Synthesis
 
 
 
