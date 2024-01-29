@@ -4,12 +4,12 @@
 
 ## Introduction
 
-- **Disciplines**: This scientific benchmark concerns mainly the engineering design, systems engineering, and product lifecycle management communities.
-- **Goal**: This scientific benchmark aims at collecting and comparing competing or complementary contributions claiming to improve the model-based architecture design synthesis process. In this benchmark, Model-Based Architecture Design Synthesis (MBADS) is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction.
+- **Disciplines**: This scientific benchmark mainly concerns engineering design, systems engineering, and product lifecycle management communities.
+- **Goal**: This scientific benchmark aims to collect and compare competing or complementary contributions claiming to improve the model-based architecture design synthesis process. In this benchmark, Model-Based Architecture Design Synthesis (MBADS) is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction.
 
 ## Glossary
 
-An agreed-upon glossary of terms used in this benchmark is proposed below. Contributors should reuse existing terms and definitions from existing standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions)).
+An agreed-upon glossary of terms used in this benchmark is proposed below. Contributors should reuse existing terms and definitions from existing standards and not invent new ones unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions)).
 
 |                    **Keyword**                    |                         **Synonyms**                         |                        **Definition**                        | **Source** |
 | :-----------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
@@ -48,10 +48,10 @@ The primitive research objective pursued by the benchmark community is to improv
 
 The list of claimed contributions gathers candidate research proposals combining a design philosophy, design method, modelling language, modelling software, and modelling method, which claim to improve the end-to-end model-based architecture design synthesis process. 
 
-| Contribution ID | Design Philosophy | Design  Method | Modelling  Language | Modelling  Software | Modelling  Method |
-| :-------------: | :---------------: | :------------: | :-----------------: | :-----------------: | :---------------: |
-|       001       |                   |                |                     |                     |                   |
-|                 |                   |                |                     |                     |                   |
+|                Contribution ID                | Design Philosophy | Design  Method |  Modelling  Language   | Modelling  Software |          Modelling  Method          |
+| :-------------------------------------------: | :---------------: | :------------: | :--------------------: | :-----------------: | :---------------------------------: |
+| [001](Proposals/FPPT-SK2/Lean engineering.md) | Lean engineering  |  FPPT and SK2  | FPPT and SK2 Ecore DSL |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
+|                                               |                   |                |                        |                     |                                     |
 
 ## Benchmarks
 
@@ -61,7 +61,7 @@ Hence, the MBADS benchmark is decomposed into 6 benchmarks.
 
 |                              | MBADS for System Configuration |                   MBADS for System Sizing                    | MBADS for Resource Allocation | MBADS for Space Allocation | MBADS for Interface Routing |              MBADS for Architecture Generation               |
 | ---------------------------- | :----------------------------: | :----------------------------------------------------------: | :---------------------------: | :------------------------: | :-------------------------: | :----------------------------------------------------------: |
-| **Requirements development** |                                |                                                              |                               |                            |                             |                        [Benchmark]()                         |
+| **Requirements development** |                                |                                                              |                               |                            |                             | [Benchmark](Benchmarks/Benchmark-MBADS_Architecture_Generation-Requirements_Development.md) |
 | **Concept finding**          |                                | [Benchmark](Benchmarks/Benchmark-MBADS_System_Sizing-Concept_Finding.md) |                               |                            |                             | [Benchmark](Benchmarks/Benchmark-MBADS_Architecture_Generation-Concept_Finding.md) |
 | **Problem modelling**        |                                |                                                              |                               |                            |                             |                                                              |
 | **Problem solving**          |                                |                                                              |                               |                            |                             |                                                              |
@@ -70,14 +70,14 @@ Hence, the MBADS benchmark is decomposed into 6 benchmarks.
 
 ...
 
-|            **Name**            | **Contribution 001** | Contribution 002 | Contribution 003 |
-| :----------------------------: | :------------------: | :--------------: | :--------------: |
-| MBADS for System Configuration |                      |                  |                  |
-|    MBADS for System Sizing     |          X           |                  |                  |
-| MBADS for Resource Allocation  |                      |                  |                  |
-|   MBADS for Space Allocation   |                      |                  |                  |
-|  MBADS for Interface Routing   |                      |                  |                  |
-|     MBADS for Architecture     |                      |                  |                  |
+|                                    | **Contribution 001** | Contribution 002 | Contribution 003 |
+| :--------------------------------: | :------------------: | :--------------: | :--------------: |
+| **MBADS for System Configuration** |                      |                  |                  |
+|    **MBADS for System Sizing**     |        **X**         |                  |                  |
+| **MBADS for Resource Allocation**  |                      |                  |                  |
+|   **MBADS for Space Allocation**   |                      |                  |                  |
+|  **MBADS for Interface Routing**   |                      |                  |                  |
+|     **MBADS for Architecture**     |                      |                  |                  |
 
 ## Meta-Analysis
 
