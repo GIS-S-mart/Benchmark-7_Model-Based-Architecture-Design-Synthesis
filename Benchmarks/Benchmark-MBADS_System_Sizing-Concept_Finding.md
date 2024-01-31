@@ -80,10 +80,10 @@ However, the design inputs and outputs of the concept finding activity depend on
 
 The table below is a collection of research proposals (e.g., theory, process, method, modelling language, software…) that claim to improve the activity of concept finding in the MBADS process for system sizing. Once applied to the collection of benchmarks, they must provide empirical evidence that the research objectives have been met. 
 
-| Contribution ID | Design Philosophy | Design  Method | Modelling  Language | Modelling  Software |          Modelling  Method          |
-| :-------------: | :---------------: | :------------: | :-----------------: | :-----------------: | :---------------------------------: |
-|       001       | Lean engineering  |    FPPT-SK2    | FPPT-SK2 Ecore DSL  |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
-|       ...       |        ...        |      ...       |         ...         |         ...         |                 ...                 |
+|                 Contribution ID                 | Design Philosophy | Design  Method | Modelling  Language | Modelling  Software |          Modelling  Method          |
+| :---------------------------------------------: | :---------------: | :------------: | :-----------------: | :-----------------: | :---------------------------------: |
+| [001](./Proposals/FPPT-SK2/Lean engineering.md) | Lean engineering  |    FPPT-SK2    | FPPT-SK2 Ecore DSL  |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
+|                       ...                       |        ...        |      ...       |         ...         |         ...         |                 ...                 |
 
 ## Benchmarks Collection
 
