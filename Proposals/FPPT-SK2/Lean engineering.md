@@ -1,4 +1,4 @@
-# #OO1 Lean Engineering - Coupling Bolt
+# #OO1 Lean Engineering
 
 > Metadata:
 >
