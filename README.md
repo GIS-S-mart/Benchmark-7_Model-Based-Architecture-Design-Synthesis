@@ -48,10 +48,10 @@ The primitive research objective pursued by the benchmark community is to improv
 
 The list of claimed contributions gathers candidate research proposals combining a design philosophy, design method, modelling language, modelling software, and modelling method, which claim to improve the end-to-end model-based architecture design synthesis process. 
 
-|                Contribution ID                | Design Philosophy | Design  Method |  Modelling  Language   | Modelling  Software |          Modelling  Method          |
-| :-------------------------------------------: | :---------------: | :------------: | :--------------------: | :-----------------: | :---------------------------------: |
-| [001](Proposals/FPPT-SK2/Lean engineering.md) | Lean engineering  |  FPPT and SK2  | FPPT and SK2 Ecore DSL |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
-|                                               |                   |                |                        |                     |                                     |
+|                 Contribution ID                 | Design Philosophy | Design  Method |  Modelling  Language   | Modelling  Software |          Modelling  Method          |
+| :---------------------------------------------: | :---------------: | :------------: | :--------------------: | :-----------------: | :---------------------------------: |
+| [001](./Proposals/FPPT-SK2/Lean engineering.md) | Lean engineering  |  FPPT and SK2  | FPPT and SK2 Ecore DSL |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
+|                                                 |                   |                |                        |                     |                                     |
 
 ## Benchmarks
 
