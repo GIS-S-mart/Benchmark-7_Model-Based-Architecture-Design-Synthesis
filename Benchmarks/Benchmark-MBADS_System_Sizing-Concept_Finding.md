@@ -87,16 +87,16 @@ The table below is a collection of research proposals (e.g., theory, process, me
 
 ## Benchmarks Collection
 
-To demonstrate the usefulness of a claimed contribution, it is necessary to demonstrate the usefulness of a claimed contribution beyond an example problem. To build confidence in genericity and identify limits, one can use the set of benchmark exercises to confirm or disconfirm that the claimed contribution meets the research objectives.
+To demonstrate the usefulness of a claimed contribution, it is necessary to demonstrate its usefulness beyond an example problem. To build confidence in genericity and identify limits, one can use the set of benchmark exercises to confirm or disconfirm that the claimed contribution meets the research objectives.
 
 ### Benchmark exercises
 
-These benchmark exercise aims to evaluate - competitive or complementary - contributions claiming to improve the MBADS process for system sizing. 
+These benchmark exercises aim to evaluate - competitive or complementary - contributions that claim to improve the MBADS process for system sizing. 
 
 |                                                              | Number of physics | Number of systemic levels | Number of different parts |
 | :----------------------------------------------------------: | :---------------: | :-----------------------: | :-----------------------: |
-| [**Coupling bolt**](../Exercises/Coupling/Exercise-MBADS_System_Sizing.md) |         1         |             1             |             3             |
-|                        **Flashlight**                        |                   |                           |                           |
+| [**Coupling bolt**](../Exercises/Coupling/Exercise-MBADS_System_Sizing_Coupling.md) |         1         |             1             |             3             |
+| **[Flashlight](../Exercises/Flashlight/Exercise-MBADS_System_Sizing_Flashlight.md)** |                   |                           |                           |
 |                          **Camera**                          |                   |                           |                           |
 
 ### Benchmark protocols
@@ -109,14 +109,14 @@ The table below gives access to the open data that serves as empirical evidence 
 
 |                   |                       Contribution 001                       | Contribution 002 | Contribution 003 |
 | :---------------: | :----------------------------------------------------------: | :--------------: | :--------------: |
-| **Coupling bolt** | [Empirical evidence](../Proposals/FPPT-SK2/Coupling/Coupling.md) |                  |                  |
-|  **Flashlight**   |                                                              |                  |                  |
-|    **Camera**     |                                                              |                  |                  |
+| **Coupling bolt** | [Empirical evidence](../Proposals/FPPT-SK2/Coupling/FPPT-SK2_Coupling.md) |                  |                  |
+|  **Flashlight**   | [Empirical evidence](../Proposals/FPPT-SK2/Flashlight/FPPT-SK2_Flashlight.md) |                  |                  |
+|      **...**      |                                                              |                  |                  |
 
 ## Benchmarking
 
 |                          **Metric**                          |    **Contribution 001**     | Contribution 002 | Contribution 003 |
-| :----------------------------------------------------------: | :-------------------------: | ---------------- | :--------------: |
+| :----------------------------------------------------------: | :-------------------------: | :--------------: | :--------------: |
 |                                                              | Coupling Bolt \| Flashlight |                  |                  |
 |    Number of concepts satisfying the system requirements     |          1 \| ...           |                  |                  |
 |                  Number of design variables                  |          2 \| ...           |                  |                  |

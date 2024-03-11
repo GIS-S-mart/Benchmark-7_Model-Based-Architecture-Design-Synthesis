@@ -44,40 +44,104 @@ The body of knowledge is the background knowledge upon which researchers will dr
 
 The primitive research objective pursued by the benchmark community is to improve a model-based architecture design synthesis process, which includes four main activities: 1) requirements definition, 2) concept finding, 3) problem modelling, and 4) system sizing.
 
-## Claimed contributions
-
-The list of claimed contributions gathers candidate research proposals combining a design philosophy, design method, modelling language, modelling software, and modelling method, which claim to improve the end-to-end model-based architecture design synthesis process. 
-
-|                 Contribution ID                 | Design Philosophy | Design  Method |  Modelling  Language   | Modelling  Software |          Modelling  Method          |
-| :---------------------------------------------: | :---------------: | :------------: | :--------------------: | :-----------------: | :---------------------------------: |
-| [001](./Proposals/FPPT-SK2/Lean engineering.md) | Lean engineering  |  FPPT and SK2  | FPPT and SK2 Ecore DSL |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
-|                                                 |                   |                |                        |                     |                                     |
-
-## Benchmarks
+## Benchmarking
 
 Once applied to the collection of benchmarks, the claimed contributions must provide empirical evidence that the research objectives have been met. The design inputs of each activity of the Model-Based Architecture Design Synthesis process change according to the MBADS objective. For instance, a research proposal can contribute to MBADS for system sizing without contributing to MBADS for interfaces routing. In addition, a research proposal can contribute to one activity of the MBADS process (e.g., concept finding) without contributing to other activities.
 
 Hence, the MBADS benchmark is decomposed into 6 benchmarks.
 
-|                              | MBADS for System Configuration |                   MBADS for System Sizing                    | MBADS for Resource Allocation | MBADS for Space Allocation | MBADS for Interface Routing |              MBADS for Architecture Generation               |
-| ---------------------------- | :----------------------------: | :----------------------------------------------------------: | :---------------------------: | :------------------------: | :-------------------------: | :----------------------------------------------------------: |
-| **Requirements development** |                                |                                                              |                               |                            |                             | [Benchmark](Benchmarks/Benchmark-MBADS_Architecture_Generation-Requirements_Development.md) |
-| **Concept finding**          |                                | [Benchmark](Benchmarks/Benchmark-MBADS_System_Sizing-Concept_Finding.md) |                               |                            |                             | [Benchmark](Benchmarks/Benchmark-MBADS_Architecture_Generation-Concept_Finding.md) |
-| **Problem modelling**        |                                |                                                              |                               |                            |                             |                                                              |
-| **Problem solving**          |                                |                                                              |                               |                            |                             |                                                              |
-
-## Benchmarking
-
-...
-
-|                                    | **Contribution 001** | Contribution 002 | Contribution 003 |
-| :--------------------------------: | :------------------: | :--------------: | :--------------: |
-| **MBADS for System Configuration** |                      |                  |                  |
-|    **MBADS for System Sizing**     |        **X**         |                  |                  |
-| **MBADS for Resource Allocation**  |                      |                  |                  |
-|   **MBADS for Space Allocation**   |                      |                  |                  |
-|  **MBADS for Interface Routing**   |                      |                  |                  |
-|     **MBADS for Architecture**     |                      |                  |                  |
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-lboi{border-color:inherit;text-align:left;vertical-align:middle}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
+.tg .tg-44qx{border-color:#ffffff;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-2eyt{border-color:#ffffff;font-weight:bold;text-align:left;vertical-align:middle}
+.tg .tg-0lax{text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:center;vertical-align:center}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-2eyt"></th>
+    <th class="tg-44qx">MBADS for System Configuration</th>
+    <th class="tg-44qx" colspan="2">MBADS for System Sizing</th>
+    <th class="tg-44qx">MBADS for Resource Allocation</th>
+    <th class="tg-44qx">MBADS for Space Allocation</th>
+    <th class="tg-44qx">MBADS for Interface Routing</th>
+    <th class="tg-44qx">MBADS for Architecture Generation</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-lboi"><b>Requirements development</b></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+  </tr>
+  <tr>
+    <td class="tg-lboi" rowspan="2"><b>Concept finding</b></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8">001 - Lean</td>
+    <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Concept_Finding.md">Benchmark</a></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_Architecture_Generation-Concept_Finding.md">Benchmark</a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">002 - C&CA</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-lboi" rowspan="2"><b>Problem modelling</b></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8">001 - DEPS</td>
+    <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Problem_Modeling.md">Benchmark</a></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+  </tr>
+   <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">002 - Ibex?</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-lboi" rowspan="2"><b>Problem solving</b></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8">001 - DEPS</td>
+    <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Problem_Solving.md">Benchmark</a></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+    <td class="tg-9wq8"></td>
+  </tr>
+   <tr>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">002 - Ibex?</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+</tbody>
+</table>
 
 ## Meta-Analysis
 
