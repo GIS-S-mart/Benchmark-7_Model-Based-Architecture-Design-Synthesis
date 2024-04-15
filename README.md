@@ -2,22 +2,30 @@
 
 > [!NOTE]
 >
-> A scientific benchmark repository is a an online version-controlled and collaborative place where researchers can share a collection of open data and its revision history.
+> *A scientific benchmark repository is a an online version-controlled and collaborative place where researchers can share a collection of open data and its revision history.*
 
 ## Introduction
 
 > [!NOTE]
 >
-> 
-
-
+> *The introduction must be short and include the following items:* 
+> *\- The main discipline(s) it contributes to.*
+> *\- The type of the claimed contribution to benchmark (theory, process, method, software, algorithm, modelling language...).*
+> *\- The expected results.*
+> *\- Type of research (does the benchmark intend to be qualitative and/or quantitative)*
 
 - **Disciplines**: This scientific benchmark mainly concerns engineering design, systems engineering, and product lifecycle management communities.
 - **Goal**: This scientific benchmark aims to collect and compare competing or complementary contributions claiming to improve the model-based architecture design synthesis process. In this benchmark, Model-Based Architecture Design Synthesis (MBADS) is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction.
 
 ## Glossary
 
-An agreed-upon glossary of terms used in this benchmark is proposed below. Contributors should reuse existing terms and definitions from existing standards and not invent new ones unless they have a very specific concept that requires the introduction of a new keyword and definition. Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions)).
+> [!NOTE]
+>
+> *The glossary aims to clearly define keywords and consistently use them in the benchmark documentation so the community members can communicate more effectively. Contributors should reuse existing keywords and definitions from standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition.*
+
+> [!TIP]
+>
+> Any new keyword and definition must be motivated and explained in the discussion of the repository (e.g. navigate to '*Repositories > Benchmark-0_Template > Discussions*', or [click here](ttps://github.com/GIS-S-mart/Benchmark-7_Design_synthesis-3_Concepts_finding/discussions)).
 
 |                    **Keyword**                    |                         **Synonyms**                         |                        **Definition**                        | **Source** |
 | :-----------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :--------: |
@@ -39,7 +47,11 @@ An agreed-upon glossary of terms used in this benchmark is proposed below. Contr
 
 ## Research objectives
 
-The primitive research objective pursued by the benchmark community is to improve a model-based architecture design synthesis process, which includes four main activities: 1) requirements definition, 2) concept finding, 3) problem modelling, and 4) system sizing.
+> [!NOTE]
+>
+> *A research objective is a measurable goal that is pursued by the scientific community. Fundamental research objectives in design research are to understand or improve design activities.*
+
+The primitive research objective pursued by the benchmark community is to improve a model-based architecture definition process. The process consists of four main activities 1) requirements development, 2) concept finding, 3) problem modelling, and 4) system sizing.
 
 ## Benchmarking
 
@@ -49,77 +61,94 @@ Hence, the MBADS benchmark is decomposed into 6 benchmarks.
 
 <table class="tg">
 <thead>
-  <tr>
-    <th class="tg-2eyt"></th>
-    <th class="tg-44qx">MBADS for System Configuration</th>
-    <th class="tg-44qx" colspan="2">MBADS for System Sizing</th>
-    <th class="tg-44qx">MBADS for Resource Allocation</th>
-    <th class="tg-44qx">MBADS for Space Allocation</th>
-    <th class="tg-44qx">MBADS for Interface Routing</th>
-    <th class="tg-44qx">MBADS for Architecture Generation</th>
-  </tr>
+<tr style="height: 63px;">
+
+<th class="tg-2eyt" style="height: 63px;">&nbsp;</th>
+<th class="tg-44qx" style="height: 63px;">MBADS for System Configuration</th>
+<th class="tg-44qx" style="height: 63px;" colspan="2">MBADS for System Sizing</th>
+<th class="tg-44qx" style="height: 63px;">MBADS for Resource Allocation</th>
+<th class="tg-44qx" style="height: 63px;">MBADS for Space Allocation</th>
+<th class="tg-44qx" style="height: 63px;">MBADS for Interface Routing</th>
+<th class="tg-44qx" style="height: 63px;" colspan="2">MBADS for Architecture Generation</th>
+</tr>
 </thead>
 <tbody>
-  <tr>
-    <td class="tg-lboi"><b>Requirements development</b></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
-  </tr>
-  <tr>
-    <td class="tg-lboi" rowspan="2"><b>Concept finding</b></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-9wq8">001 - Lean</td>
-    <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Concept_Finding.md">Benchmark</a></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_Architecture_Generation-Concept_Finding.md">Benchmark</a></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">002 - C&CA</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-lboi" rowspan="2"><b>Problem modelling</b></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-9wq8">001 - DEPS</td>
-    <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Problem_Modeling.md">Benchmark</a></td>
-    <td class="tg-0lax"></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
-  </tr>
-   <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">002 - Ibex?</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-  <tr>
-    <td class="tg-lboi" rowspan="2"><b>Problem solving</b></td>
-    <td class="tg-9wq8"></td>
-      <td class="tg-9wq8">001 - DEPS + DEPS Studio</td>
-    <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Problem_Solving.md">Benchmark</a></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
-  </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky">002 - DEPS + Ibex</td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-</tbody>
-</table>
-
+<tr style="height: 23.5px;">
+<td class="tg-lboi" style="height: 46.5px;" rowspan="2"><strong>Requirements
+development</strong></td>
+<td class="tg-9wq8" style="height: 23.5px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23.5px;">PBR</td>
+<td class="tg-0lax" style="height: 46.5px;" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Requirements_Development.md">Benchmark</a></td>
+<td class="tg-9wq8" style="height: 23.5px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23.5px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23.5px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23.5px;">???</td>
+<td class="tg-0lax" style="height: 46.5px;" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_Architecture_Generation-Requirements_Development.md">Benchmark</a></td>
+</tr>
+<tr style="height: 23px;">
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">???</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">???</td>
+</tr>
+<tr style="height: 23px;">
+<td class="tg-lboi" style="height: 46px;" rowspan="2"><strong>Concept finding</strong></td>
+<td class="tg-9wq8" style="height: 23px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23px;">Lean</td>
+<td class="tg-0lax" style="height: 46px;" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Concept_Finding.md">Benchmark</a></td>
+<td class="tg-9wq8" style="height: 23px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23px;">???</td>
+<td class="tg-0lax" style="height: 46px;" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_Architecture_Generation-Concept_Finding.md">Benchmark</a></td>
+</tr>
+<tr style="height: 23px;">
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">C&amp;CA</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">C&amp;CA</td>
+</tr>
+<tr style="height: 23px;">
+<td class="tg-lboi" style="height: 46px;" rowspan="2"><strong>Problem modelling</strong></td>
+<td class="tg-9wq8" style="height: 23px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23px;">DEPS</td>
+<td class="tg-0lax" style="height: 46px;" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Problem_Modeling.md">Benchmark</a></td>
+<td class="tg-0lax" style="height: 23px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 23px;">&nbsp;</td>
+  <td class="tg-9wq8" style="height: 23px;">???</td>
+  <td class="tg-0lax" style="height: 46px;" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_Architecture_Generation-Problem_Modeling.md">Benchmark</a></td>
+</tr>
+<tr style="height: 23px;">
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">Ibex?</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+  <td class="tg-9wq8" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">???</td>
+</tr>
+<tr style="height: 43px;">
+<td class="tg-lboi" style="height: 66px;" rowspan="2"><strong>Problem solving</strong></td>
+<td class="tg-9wq8" style="height: 43px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 43px;">DEPS + DEPS Studio</td>
+<td class="tg-0lax" style="height: 66px;" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Problem_Solving.md">Benchmark</a></td>
+<td class="tg-9wq8" style="height: 43px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 43px;">&nbsp;</td>
+<td class="tg-9wq8" style="height: 43px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">???</td>
+<td class="tg-0lax" style="height: 46px;" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_Architecture_Generation-Problem_Solving.md">Benchmark</a></td>
+</tr>
+<tr style="height: 23px;">
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">DEPS + Ibex</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">&nbsp;</td>
+<td class="tg-0pky" style="height: 23px;">???</td>
 
 ## Meta-Analysis
 

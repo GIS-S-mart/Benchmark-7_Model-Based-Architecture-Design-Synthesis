@@ -1,3 +1,3 @@
-# Benchmark 6. MBADS for System Sizing: Problem Solving
+# MBADS for System Sizing: Problem Solving
 
 TBD...

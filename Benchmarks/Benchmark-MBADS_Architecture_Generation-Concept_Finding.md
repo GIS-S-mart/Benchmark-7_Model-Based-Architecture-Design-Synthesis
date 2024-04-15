@@ -1,4 +1,4 @@
-# Benchmark 6. MBADS for Architecture Generation: Concept Finding
+# MBADS for Architecture Generation: Concept Finding
 
 ## Introduction
 

@@ -80,23 +80,23 @@ However, the design inputs and outputs of the concept finding activity depend on
 
 The table below is a collection of research proposals (e.g., theory, process, method, modelling language, software…) that claim to improve the activity of concept finding in the MBADS process for system sizing. Once applied to the collection of benchmarks, they must provide empirical evidence that the research objectives have been met. 
 
-|                 Contribution ID                 | Design Philosophy | Design  Method | Modelling  Language | Modelling  Software |          Modelling  Method          |
-| :---------------------------------------------: | :---------------: | :------------: | :-----------------: | :-----------------: | :---------------------------------: |
-| [001](./Proposals/FPPT-SK2/Lean engineering.md) | Lean engineering  |    FPPT-SK2    | FPPT-SK2 Ecore DSL  |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
-|                       ...                       |        ...        |      ...       |         ...         |         ...         |                 ...                 |
+| Contribution ID | Design Philosophy | Design  Method | Modelling  Language | Modelling  Software |          Modelling  Method          |
+| :-------------: | :---------------: | :------------: | :-----------------: | :-----------------: | :---------------------------------: |
+|       001       | Lean engineering  |    FPPT-SK2    | FPPT-SK2 Ecore DSL  |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
+|       ...       |        ...        |      ...       |         ...         |         ...         |                 ...                 |
 
 ## Benchmarks Collection
 
-To demonstrate the usefulness of a claimed contribution, it is necessary to demonstrate its usefulness beyond an example problem. To build confidence in genericity and identify limits, one can use the set of benchmark exercises to confirm or disconfirm that the claimed contribution meets the research objectives.
+To demonstrate the usefulness of a claimed contribution, it is necessary to demonstrate the usefulness of a claimed contribution beyond an example problem. To build confidence in genericity and identify limits, one can use the set of benchmark exercises to confirm or disconfirm that the claimed contribution meets the research objectives.
 
 ### Benchmark exercises
 
-These benchmark exercises aim to evaluate - competitive or complementary - contributions that claim to improve the MBADS process for system sizing. 
+These benchmark exercise aims to evaluate - competitive or complementary - contributions claiming to improve the MBADS process for system sizing. 
 
 |                                                              | Number of physics | Number of systemic levels | Number of different parts |
 | :----------------------------------------------------------: | :---------------: | :-----------------------: | :-----------------------: |
-| [**Coupling bolt**](../Exercises/Coupling/Exercise-MBADS_System_Sizing_Coupling.md) |         1         |             1             |             3             |
-| **[Flashlight](../Exercises/Flashlight/Exercise-MBADS_System_Sizing_Flashlight.md)** |                   |                           |                           |
+| [**Coupling bolt**](../Exercises/Coupling/Exercise-MBADS_System_Sizing.md) |         1         |             1             |             3             |
+|                        **Flashlight**                        |                   |                           |                           |
 |                          **Camera**                          |                   |                           |                           |
 
 ### Benchmark protocols
@@ -109,14 +109,14 @@ The table below gives access to the open data that serves as empirical evidence 
 
 |                   |                       Contribution 001                       | Contribution 002 | Contribution 003 |
 | :---------------: | :----------------------------------------------------------: | :--------------: | :--------------: |
-| **Coupling bolt** | [Empirical evidence](../Proposals/FPPT-SK2/Coupling/FPPT-SK2_Coupling.md) |                  |                  |
-|  **Flashlight**   | [Empirical evidence](../Proposals/FPPT-SK2/Flashlight/FPPT-SK2_Flashlight.md) |                  |                  |
-|      **...**      |                                                              |                  |                  |
+| **Coupling bolt** | [Empirical evidence](../Proposals/FPPT-SK2/Coupling/Coupling.md) |                  |                  |
+|  **Flashlight**   |                                                              |                  |                  |
+|    **Camera**     |                                                              |                  |                  |
 
 ## Benchmarking
 
 |                          **Metric**                          |    **Contribution 001**     | Contribution 002 | Contribution 003 |
-| :----------------------------------------------------------: | :-------------------------: | :--------------: | :--------------: |
+| :----------------------------------------------------------: | :-------------------------: | ---------------- | :--------------: |
 |                                                              | Coupling Bolt \| Flashlight |                  |                  |
 |    Number of concepts satisfying the system requirements     |          1 \| ...           |                  |                  |
 |                  Number of design variables                  |          2 \| ...           |                  |                  |

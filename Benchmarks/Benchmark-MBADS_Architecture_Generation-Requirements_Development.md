@@ -1,16 +1,9 @@
-# Benchmark 6. MBADS for System Sizing: Concept Finding
+# Architecture Generation: Requirements Development
 
 ## Introduction
 
 - **Disciplines**: This scientific benchmark concerns mainly the engineering design, systems engineering, and product lifecycle management communities.
-- **Goal**: This scientific benchmark aims to foster cumulative research and support researchers in the fair and systematic evaluation of competing or complementary research proposals that claim to improve the activity of **concept finding** in the 4-activity **Model-Based Architecture Design Synthesis** (MBADS) process for **system sizing** defined as follows:
-
-|         Activity         |                         Inputs                          | Outputs                                                      |
-| :----------------------: | :-----------------------------------------------------: | :----------------------------------------------------------- |
-| Requirements development |                Expected system functions                | - Valid set of requirements.<br />- Valid set of design constraints. |
-|   **Concept finding**    | **Outputs of the activity "requirements development".** | **- Set of design variables with their data types and range of acceptable values.<br />- Set of design parameters with their data types and values.<br />- Set of constants with their types and values.<br />- Preliminary set of relationships between design variables, design parameters, and constants.**- |
-|    Problem modelling     |       Outputs of the activity "concept finding".        | \- 1..* system configuration.<br />- Complete set of design variables, design parameters, and constants.<br />- Complete set of relationships between design variables, design parameters, and constants. |
-|     Problem solving      |      Outputs of the activity "problem modelling".       | At least one value for each design variable.                 |
+- **Goal**: This scientific benchmark aims to foster cumulative research and support researchers in the fair and systematic evaluation of competing or complementary research proposals that claim to improve the activity of **requirements development** in the 4-activity **Model-Based Architecture Design Synthesis** (MBADS) process for **architecture generation** defined as follows:
 
 ## Glossary
 
@@ -60,21 +53,7 @@ Authors should use existing metrics and not invent new ones, unless they measure
 
 ## Body of knowledge
 
-The body of knowledge is the background knowledge upon which researchers will draw on and contribute in theory or practice. Regarding the activity of concept finding, the background knowledge is relatively broad and vaguely known under different names, such as embodiment design, conceptual design, preliminary design, [...], or system architecture design. Existing works include:
-
-- Albers, A., Sedchaicharn, K., Sauter, C., & Burger, W. (2009). A Method to define a Product Architecture Early in Product Development Using the Contact and Channel Model. In *DS 58-5: Proceedings of ICED 09, the 17th International Conference on Engineering Design, Vol. 5, Design Methods and Tools (pt. 1), Palo Alto, CA, USA, 24.-27.08. 2009* (pp. 241-252).
-- Pailhès, J., Sallaou, M., Nadeau, J. P., & Fadel, G. M. (2011). Energy based functional decomposition in preliminary design.
-- Suh, N. P., & Suh, N. P. (2001). *Axiomatic design: advances and applications* (Vol. 4). New York: Oxford university press.
-
-This benchmark focuses on a more narrow scope limited to the design approaches supporting the concept finding activity with a model-based approach, which could be part of a Model-Based Architecture Design Synthesis process for automatic solving. Existing works include:
-
-- Albert, A., & Christian, Z. (2013). Extending SysML for engineering designers by integration of the contact & channel–approach (C&C2-A) for function-based modeling of technical systems. *Procedia Computer Science*, *16*, 353-362.
-- Barbedienne, R., Penas, O., Choley, J. Y., & Hehenberger, P. (2019). Modeling framework for a consistent integration of geometry knowledge during conceptual design. *Journal of Computing and Information Science in Engineering*, *19*(2), 021009.
-- Barbedienne, R., Messaoud, Y. B., Choley, J. Y., Penas, O., Ouslimani, A., & Rivière, A. (2015, September). SAMOS for Spatial Architecture based on Multi-physics and Organisation of Systems in conceptual design. In *2015 IEEE International Symposium on Systems Engineering (ISSE)* (pp. 135-141). IEEE.
-- Kharrat, M., Penas, O., Plateaux, R., Trabelsi, H., Choley, J. Y., Louati, J., & Haddar, M. (2017, October). Towards a 3D conceptual architecture framework, based on multi-physical constraints. In *2017 IEEE International Systems Engineering Symposium (ISSE)* (pp. 1-8). IEEE.
-- Kharrat, M., Penas, O., Plateaux, R., Choley, J. Y., Trabelsi, H., Louati, J., & Haddar, M. (2020). Integration of electromagnetic constraints as of the conceptual design through an MBSE approach. *IEEE Systems Journal*, *15*(1), 747-758.
-
-However, the design inputs and outputs of the concept finding activity depend on the objective of the Model-Based Architecture Design Synthesis process. This benchmark concentrates on the activity of MBADS for system sizing, which further limits the body of knowledge, although all related works are of interest.
+TBD
 
 ## Claimed contributions
 
