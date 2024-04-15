@@ -28,17 +28,6 @@ An agreed-upon glossary of terms used in this benchmark is proposed below. Contr
 |                Modelling language                 |                    Standardised notation                     | A language or a standardised notation that is used to encode the system concept elaborated with the conceptual design method. |            |
 |                Modelling software                 |                    Modelling environment                     | A software used by a practitioner to model a system concept using a modelling language. |            |
 
-## Body of Knowledge
-
-The body of knowledge is the background knowledge upon which researchers will draw on and contribute in theory or practice. This benchmark aims to increase the knowledge of the MBADS process.
-
-- Hartmann, C., Chenouard, R., Mermoz, E., & Bernard, A. (2018). A framework for automatic architectural synthesis in conceptual design phase. *Journal of Engineering Design*, *29*(11), 665-689.
-- Menu, J., Nicolai, M., & Zeller, M. (2018, July). Designing fail-safe architectures for aircraft electrical power systems. In *2018 AIAA/IEEE Electric Aircraft Technologies Symposium (EATS)* (pp. 1-14). IEEE.
-- Menu, J., & Nicolai, M. (2017). A Framework for Automated Design, Verification, and Simulation of Electrical Power Systems for Aircraft. In *Proceedings of 6th International Workshop on Aircraft System Technologies (AST 2017)* (pp. 135-144).
-- Rosich, A., Berx, K., & Pinte, G. (2016). Model-based design synthesis: application to optimal air-compressor system design. *IFAC-PapersOnLine*, *49*(21), 416-422.
-- dos Santos, C. A. R., Saleh, A. H., Schrijvers, T., & Nicolai, M. (2019, September). CONDEnSe: contract based design synthesis. In *2019 ACM/IEEE 22nd International Conference on Model Driven Engineering Languages and Systems (MODELS)* (pp. 250-260). IEEE.
-- Yvars, P. A., & Zimmer, L. (2022). Towards a correct by construction design of complex systems: The MBSS approach. *Procedia CIRP*, *109*, 269-274.
-- Yvars, P. A., & Zimmer, L. (2021). A model-based synthesis approach to system design correct by construction under environmental impact requirements. *Procedia CIRP*, *103*, 85-90.
 
 ## Research objectives
 
