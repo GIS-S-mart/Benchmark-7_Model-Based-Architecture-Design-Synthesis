@@ -56,11 +56,11 @@ Hence, the MBADS benchmark is decomposed into 6 benchmarks.
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-lboi{border-color:inherit;text-align:left;vertical-align:middle}
-.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
-.tg .tg-44qx{border-color:#ffffff;font-weight:bold;text-align:center;vertical-align:middle}
-.tg .tg-2eyt{border-color:#ffffff;font-weight:bold;text-align:left;vertical-align:middle}
-.tg .tg-0lax{text-align:center;vertical-align:top}
+.tg .tg-lboi{border-color:inherit;text-align:center;vertical-align:center}
+.tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:center}
+.tg .tg-44qx{border-color:#ffffff;font-weight:bold;text-align:center;vertical-align:center}
+.tg .tg-2eyt{border-color:#ffffff;font-weight:bold;text-align:center;vertical-align:center}
+.tg .tg-0lax{text-align:center;vertical-align:center}
 .tg .tg-0pky{border-color:inherit;text-align:center;vertical-align:center}
 </style>
 <table class="tg">
@@ -84,7 +84,6 @@ Hence, the MBADS benchmark is decomposed into 6 benchmarks.
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
   </tr>
   <tr>
     <td class="tg-lboi" rowspan="2"><b>Concept finding</b></td>
@@ -93,13 +92,11 @@ Hence, the MBADS benchmark is decomposed into 6 benchmarks.
     <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Concept_Finding.md">Benchmark</a></td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
     <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_Architecture_Generation-Concept_Finding.md">Benchmark</a></td>
   </tr>
   <tr>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">002 - C&CA</td>
-    <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -112,12 +109,10 @@ Hence, the MBADS benchmark is decomposed into 6 benchmarks.
     <td class="tg-0lax"></td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
   </tr>
    <tr>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">002 - Ibex?</td>
-    <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
@@ -125,23 +120,22 @@ Hence, the MBADS benchmark is decomposed into 6 benchmarks.
   <tr>
     <td class="tg-lboi" rowspan="2"><b>Problem solving</b></td>
     <td class="tg-9wq8"></td>
-    <td class="tg-9wq8">001 - DEPS</td>
+      <td class="tg-9wq8">001 - DEPS + DEPS Studio</td>
     <td class="tg-0lax" rowspan="2"><a href="Benchmarks/Benchmark-MBADS_System_Sizing-Problem_Solving.md">Benchmark</a></td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8"></td>
     <td class="tg-9wq8"></td>
-    <td class="tg-9wq8"></td>
   </tr>
-   <tr>
+  <tr>
     <td class="tg-0pky"></td>
-    <td class="tg-0pky">002 - Ibex?</td>
-    <td class="tg-0pky"></td>
+    <td class="tg-0pky">002 - DEPS + Ibex</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky"></td>
   </tr>
 </tbody>
 </table>
+
 
 ## Meta-Analysis
 
