@@ -49,7 +49,7 @@
 
 > [!NOTE]
 >
-> *A research objective is a measurable goal that is pursued by the scientific community. Fundamental research objectives in design research are to understand or improve design activities.*
+> *A research objective is a measurable goal that is pursued by the benchmark community. Fundamental research objectives in design research are to understand or improve design activities.*
 
 The primitive research objective pursued by the benchmark community is to improve a model-based architecture definition process. The process consists of four main activities 1) requirements development, 2) concept finding, 3) problem modelling, and 4) system sizing.
 
@@ -156,5 +156,5 @@ A meta-analysis is the analysis of all results of the benchmark for the purpose 
 
 ## References
 
-- 
+...
 
