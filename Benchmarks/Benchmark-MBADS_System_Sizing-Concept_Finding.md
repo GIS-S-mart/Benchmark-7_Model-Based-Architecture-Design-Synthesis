@@ -82,7 +82,7 @@ The table below is a collection of research proposals (e.g., theory, process, me
 
 |                 Contribution ID                 | Design Philosophy | Design  Method | Modelling  Language | Modelling  Software |          Modelling  Method          |
 | :---------------------------------------------: | :---------------: | :------------: | :-----------------: | :-----------------: | :---------------------------------: |
-| [001](../Proposals/FPPT-SK2/Lean engineering.md) | Lean engineering  |    FPPT-SK2    | FPPT-SK2 Ecore DSL  |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
+| [001](https://github.com/GIS-S-mart/Benchmark-7_Model-Based-Architecture-Design-Synthesis/blob/main/Proposals/FPPT-SK2/Lean%20engineering.md) | Lean engineering  |    FPPT-SK2    | FPPT-SK2 Ecore DSL  |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
 |                       ...                       |        ...        |      ...       |         ...         |         ...         |                 ...                 |
 
 ## Benchmarks Collection
