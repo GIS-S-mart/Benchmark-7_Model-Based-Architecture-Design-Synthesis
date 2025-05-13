@@ -2,7 +2,7 @@
 
 > [!NOTE]
 >
-> *A scientific benchmark repository is a an online version-controlled and collaborative place where researchers can share a collection of open data and its revision history.*
+> *A scientific benchmark repository is an online, version-controlled, and collaborative space where researchers can share a collection of open data along with its revision history.*
 
 ## Introduction
 
@@ -15,13 +15,13 @@
 > *\- Type of research (does the benchmark intend to be qualitative and/or quantitative)*
 
 - **Disciplines**: This scientific benchmark mainly concerns engineering design, systems engineering, and product lifecycle management communities.
-- **Goal**: This scientific benchmark aims to collect and compare competing or complementary contributions claiming to improve the model-based architecture design synthesis process. In this benchmark, Model-Based Architecture Design Synthesis (MBADS) is a computer-based automatic problem-solving process to generate preliminary design solutions that are correct by construction.
+- **Goal**: This scientific benchmark aims to collect and compare competing or complementary contributions that claim to enhance the model-based architecture design synthesis process. In this benchmark, Model-Based Architecture Design Synthesis (MBADS) is a computer-based automatic problem-solving process designed to generate preliminary design solutions that are correct by construction.
 
 ## Glossary
 
 > [!NOTE]
 >
-> *The glossary aims to clearly define keywords and consistently use them in the benchmark documentation so the community members can communicate more effectively. Contributors should reuse existing keywords and definitions from standards and not invent new ones, unless they have a very specific concept that requires the introduction of a new keyword and definition.*
+> *The the glossary aims to clearly define keywords and use them consistently in the benchmark documentation, enabling community members to communicate more effectively. Contributors should reuse existing keywords and definitions from standards rather than inventing new ones, unless they have a very specific concept that necessitates the introduction of a new keyword definition.*
 
 > [!TIP]
 >
@@ -51,11 +51,11 @@
 >
 > *A research objective is a measurable goal that is pursued by the benchmark community. Fundamental research objectives in design research are to understand or improve design activities.*
 
-The primitive research objective pursued by the benchmark community is to improve a model-based architecture definition process. The process consists of four main activities 1) requirements development, 2) concept finding, 3) problem modelling, and 4) system sizing.
+The primary research objective pursued by the benchmark community is to enhance a model-based architecture definition process. This process involves four main activities: 1) requirements development, 2) concept finding, 3) problem modelling, and 4) system sizing.
 
 ## Benchmarking
 
-Once applied to the collection of benchmarks, the claimed contributions must provide empirical evidence that the research objectives have been met. The design inputs of each activity of the Model-Based Architecture Design Synthesis process change according to the MBADS objective. For instance, a research proposal can contribute to MBADS for system sizing without contributing to MBADS for interfaces routing. In addition, a research proposal can contribute to one activity of the MBADS process (e.g., concept finding) without contributing to other activities.
+Once applied to the collection of benchmarks, the claimed contributions must provide empirical evidence that the research objectives have been met. The design inputs for each activity of the Model-Based Architecture Design Synthesis process vary according to the MBADS objective. For instance, a research proposal can contribute to MBADS for system sizing without contributing to MBADS for interface routing. Additionally, a research proposal can contribute to one activity of the MBADS process (e.g., concept finding) without contributing to other activities.
 
 Hence, the MBADS benchmark is decomposed into 6 benchmarks.
 
@@ -152,7 +152,9 @@ development</strong></td>
 
 ## Meta-Analysis
 
-A meta-analysis is the analysis of all results of the benchmark for the purpose of integrating the findings. Meta-analytic results are the most trustworthy source of evidence.
+> [!NOTE]
+>
+> A meta-analysis is the analysis of all results of the benchmark for the purpose of integrating the findings. Meta-analytic results are the most trustworthy source of evidence.
 
 ## References
 
