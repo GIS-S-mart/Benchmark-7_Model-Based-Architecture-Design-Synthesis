@@ -82,7 +82,7 @@ The table below is a collection of research proposals (e.g., theory, process, me
 
 |                 Contribution ID                 | Design Philosophy | Design  Method | Modelling  Language | Modelling  Software |          Modelling  Method          |
 | :---------------------------------------------: | :---------------: | :------------: | :-----------------: | :-----------------: | :---------------------------------: |
-| [001](./Proposals/FPPT-SK2/Lean engineering.md) | Lean engineering  |    FPPT-SK2    | FPPT-SK2 Ecore DSL  |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
+| [001](../Proposals/FPPT-SK2/Lean engineering.md) | Lean engineering  |    FPPT-SK2    | FPPT-SK2 Ecore DSL  |       Eclipse       | FPPT-SK2 with Ecore DSL and Eclipse |
 |                       ...                       |        ...        |      ...       |         ...         |         ...         |                 ...                 |
 
 ## Benchmarks Collection
