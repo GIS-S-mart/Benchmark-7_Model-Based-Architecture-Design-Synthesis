@@ -216,6 +216,7 @@ The Coupling Bolt System configuration is known in advance as the objective of t
 $$
 N ≥N_m \tag{1}
 $$
+
  **Geometric model:**
 
 
